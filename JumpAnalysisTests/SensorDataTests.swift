@@ -21,6 +21,20 @@ class SensorDataTests: XCTestCase {
     }
 
     
+    func testCanBeConvertedToJSON() {
+        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
+        let rawAcceleration = RawAcceleration(x: 0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
+        let sensorData = SensorData(sensorID: 0, rawAcceleration: rawAcceleration, quaternion: quaternion)
+        
+        let jsonSensorData = JSON(sensorData.toDictionary()).description
+        XCTAssertNotEqual("", jsonSensorData)
+        
+        let jsonArraySensorData = JSON([sensorData.toDictionary(), sensorData.toDictionary()]).description
+        XCTAssertNotEqual("", jsonArraySensorData)
+        
+        XCTAssertNotEqual(jsonSensorData, jsonArraySensorData)
+    }
+    
 
     func testPerformanceGravityFromQuaternion() {
         // This is an example of a performance test case.

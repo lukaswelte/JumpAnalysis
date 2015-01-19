@@ -38,6 +38,25 @@
 		8071D3551A6C74F000E303E8 /* SensorDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3541A6C74F000E303E8 /* SensorDataDelegate.swift */; };
 		8071D3571A6C756400E303E8 /* ArduinoCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3561A6C756400E303E8 /* ArduinoCommunicationManager.swift */; };
 		8071D3591A6C774100E303E8 /* BLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3581A6C774100E303E8 /* BLEService.m */; };
+		8081BECC1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BECB1A6D2DD9004D4EF9 /* FileHandler.swift */; };
+		8081BECD1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BECB1A6D2DD9004D4EF9 /* FileHandler.swift */; };
+		8081BED11A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED01A6D323F004D4EF9 /* SwiftyJSON.swift */; };
+		8081BED21A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED01A6D323F004D4EF9 /* SwiftyJSON.swift */; };
+		8081BEE31A6D3251004D4EF9 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED41A6D3251004D4EF9 /* ArrayTests.swift */; };
+		8081BEE51A6D3251004D4EF9 /* BaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED51A6D3251004D4EF9 /* BaseTests.swift */; };
+		8081BEE71A6D3251004D4EF9 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED61A6D3251004D4EF9 /* ComparableTests.swift */; };
+		8081BEE91A6D3251004D4EF9 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED71A6D3251004D4EF9 /* DictionaryTests.swift */; };
+		8081BEEB1A6D3251004D4EF9 /* LiteralConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED81A6D3251004D4EF9 /* LiteralConvertibleTests.swift */; };
+		8081BEED1A6D3251004D4EF9 /* NumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED91A6D3251004D4EF9 /* NumberTests.swift */; };
+		8081BEEF1A6D3251004D4EF9 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDA1A6D3251004D4EF9 /* PerformanceTests.swift */; };
+		8081BEF11A6D3251004D4EF9 /* PrintableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDB1A6D3251004D4EF9 /* PrintableTests.swift */; };
+		8081BEF31A6D3251004D4EF9 /* RawRepresentableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDC1A6D3251004D4EF9 /* RawRepresentableTests.swift */; };
+		8081BEF51A6D3251004D4EF9 /* RawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDD1A6D3251004D4EF9 /* RawTests.swift */; };
+		8081BEF71A6D3251004D4EF9 /* SequenceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDE1A6D3251004D4EF9 /* SequenceTypeTests.swift */; };
+		8081BEF91A6D3251004D4EF9 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDF1A6D3251004D4EF9 /* StringTests.swift */; };
+		8081BEFB1A6D3251004D4EF9 /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */; };
+		8081BEFD1A6D3251004D4EF9 /* Tests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8081BEE11A6D3251004D4EF9 /* Tests.json */; };
+		8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +104,24 @@
 		8071D3581A6C774100E303E8 /* BLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEService.m; sourceTree = "<group>"; };
 		8071D35A1A6C774B00E303E8 /* BLEService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEService.h; sourceTree = "<group>"; };
 		8071D35B1A6C779700E303E8 /* JumpAnalysis-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JumpAnalysis-BridgingHeader.h"; sourceTree = "<group>"; };
+		8081BECB1A6D2DD9004D4EF9 /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		8081BECF1A6D323F004D4EF9 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		8081BED01A6D323F004D4EF9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		8081BED41A6D3251004D4EF9 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		8081BED51A6D3251004D4EF9 /* BaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTests.swift; sourceTree = "<group>"; };
+		8081BED61A6D3251004D4EF9 /* ComparableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
+		8081BED71A6D3251004D4EF9 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		8081BED81A6D3251004D4EF9 /* LiteralConvertibleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiteralConvertibleTests.swift; sourceTree = "<group>"; };
+		8081BED91A6D3251004D4EF9 /* NumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTests.swift; sourceTree = "<group>"; };
+		8081BEDA1A6D3251004D4EF9 /* PerformanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
+		8081BEDB1A6D3251004D4EF9 /* PrintableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintableTests.swift; sourceTree = "<group>"; };
+		8081BEDC1A6D3251004D4EF9 /* RawRepresentableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawRepresentableTests.swift; sourceTree = "<group>"; };
+		8081BEDD1A6D3251004D4EF9 /* RawTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawTests.swift; sourceTree = "<group>"; };
+		8081BEDE1A6D3251004D4EF9 /* SequenceTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceTypeTests.swift; sourceTree = "<group>"; };
+		8081BEDF1A6D3251004D4EF9 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
+		8081BEE11A6D3251004D4EF9 /* Tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tests.json; sourceTree = "<group>"; };
+		8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +163,7 @@
 		801DA5281A6C63480028AAF3 /* JumpAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				8081BECE1A6D323F004D4EF9 /* Helpers */,
 				8071D3431A6C74D500E303E8 /* Communication */,
 				801DA5651A6C65050028AAF3 /* Model */,
 				801DA52B1A6C63480028AAF3 /* AppDelegate.swift */,
@@ -151,8 +189,10 @@
 		801DA5401A6C63480028AAF3 /* JumpAnalysisTests */ = {
 			isa = PBXGroup;
 			children = (
+				8081BED31A6D3251004D4EF9 /* Helpers */,
 				801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */,
 				80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */,
+				8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */,
 				801DA5411A6C63480028AAF3 /* Supporting Files */,
 			);
 			path = JumpAnalysisTests;
@@ -177,6 +217,7 @@
 				8071D33F1A6C699100E303E8 /* RawAcceleration.swift */,
 				8071D33D1A6C690E00E303E8 /* Quaternion.swift */,
 				8071D3391A6C671100E303E8 /* Vector.swift */,
+				8081BECB1A6D2DD9004D4EF9 /* FileHandler.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +264,36 @@
 				8071D3581A6C774100E303E8 /* BLEService.m */,
 			);
 			path = BLE;
+			sourceTree = "<group>";
+		};
+		8081BECE1A6D323F004D4EF9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8081BECF1A6D323F004D4EF9 /* SwiftyJSON.h */,
+				8081BED01A6D323F004D4EF9 /* SwiftyJSON.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8081BED31A6D3251004D4EF9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8081BED41A6D3251004D4EF9 /* ArrayTests.swift */,
+				8081BED51A6D3251004D4EF9 /* BaseTests.swift */,
+				8081BED61A6D3251004D4EF9 /* ComparableTests.swift */,
+				8081BED71A6D3251004D4EF9 /* DictionaryTests.swift */,
+				8081BED81A6D3251004D4EF9 /* LiteralConvertibleTests.swift */,
+				8081BED91A6D3251004D4EF9 /* NumberTests.swift */,
+				8081BEDA1A6D3251004D4EF9 /* PerformanceTests.swift */,
+				8081BEDB1A6D3251004D4EF9 /* PrintableTests.swift */,
+				8081BEDC1A6D3251004D4EF9 /* RawRepresentableTests.swift */,
+				8081BEDD1A6D3251004D4EF9 /* RawTests.swift */,
+				8081BEDE1A6D3251004D4EF9 /* SequenceTypeTests.swift */,
+				8081BEDF1A6D3251004D4EF9 /* StringTests.swift */,
+				8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */,
+				8081BEE11A6D3251004D4EF9 /* Tests.json */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +346,14 @@
 					801DA5251A6C63480028AAF3 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = LCLY62U8AM;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					801DA53C1A6C63480028AAF3 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -316,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8081BEFD1A6D3251004D4EF9 /* Tests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8081BECC1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */,
 				801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */,
 				801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */,
 				80094FD51A6C81FA00DC547C /* BluetoothHelper.m in Sources */,
@@ -337,6 +418,7 @@
 				80489BA11A6D05340044BFF1 /* ChartColors.swift in Sources */,
 				8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */,
 				8071D33A1A6C671100E303E8 /* Vector.swift in Sources */,
+				8081BED11A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */,
 				8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */,
 				8071D3591A6C774100E303E8 /* BLEService.m in Sources */,
 				8071D3401A6C699100E303E8 /* RawAcceleration.swift in Sources */,
@@ -352,15 +434,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8081BECD1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */,
+				8081BEF51A6D3251004D4EF9 /* RawTests.swift in Sources */,
+				8081BEF91A6D3251004D4EF9 /* StringTests.swift in Sources */,
 				80489BA61A6D06FB0044BFF1 /* SensorDataDelegate.swift in Sources */,
 				80489B981A6D011F0044BFF1 /* RawAcceleration.swift in Sources */,
+				8081BEF71A6D3251004D4EF9 /* SequenceTypeTests.swift in Sources */,
+				8081BEF31A6D3251004D4EF9 /* RawRepresentableTests.swift in Sources */,
+				8081BED21A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */,
 				80489B991A6D011F0044BFF1 /* Quaternion.swift in Sources */,
+				8081BEEB1A6D3251004D4EF9 /* LiteralConvertibleTests.swift in Sources */,
+				8081BEE91A6D3251004D4EF9 /* DictionaryTests.swift in Sources */,
 				80489B961A6D011F0044BFF1 /* Gravity.swift in Sources */,
+				8081BEEF1A6D3251004D4EF9 /* PerformanceTests.swift in Sources */,
 				801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */,
 				80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */,
 				80489B971A6D011F0044BFF1 /* LinearAcceleration.swift in Sources */,
+				8081BEE31A6D3251004D4EF9 /* ArrayTests.swift in Sources */,
+				8081BEFB1A6D3251004D4EF9 /* SubscriptTests.swift in Sources */,
+				8081BEE51A6D3251004D4EF9 /* BaseTests.swift in Sources */,
+				8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */,
 				80489B9A1A6D011F0044BFF1 /* Vector.swift in Sources */,
+				8081BEF11A6D3251004D4EF9 /* PrintableTests.swift in Sources */,
 				80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */,
+				8081BEED1A6D3251004D4EF9 /* NumberTests.swift in Sources */,
+				8081BEE71A6D3251004D4EF9 /* ComparableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,11 +574,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = JumpAnalysis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JumpAnalysis/JumpAnalysis-BridgingHeader.h";
 			};
 			name = Debug;
@@ -490,11 +590,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = JumpAnalysis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JumpAnalysis/JumpAnalysis-BridgingHeader.h";
 			};
 			name = Release;

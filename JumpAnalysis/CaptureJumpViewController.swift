@@ -19,6 +19,8 @@ class CaptureJumpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.measurementDidFinish()
     }
     
     @IBAction func startStopMeasurement(sender: UIButton) {
@@ -34,6 +36,13 @@ class CaptureJumpViewController: UIViewController {
     
     func measurementDidFinish() {
         self.updateCharts()
+        
+        
+        let lowerSensorData = self.sensorDataSession.lowerSensorData()
+        let sensorDataDictionaries = lowerSensorData.map({sensorData in sensorData.toDictionary()})
+        let json = JSON(sensorDataDictionaries)
+        let jsonString = json.description
+        FileHandler.writeToFile(NSDate().description.stringByAppendingPathExtension("json")!, content: jsonString)
     }
     
     func updateCharts() {
