@@ -11,7 +11,7 @@ private let _SharedInstance = ArduinoCommunicationManager()
 class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDelegate, BLEServiceDataDelegate {
     
     let numberOfRequiredSensors: Int = 2
-    var shouldAutomaticallyReconnect = true
+    var shouldAutomaticallyReconnect = false
     
     class var sharedInstance: ArduinoCommunicationManager {
         return _SharedInstance
@@ -29,7 +29,9 @@ class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDel
     }
     
     func isAbleToReceiveSensorData() -> Bool {
-        return BLEDiscovery.sharedInstance().foundPeripherals == numberOfRequiredSensors
+        let foundPeripherals = BLEDiscovery.sharedInstance().foundPeripherals.count
+        NSLog("Found %d Peripherals", foundPeripherals)
+        return foundPeripherals == numberOfRequiredSensors
     }
     
     func connectToPeripherals() -> Void {
@@ -61,12 +63,14 @@ class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDel
 //Mark: BLEDiscovery
     
     func discoveryDidRefresh() {
+        NSLog("Discovered did refresh")
         if (self.isAbleToReceiveSensorData()) {
             self.connectToPeripherals()
         }
     }
     
     func peripheralDiscovered(peripheral: CBPeripheral!) {
+        NSLog("Discovered Peripherial: %@", peripheral)
         if (self.isAbleToReceiveSensorData()) {
             self.connectToPeripherals()
         }

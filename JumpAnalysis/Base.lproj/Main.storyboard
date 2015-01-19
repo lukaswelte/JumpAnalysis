@@ -61,6 +61,9 @@
                                 <state key="normal" title="Start Measurement">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startStopMeasurement:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pyx-FI-tBu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -116,8 +116,11 @@
 			continue;
 		}
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 		[self.centralManager retrievePeripherals:[NSArray arrayWithObject:(__bridge id)uuid]];
 		CFRelease(uuid);
+#pragma clang diagnostic pop
 	}
 }
 
@@ -337,7 +340,10 @@
 	case CBCentralManagerStatePoweredOn: {
 		self.pendingInit = NO;
 		[self loadSavedDevices];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 		[self.centralManager retrieveConnectedPeripherals];
+#pragma clang diagnostic pop
 		[self.discoveryDelegate discoveryDidRefresh];
         
         // TODO:
