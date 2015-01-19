@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
+import Foundation
+
 private let _SharedInstance = ArduinoCommunicationManager()
 
 class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDelegate, BLEServiceDataDelegate {

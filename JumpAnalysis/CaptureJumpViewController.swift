@@ -11,10 +11,13 @@ import UIKit
 class CaptureJumpViewController: UIViewController {
     
     var sensorDataSession = SensorDataSession()
+    @IBOutlet weak var rawAccelerometerChart: Chart!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
     
     @IBAction func startStopMeasurement(sender: UIButton) {
