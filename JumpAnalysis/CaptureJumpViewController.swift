@@ -10,20 +10,85 @@ import UIKit
 
 class CaptureJumpViewController: UIViewController {
     
+    var isCollectingData = false
     var sensorDataSession = SensorDataSession()
+    
     @IBOutlet weak var rawAccelerometerChart: Chart!
+    @IBOutlet weak var quaternionChart: Chart!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        let series = ChartSeries([1.2,1.4,5.0,-1.3,0.5])
-        series.color = ChartColors.greenColor()
-        self.rawAccelerometerChart.addSeries(series)
     }
     
     @IBAction func startStopMeasurement(sender: UIButton) {
-        self.sensorDataSession.startStopMeasurement({sender.setTitle("Start Measurement", forState: .Normal)})
+        self.sensorDataSession.startStopMeasurement({
+            self.isCollectingData = !self.isCollectingData
+            let title:String = self.isCollectingData ? "Stop Measurement" : "Start Measurement"
+            sender.setTitle(title, forState: .Normal)
+            if (!self.isCollectingData) {
+                self.measurementDidFinish()
+            }
+        })
+    }
+    
+    func measurementDidFinish() {
+        self.updateCharts()
+    }
+    
+    func updateCharts() {
+        self.rawAccelerometerChart.removeSeries()
+        
+        let rawAccelerometerSeries = self.rawAccelerometerChartSeries(self.sensorDataSession.lowerSensorData())
+        self.rawAccelerometerChart.addSeries(rawAccelerometerSeries)
+        self.rawAccelerometerChart.setNeedsDisplay()
+        
+        self.quaternionChart.removeSeries()
+        
+        let quaternionSeries = self.quaternionChartSeries(self.sensorDataSession.lowerSensorData())
+        self.quaternionChart.addSeries(quaternionSeries)
+        self.quaternionChart.setNeedsDisplay()
+    }
+    
+    func rawAccelerometerChartSeries(data:[SensorData]) -> [ChartSeries] {
+        let rawAccelerations = data.map({sensorData in sensorData.rawAcceleration})
+        
+        let yValues = rawAccelerations.map({acceleration in Float(acceleration.y)})
+        let yChart = ChartSeries(yValues)
+        yChart.color = ChartColors.greenColor()
+        
+        let xValues = rawAccelerations.map({acceleration in Float(acceleration.x)})
+        let xChart = ChartSeries(xValues)
+        xChart.color = ChartColors.blueColor()
+        
+        let zValues = rawAccelerations.map({acceleration in Float(acceleration.z)})
+        let zChart = ChartSeries(zValues)
+        zChart.color = ChartColors.redColor()
+        
+        
+        return [yChart, xChart, zChart]
+    }
+    
+    func quaternionChartSeries(data:[SensorData]) -> [ChartSeries] {
+        let quaternions = data.map({sensorData in sensorData.quaternion})
+        
+        let wValues = quaternions.map({quaternion in Float(quaternion.w)})
+        let wChart = ChartSeries(wValues)
+        wChart.color = ChartColors.yellowColor()
+        
+        let yValues = quaternions.map({quaternion in Float(quaternion.y)})
+        let yChart = ChartSeries(yValues)
+        yChart.color = ChartColors.greenColor()
+        
+        let xValues = quaternions.map({quaternion in Float(quaternion.x)})
+        let xChart = ChartSeries(xValues)
+        xChart.color = ChartColors.blueColor()
+        
+        let zValues = quaternions.map({quaternion in Float(quaternion.z)})
+        let zChart = ChartSeries(zValues)
+        zChart.color = ChartColors.redColor()
+        
+        return [wChart, yChart, xChart, zChart]
     }
 
     override func didReceiveMemoryWarning() {

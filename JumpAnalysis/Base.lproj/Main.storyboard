@@ -57,6 +57,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DW-3j-8j0" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
+                                <rect key="frame" x="32" y="91" width="537" height="158"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txz-V7-gGP" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
+                                <rect key="frame" x="32" y="317" width="537" height="158"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-c7-gfM">
                                 <rect key="frame" x="235" y="28" width="131" height="30"/>
                                 <state key="normal" title="Start Measurement">
@@ -66,28 +90,24 @@
                                     <action selector="startStopMeasurement:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pyx-FI-tBu"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DW-3j-8j0" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
-                                <rect key="frame" x="32" y="91" width="537" height="158"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="txz-V7-gGP" firstAttribute="top" secondItem="4DW-3j-8j0" secondAttribute="bottom" constant="68" id="6ye-Cg-y2H"/>
                             <constraint firstItem="4DW-3j-8j0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="16" id="Glq-A1-DTY"/>
                             <constraint firstItem="cbr-c7-gfM" firstAttribute="centerX" secondItem="4DW-3j-8j0" secondAttribute="centerX" id="JRy-5B-RGg"/>
+                            <constraint firstItem="txz-V7-gGP" firstAttribute="leading" secondItem="4DW-3j-8j0" secondAttribute="leading" id="Ovx-av-YUh"/>
                             <constraint firstItem="4DW-3j-8j0" firstAttribute="top" secondItem="cbr-c7-gfM" secondAttribute="bottom" constant="33" id="YGn-D3-ZrA"/>
                             <constraint firstItem="cbr-c7-gfM" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="YSe-55-0wD"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4DW-3j-8j0" secondAttribute="bottom" constant="302" id="dF3-bs-NhB"/>
                             <constraint firstItem="cbr-c7-gfM" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="rBq-da-o4d"/>
+                            <constraint firstItem="txz-V7-gGP" firstAttribute="trailing" secondItem="4DW-3j-8j0" secondAttribute="trailing" id="ucE-el-YGN"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="txz-V7-gGP" secondAttribute="bottom" constant="76" id="y9x-2k-N79"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Capture Jump" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="quaternionChart" destination="txz-V7-gGP" id="UZ4-wr-Z8c"/>
                         <outlet property="rawAccelerometerChart" destination="4DW-3j-8j0" id="Ggl-mc-rT2"/>
                     </connections>
                 </viewController>

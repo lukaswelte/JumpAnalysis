@@ -21,6 +21,18 @@ class SensorDataSession: SensorDataDelegate {
         communicationManager.sensorDataDelegate = self
     }
     
+    func upperSensorData() -> [SensorData] {
+        return self.sensorData.filter { (data) -> Bool in
+            data.isUpperSensor
+        }
+    }
+    
+    func lowerSensorData() -> [SensorData] {
+        return self.sensorData.filter { (data) -> Bool in
+            !data.isUpperSensor
+        }
+    }
+    
     func startStopMeasurement(onSuccess:()->()) {
         if (self.isCollectingData) {
             self.communicationManager.stopReceivingSensorData()
