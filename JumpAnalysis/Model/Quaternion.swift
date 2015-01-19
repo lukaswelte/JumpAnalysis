@@ -11,4 +11,8 @@ struct Quaternion {
     let x:Double
     let y:Double
     let z:Double
+    
+    func toDictionary() -> Dictionary<String, JSON> {
+        return ["w": JSON(w), "x":JSON(x), "y":JSON(y), "z":JSON(z)]
+    }
 }

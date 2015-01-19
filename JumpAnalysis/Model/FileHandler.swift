@@ -21,11 +21,20 @@ class FileHandler {
     }
     
     class func writeToFile(fileName: String, content: String) {
-        content.writeToFile(FileHandler.getFilePathForFileName(fileName), atomically: false, encoding: NSUTF8StringEncoding, error: nil)
+        var error = NSErrorPointer()
+        let written = content.writeToFile(FileHandler.getFilePathForFileName(fileName), atomically: false, encoding: NSUTF8StringEncoding, error: error)
+        
+        if (written) {
+            let writtenContent = FileHandler.readFromFile(fileName)
+        }
     }
     
     class func readFromFile(fileName: String) -> String {
         let fileContent = NSString(contentsOfFile: FileHandler.getFilePathForFileName(fileName), encoding: NSUTF8StringEncoding, error: nil)
-        return fileContent!
+        if let content = fileContent {
+            return content
+        } else {
+            return ""
+        }
     }
 }

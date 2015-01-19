@@ -56,6 +56,7 @@
 		8081BEF91A6D3251004D4EF9 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEDF1A6D3251004D4EF9 /* StringTests.swift */; };
 		8081BEFB1A6D3251004D4EF9 /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */; };
 		8081BEFD1A6D3251004D4EF9 /* Tests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8081BEE11A6D3251004D4EF9 /* Tests.json */; };
+		8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		8081BEDF1A6D3251004D4EF9 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
 		8081BEE11A6D3251004D4EF9 /* Tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tests.json; sourceTree = "<group>"; };
+		8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				8081BED31A6D3251004D4EF9 /* Helpers */,
 				801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */,
 				80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */,
+				8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */,
 				801DA5411A6C63480028AAF3 /* Supporting Files */,
 			);
 			path = JumpAnalysisTests;
@@ -343,6 +346,14 @@
 					801DA5251A6C63480028AAF3 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = LCLY62U8AM;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					801DA53C1A6C63480028AAF3 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -442,6 +453,7 @@
 				8081BEE31A6D3251004D4EF9 /* ArrayTests.swift in Sources */,
 				8081BEFB1A6D3251004D4EF9 /* SubscriptTests.swift in Sources */,
 				8081BEE51A6D3251004D4EF9 /* BaseTests.swift in Sources */,
+				8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */,
 				80489B9A1A6D011F0044BFF1 /* Vector.swift in Sources */,
 				8081BEF11A6D3251004D4EF9 /* PrintableTests.swift in Sources */,
 				80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */,
@@ -562,11 +574,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = JumpAnalysis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JumpAnalysis/JumpAnalysis-BridgingHeader.h";
 			};
 			name = Debug;
@@ -576,11 +590,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = JumpAnalysis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JumpAnalysis/JumpAnalysis-BridgingHeader.h";
 			};
 			name = Release;

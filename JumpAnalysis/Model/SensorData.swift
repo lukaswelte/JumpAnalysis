@@ -45,4 +45,8 @@ class SensorData {
         
         return Gravity(x: x, y: y, z: z)
     }
+    
+    func toDictionary() -> Dictionary<String, AnyObject> {
+        return ["upperSensor":self.isUpperSensor, "creationDate": creationDate.timeIntervalSince1970, "gravity":self.gravity.toDictionary(), "rawAccelerometer":self.rawAcceleration.toDictionary()]
+    }
 }
