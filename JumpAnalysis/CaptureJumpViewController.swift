@@ -34,6 +34,9 @@ class CaptureJumpViewController: UIViewController {
     
     func measurementDidFinish() {
         self.updateCharts()
+        
+        let json = JSON(self.sensorDataSession.lowerSensorData()).stringValue
+        FileHandler.writeToFile(NSDate().description, content: json)
     }
     
     func updateCharts() {
