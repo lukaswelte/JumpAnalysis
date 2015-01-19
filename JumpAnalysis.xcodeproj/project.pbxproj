@@ -25,11 +25,8 @@
 		80489B991A6D011F0044BFF1 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33D1A6C690E00E303E8 /* Quaternion.swift */; };
 		80489B9A1A6D011F0044BFF1 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3391A6C671100E303E8 /* Vector.swift */; };
 		80489B9F1A6D05340044BFF1 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B9C1A6D05340044BFF1 /* Chart.swift */; };
-		80489BA01A6D05340044BFF1 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B9C1A6D05340044BFF1 /* Chart.swift */; };
 		80489BA11A6D05340044BFF1 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B9D1A6D05340044BFF1 /* ChartColors.swift */; };
-		80489BA21A6D05340044BFF1 /* ChartColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B9D1A6D05340044BFF1 /* ChartColors.swift */; };
 		80489BA31A6D05340044BFF1 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B9E1A6D05340044BFF1 /* ChartSeries.swift */; };
-		80489BA41A6D05340044BFF1 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B9E1A6D05340044BFF1 /* ChartSeries.swift */; };
 		80489BA61A6D06FB0044BFF1 /* SensorDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3541A6C74F000E303E8 /* SensorDataDelegate.swift */; };
 		8071D33A1A6C671100E303E8 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3391A6C671100E303E8 /* Vector.swift */; };
 		8071D33C1A6C68C800E303E8 /* LinearAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */; };
@@ -356,7 +353,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80489BA61A6D06FB0044BFF1 /* SensorDataDelegate.swift in Sources */,
-				80489BA01A6D05340044BFF1 /* Chart.swift in Sources */,
 				80489B981A6D011F0044BFF1 /* RawAcceleration.swift in Sources */,
 				80489B991A6D011F0044BFF1 /* Quaternion.swift in Sources */,
 				80489B961A6D011F0044BFF1 /* Gravity.swift in Sources */,
@@ -364,8 +360,6 @@
 				80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */,
 				80489B971A6D011F0044BFF1 /* LinearAcceleration.swift in Sources */,
 				80489B9A1A6D011F0044BFF1 /* Vector.swift in Sources */,
-				80489BA41A6D05340044BFF1 /* ChartSeries.swift in Sources */,
-				80489BA21A6D05340044BFF1 /* ChartColors.swift in Sources */,
 				80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

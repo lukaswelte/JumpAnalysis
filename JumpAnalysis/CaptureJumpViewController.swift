@@ -17,7 +17,9 @@ class CaptureJumpViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        let series = ChartSeries([1.2,1.4,5.0,-1.3,0.5])
+        series.color = ChartColors.greenColor()
+        self.rawAccelerometerChart.addSeries(series)
     }
     
     @IBAction func startStopMeasurement(sender: UIButton) {

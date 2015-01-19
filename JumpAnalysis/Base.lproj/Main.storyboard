@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Analysis-->
@@ -76,6 +77,14 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4DW-3j-8j0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="16" id="Glq-A1-DTY"/>
+                            <constraint firstItem="cbr-c7-gfM" firstAttribute="centerX" secondItem="4DW-3j-8j0" secondAttribute="centerX" id="JRy-5B-RGg"/>
+                            <constraint firstItem="4DW-3j-8j0" firstAttribute="top" secondItem="cbr-c7-gfM" secondAttribute="bottom" constant="33" id="YGn-D3-ZrA"/>
+                            <constraint firstItem="cbr-c7-gfM" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="YSe-55-0wD"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4DW-3j-8j0" secondAttribute="bottom" constant="302" id="dF3-bs-NhB"/>
+                            <constraint firstItem="cbr-c7-gfM" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="rBq-da-o4d"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Capture Jump" image="second" id="cPa-gy-q4n"/>
                     <connections>
