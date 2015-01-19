@@ -1,4 +1,6 @@
 language: objective-c
+osx_image: xcode61
+
 xcode_project: JumpAnalysis.xcodeproj # path to your xcodeproj folder
 xcode_scheme: JumpAnalysisTests
 xcode_sdk: iphonesimulator8.0
