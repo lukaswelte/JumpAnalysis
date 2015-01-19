@@ -17,12 +17,16 @@ class FileHandler {
     }
     
     private class func getFilePathForFileName(fileName: String) -> String {
-        return FileHandler.getDocumentDirectoryPath() + fileName
+        return FileHandler.getDocumentDirectoryPath().stringByAppendingPathComponent(fileName)
     }
     
     class func writeToFile(fileName: String, content: String) {
-        var error = NSErrorPointer()
-        let written = content.writeToFile(FileHandler.getFilePathForFileName(fileName), atomically: false, encoding: NSUTF8StringEncoding, error: error)
+        var error: NSError?
+        let written = content.writeToFile(FileHandler.getFilePathForFileName(fileName), atomically: false, encoding: NSUTF8StringEncoding, error: &error)
+        
+        if let actualError = error {
+            println("Error writing JSON to file: \(actualError)")
+        }
         
         if (written) {
             let writtenContent = FileHandler.readFromFile(fileName)
