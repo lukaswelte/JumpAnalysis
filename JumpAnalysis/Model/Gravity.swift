@@ -6,4 +6,4 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-typealias Gravity = Vector<Int>
+typealias Gravity = Vector<Double>

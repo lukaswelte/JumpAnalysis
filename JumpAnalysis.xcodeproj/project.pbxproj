@@ -17,6 +17,14 @@
 		801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */; };
 		801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
 		801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
+		80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */; };
+		80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
+		80489B951A6D011F0044BFF1 /* SensorDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3411A6C69F500E303E8 /* SensorDataSession.swift */; };
+		80489B961A6D011F0044BFF1 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
+		80489B971A6D011F0044BFF1 /* LinearAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */; };
+		80489B981A6D011F0044BFF1 /* RawAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33F1A6C699100E303E8 /* RawAcceleration.swift */; };
+		80489B991A6D011F0044BFF1 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33D1A6C690E00E303E8 /* Quaternion.swift */; };
+		80489B9A1A6D011F0044BFF1 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3391A6C671100E303E8 /* Vector.swift */; };
 		8071D33A1A6C671100E303E8 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3391A6C671100E303E8 /* Vector.swift */; };
 		8071D33C1A6C68C800E303E8 /* LinearAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */; };
 		8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33D1A6C690E00E303E8 /* Quaternion.swift */; };
@@ -55,6 +63,7 @@
 		801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAnalysisTests.swift; sourceTree = "<group>"; };
 		801DA5661A6C65110028AAF3 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		801DA5681A6C666E0028AAF3 /* Gravity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
+		80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDataTests.swift; sourceTree = "<group>"; };
 		8071D3391A6C671100E303E8 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearAcceleration.swift; sourceTree = "<group>"; };
 		8071D33D1A6C690E00E303E8 /* Quaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quaternion.swift; sourceTree = "<group>"; };
@@ -137,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */,
+				80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */,
 				801DA5411A6C63480028AAF3 /* Supporting Files */,
 			);
 			path = JumpAnalysisTests;
@@ -322,7 +332,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80489B981A6D011F0044BFF1 /* RawAcceleration.swift in Sources */,
+				80489B991A6D011F0044BFF1 /* Quaternion.swift in Sources */,
+				80489B961A6D011F0044BFF1 /* Gravity.swift in Sources */,
 				801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */,
+				80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */,
+				80489B951A6D011F0044BFF1 /* SensorDataSession.swift in Sources */,
+				80489B971A6D011F0044BFF1 /* LinearAcceleration.swift in Sources */,
+				80489B9A1A6D011F0044BFF1 /* Vector.swift in Sources */,
+				80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
