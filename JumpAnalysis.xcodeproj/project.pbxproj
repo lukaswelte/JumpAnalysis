@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80094FD51A6C81FA00DC547C /* BluetoothHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80094FD41A6C81FA00DC547C /* BluetoothHelper.m */; };
+		801DA52C1A6C63480028AAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52B1A6C63480028AAF3 /* AppDelegate.swift */; };
+		801DA52E1A6C63480028AAF3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52D1A6C63480028AAF3 /* FirstViewController.swift */; };
+		801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */; };
+		801DA5331A6C63480028AAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801DA5311A6C63480028AAF3 /* Main.storyboard */; };
+		801DA5351A6C63480028AAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801DA5341A6C63480028AAF3 /* Images.xcassets */; };
+		801DA5381A6C63480028AAF3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 801DA5361A6C63480028AAF3 /* LaunchScreen.xib */; };
+		801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */; };
+		801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
+		801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
+		8071D33A1A6C671100E303E8 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3391A6C671100E303E8 /* Vector.swift */; };
+		8071D33C1A6C68C800E303E8 /* LinearAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */; };
+		8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33D1A6C690E00E303E8 /* Quaternion.swift */; };
+		8071D3401A6C699100E303E8 /* RawAcceleration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D33F1A6C699100E303E8 /* RawAcceleration.swift */; };
+		8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3411A6C69F500E303E8 /* SensorDataSession.swift */; };
+		8071D3501A6C74D500E303E8 /* BLEDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3481A6C74D500E303E8 /* BLEDiscovery.m */; };
+		8071D3511A6C74D500E303E8 /* BLEHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8071D34A1A6C74D500E303E8 /* BLEHelper.m */; };
+		8071D3551A6C74F000E303E8 /* SensorDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3541A6C74F000E303E8 /* SensorDataDelegate.swift */; };
+		8071D3571A6C756400E303E8 /* ArduinoCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3561A6C756400E303E8 /* ArduinoCommunicationManager.swift */; };
+		8071D3591A6C774100E303E8 /* BLEService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8071D3581A6C774100E303E8 /* BLEService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		801DA53E1A6C63480028AAF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 801DA51E1A6C63480028AAF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 801DA5251A6C63480028AAF3;
+			remoteInfo = JumpAnalysis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80094FD31A6C81FA00DC547C /* BluetoothHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluetoothHelper.h; path = BLE/BluetoothHelper.h; sourceTree = "<group>"; };
+		80094FD41A6C81FA00DC547C /* BluetoothHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BluetoothHelper.m; path = BLE/BluetoothHelper.m; sourceTree = "<group>"; };
+		801DA5261A6C63480028AAF3 /* JumpAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		801DA52A1A6C63480028AAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801DA52B1A6C63480028AAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		801DA52D1A6C63480028AAF3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureJumpViewController.swift; sourceTree = "<group>"; };
+		801DA5321A6C63480028AAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		801DA5341A6C63480028AAF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		801DA5371A6C63480028AAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		801DA53D1A6C63480028AAF3 /* JumpAnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JumpAnalysisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		801DA5421A6C63480028AAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAnalysisTests.swift; sourceTree = "<group>"; };
+		801DA5661A6C65110028AAF3 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		801DA5681A6C666E0028AAF3 /* Gravity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
+		8071D3391A6C671100E303E8 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearAcceleration.swift; sourceTree = "<group>"; };
+		8071D33D1A6C690E00E303E8 /* Quaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quaternion.swift; sourceTree = "<group>"; };
+		8071D33F1A6C699100E303E8 /* RawAcceleration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawAcceleration.swift; sourceTree = "<group>"; };
+		8071D3411A6C69F500E303E8 /* SensorDataSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDataSession.swift; sourceTree = "<group>"; };
+		8071D3461A6C74D500E303E8 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		8071D3471A6C74D500E303E8 /* BLEDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDiscovery.h; sourceTree = "<group>"; };
+		8071D3481A6C74D500E303E8 /* BLEDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDiscovery.m; sourceTree = "<group>"; };
+		8071D3491A6C74D500E303E8 /* BLEHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEHelper.h; sourceTree = "<group>"; };
+		8071D34A1A6C74D500E303E8 /* BLEHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEHelper.m; sourceTree = "<group>"; };
+		8071D3541A6C74F000E303E8 /* SensorDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDataDelegate.swift; sourceTree = "<group>"; };
+		8071D3561A6C756400E303E8 /* ArduinoCommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArduinoCommunicationManager.swift; sourceTree = "<group>"; };
+		8071D3581A6C774100E303E8 /* BLEService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEService.m; sourceTree = "<group>"; };
+		8071D35A1A6C774B00E303E8 /* BLEService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEService.h; sourceTree = "<group>"; };
+		8071D35B1A6C779700E303E8 /* JumpAnalysis-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JumpAnalysis-BridgingHeader.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		801DA5231A6C63480028AAF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801DA53A1A6C63480028AAF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		801DA51D1A6C63480028AAF3 = {
+			isa = PBXGroup;
+			children = (
+				801DA5281A6C63480028AAF3 /* JumpAnalysis */,
+				801DA5401A6C63480028AAF3 /* JumpAnalysisTests */,
+				801DA5271A6C63480028AAF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		801DA5271A6C63480028AAF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801DA5261A6C63480028AAF3 /* JumpAnalysis.app */,
+				801DA53D1A6C63480028AAF3 /* JumpAnalysisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		801DA5281A6C63480028AAF3 /* JumpAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				8071D3431A6C74D500E303E8 /* Communication */,
+				801DA5651A6C65050028AAF3 /* Model */,
+				801DA52B1A6C63480028AAF3 /* AppDelegate.swift */,
+				801DA52D1A6C63480028AAF3 /* FirstViewController.swift */,
+				801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */,
+				801DA5311A6C63480028AAF3 /* Main.storyboard */,
+				801DA5341A6C63480028AAF3 /* Images.xcassets */,
+				801DA5361A6C63480028AAF3 /* LaunchScreen.xib */,
+				801DA5291A6C63480028AAF3 /* Supporting Files */,
+				8071D35B1A6C779700E303E8 /* JumpAnalysis-BridgingHeader.h */,
+			);
+			path = JumpAnalysis;
+			sourceTree = "<group>";
+		};
+		801DA5291A6C63480028AAF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				801DA52A1A6C63480028AAF3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		801DA5401A6C63480028AAF3 /* JumpAnalysisTests */ = {
+			isa = PBXGroup;
+			children = (
+				801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */,
+				801DA5411A6C63480028AAF3 /* Supporting Files */,
+			);
+			path = JumpAnalysisTests;
+			sourceTree = "<group>";
+		};
+		801DA5411A6C63480028AAF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				801DA5421A6C63480028AAF3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		801DA5651A6C65050028AAF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				801DA5661A6C65110028AAF3 /* SensorData.swift */,
+				8071D3411A6C69F500E303E8 /* SensorDataSession.swift */,
+				801DA5681A6C666E0028AAF3 /* Gravity.swift */,
+				8071D33B1A6C68C800E303E8 /* LinearAcceleration.swift */,
+				8071D33F1A6C699100E303E8 /* RawAcceleration.swift */,
+				8071D33D1A6C690E00E303E8 /* Quaternion.swift */,
+				8071D3391A6C671100E303E8 /* Vector.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8071D3431A6C74D500E303E8 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				8071D3441A6C74D500E303E8 /* Arduino */,
+				8071D3541A6C74F000E303E8 /* SensorDataDelegate.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		8071D3441A6C74D500E303E8 /* Arduino */ = {
+			isa = PBXGroup;
+			children = (
+				80094FD31A6C81FA00DC547C /* BluetoothHelper.h */,
+				80094FD41A6C81FA00DC547C /* BluetoothHelper.m */,
+				8071D3451A6C74D500E303E8 /* BLE */,
+				8071D3561A6C756400E303E8 /* ArduinoCommunicationManager.swift */,
+			);
+			path = Arduino;
+			sourceTree = "<group>";
+		};
+		8071D3451A6C74D500E303E8 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				8071D3461A6C74D500E303E8 /* BLE.h */,
+				8071D3471A6C74D500E303E8 /* BLEDiscovery.h */,
+				8071D3481A6C74D500E303E8 /* BLEDiscovery.m */,
+				8071D3491A6C74D500E303E8 /* BLEHelper.h */,
+				8071D34A1A6C74D500E303E8 /* BLEHelper.m */,
+				8071D35A1A6C774B00E303E8 /* BLEService.h */,
+				8071D3581A6C774100E303E8 /* BLEService.m */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		801DA5251A6C63480028AAF3 /* JumpAnalysis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801DA5471A6C63480028AAF3 /* Build configuration list for PBXNativeTarget "JumpAnalysis" */;
+			buildPhases = (
+				801DA5221A6C63480028AAF3 /* Sources */,
+				801DA5231A6C63480028AAF3 /* Frameworks */,
+				801DA5241A6C63480028AAF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JumpAnalysis;
+			productName = JumpAnalysis;
+			productReference = 801DA5261A6C63480028AAF3 /* JumpAnalysis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		801DA53C1A6C63480028AAF3 /* JumpAnalysisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 801DA54A1A6C63480028AAF3 /* Build configuration list for PBXNativeTarget "JumpAnalysisTests" */;
+			buildPhases = (
+				801DA5391A6C63480028AAF3 /* Sources */,
+				801DA53A1A6C63480028AAF3 /* Frameworks */,
+				801DA53B1A6C63480028AAF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				801DA53F1A6C63480028AAF3 /* PBXTargetDependency */,
+			);
+			name = JumpAnalysisTests;
+			productName = JumpAnalysisTests;
+			productReference = 801DA53D1A6C63480028AAF3 /* JumpAnalysisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		801DA51E1A6C63480028AAF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Lukas Welte";
+				TargetAttributes = {
+					801DA5251A6C63480028AAF3 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = LCLY62U8AM;
+					};
+					801DA53C1A6C63480028AAF3 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 801DA5251A6C63480028AAF3;
+					};
+				};
+			};
+			buildConfigurationList = 801DA5211A6C63480028AAF3 /* Build configuration list for PBXProject "JumpAnalysis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 801DA51D1A6C63480028AAF3;
+			productRefGroup = 801DA5271A6C63480028AAF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				801DA5251A6C63480028AAF3 /* JumpAnalysis */,
+				801DA53C1A6C63480028AAF3 /* JumpAnalysisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		801DA5241A6C63480028AAF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801DA5331A6C63480028AAF3 /* Main.storyboard in Resources */,
+				801DA5381A6C63480028AAF3 /* LaunchScreen.xib in Resources */,
+				801DA5351A6C63480028AAF3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801DA53B1A6C63480028AAF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		801DA5221A6C63480028AAF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */,
+				801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */,
+				80094FD51A6C81FA00DC547C /* BluetoothHelper.m in Sources */,
+				8071D3551A6C74F000E303E8 /* SensorDataDelegate.swift in Sources */,
+				801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */,
+				801DA52C1A6C63480028AAF3 /* AppDelegate.swift in Sources */,
+				8071D3501A6C74D500E303E8 /* BLEDiscovery.m in Sources */,
+				8071D3511A6C74D500E303E8 /* BLEHelper.m in Sources */,
+				8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */,
+				8071D33A1A6C671100E303E8 /* Vector.swift in Sources */,
+				8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */,
+				8071D3591A6C774100E303E8 /* BLEService.m in Sources */,
+				8071D3401A6C699100E303E8 /* RawAcceleration.swift in Sources */,
+				8071D3571A6C756400E303E8 /* ArduinoCommunicationManager.swift in Sources */,
+				801DA52E1A6C63480028AAF3 /* FirstViewController.swift in Sources */,
+				8071D33C1A6C68C800E303E8 /* LinearAcceleration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		801DA5391A6C63480028AAF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		801DA53F1A6C63480028AAF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 801DA5251A6C63480028AAF3 /* JumpAnalysis */;
+			targetProxy = 801DA53E1A6C63480028AAF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		801DA5311A6C63480028AAF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801DA5321A6C63480028AAF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		801DA5361A6C63480028AAF3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				801DA5371A6C63480028AAF3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		801DA5451A6C63480028AAF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		801DA5461A6C63480028AAF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		801DA5481A6C63480028AAF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = JumpAnalysis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JumpAnalysis/JumpAnalysis-BridgingHeader.h";
+			};
+			name = Debug;
+		};
+		801DA5491A6C63480028AAF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = JumpAnalysis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/JumpAnalysis/JumpAnalysis-BridgingHeader.h";
+			};
+			name = Release;
+		};
+		801DA54B1A6C63480028AAF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JumpAnalysisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JumpAnalysis.app/JumpAnalysis";
+			};
+			name = Debug;
+		};
+		801DA54C1A6C63480028AAF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JumpAnalysisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JumpAnalysis.app/JumpAnalysis";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		801DA5211A6C63480028AAF3 /* Build configuration list for PBXProject "JumpAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801DA5451A6C63480028AAF3 /* Debug */,
+				801DA5461A6C63480028AAF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801DA5471A6C63480028AAF3 /* Build configuration list for PBXNativeTarget "JumpAnalysis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801DA5481A6C63480028AAF3 /* Debug */,
+				801DA5491A6C63480028AAF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801DA54A1A6C63480028AAF3 /* Build configuration list for PBXNativeTarget "JumpAnalysisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				801DA54B1A6C63480028AAF3 /* Debug */,
+				801DA54C1A6C63480028AAF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 801DA51E1A6C63480028AAF3 /* Project object */;
+}
