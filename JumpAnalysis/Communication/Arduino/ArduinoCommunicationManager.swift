@@ -12,7 +12,7 @@ private let _SharedInstance = ArduinoCommunicationManager()
 
 class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDelegate, BLEServiceDataDelegate {
     
-    let numberOfRequiredSensors: Int = 2
+    let numberOfRequiredSensors: Int = 1
     var shouldAutomaticallyReconnect = false
     
     class var sharedInstance: ArduinoCommunicationManager {

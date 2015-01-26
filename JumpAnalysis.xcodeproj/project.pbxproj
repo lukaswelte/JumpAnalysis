@@ -17,6 +17,7 @@
 		801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */; };
 		801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
 		801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
+		80469B651A7641D000544715 /* BenchmarkSensorRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */; };
 		80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */; };
 		80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
 		80489B961A6D011F0044BFF1 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
@@ -85,6 +86,7 @@
 		801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAnalysisTests.swift; sourceTree = "<group>"; };
 		801DA5661A6C65110028AAF3 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		801DA5681A6C666E0028AAF3 /* Gravity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
+		80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkSensorRateViewController.swift; sourceTree = "<group>"; };
 		80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDataTests.swift; sourceTree = "<group>"; };
 		80489B9C1A6D05340044BFF1 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		80489B9D1A6D05340044BFF1 /* ChartColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartColors.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				801DA52B1A6C63480028AAF3 /* AppDelegate.swift */,
 				801DA52D1A6C63480028AAF3 /* FirstViewController.swift */,
 				801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */,
+				80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */,
 				801DA5311A6C63480028AAF3 /* Main.storyboard */,
 				801DA5341A6C63480028AAF3 /* Images.xcassets */,
 				801DA5361A6C63480028AAF3 /* LaunchScreen.xib */,
@@ -414,6 +417,7 @@
 				801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */,
 				801DA52C1A6C63480028AAF3 /* AppDelegate.swift in Sources */,
 				8071D3501A6C74D500E303E8 /* BLEDiscovery.m in Sources */,
+				80469B651A7641D000544715 /* BenchmarkSensorRateViewController.swift in Sources */,
 				8071D3511A6C74D500E303E8 /* BLEHelper.m in Sources */,
 				80489BA11A6D05340044BFF1 /* ChartColors.swift in Sources */,
 				8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */,

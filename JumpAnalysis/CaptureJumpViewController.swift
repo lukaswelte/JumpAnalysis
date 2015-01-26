@@ -20,7 +20,6 @@ class CaptureJumpViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.measurementDidFinish()
     }
     
     @IBAction func startStopMeasurement(sender: UIButton) {
@@ -35,7 +34,7 @@ class CaptureJumpViewController: UIViewController {
     }
     
     func measurementDidFinish() {
-        self.updateCharts()
+        //self.updateCharts()
         
         
         let lowerSensorData = self.sensorDataSession.lowerSensorData()
@@ -48,7 +47,8 @@ class CaptureJumpViewController: UIViewController {
     func updateCharts() {
         self.rawAccelerometerChart.removeSeries()
         
-        let rawAccelerometerSeries = self.rawAccelerometerChartSeries(self.sensorDataSession.lowerSensorData())
+        let lowerSensorData = self.sensorDataSession.lowerSensorData()
+        let rawAccelerometerSeries = self.rawAccelerometerChartSeries(lowerSensorData)
         self.rawAccelerometerChart.addSeries(rawAccelerometerSeries)
         self.rawAccelerometerChart.setNeedsDisplay()
         
@@ -73,7 +73,6 @@ class CaptureJumpViewController: UIViewController {
         let zValues = rawAccelerations.map({acceleration in Float(acceleration.z)})
         let zChart = ChartSeries(zValues)
         zChart.color = ChartColors.redColor()
-        
         
         return [yChart, xChart, zChart]
     }
