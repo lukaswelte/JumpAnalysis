@@ -34,11 +34,11 @@ class CaptureJumpViewController: UIViewController {
     }
     
     func measurementDidFinish() {
-        //self.updateCharts()
+        self.updateCharts()
         
         
-        let lowerSensorData = self.sensorDataSession.lowerSensorData()
-        let sensorDataDictionaries = lowerSensorData.map({sensorData in sensorData.toDictionary()})
+        let upperSensorData = self.sensorDataSession.upperSensorData()
+        let sensorDataDictionaries = upperSensorData.map({sensorData in sensorData.toDictionary()})
         let json = JSON(sensorDataDictionaries)
         let jsonString = json.description
         FileHandler.writeToFile(NSDate().description.stringByAppendingPathExtension("json")!, content: jsonString)
@@ -47,14 +47,14 @@ class CaptureJumpViewController: UIViewController {
     func updateCharts() {
         self.rawAccelerometerChart.removeSeries()
         
-        let lowerSensorData = self.sensorDataSession.lowerSensorData()
-        let rawAccelerometerSeries = self.rawAccelerometerChartSeries(lowerSensorData)
+        let upperSensorData = self.sensorDataSession.upperSensorData()
+        let rawAccelerometerSeries = self.rawAccelerometerChartSeries(upperSensorData)
         self.rawAccelerometerChart.addSeries(rawAccelerometerSeries)
         self.rawAccelerometerChart.setNeedsDisplay()
         
         self.quaternionChart.removeSeries()
         
-        let quaternionSeries = self.quaternionChartSeries(self.sensorDataSession.lowerSensorData())
+        let quaternionSeries = self.quaternionChartSeries(upperSensorData)
         self.quaternionChart.addSeries(quaternionSeries)
         self.quaternionChart.setNeedsDisplay()
     }

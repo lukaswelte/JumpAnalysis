@@ -15,12 +15,14 @@ class SensorData {
     let quaternion: Quaternion
     let rawAcceleration: RawAcceleration
     let isUpperSensor: Bool
+    let sensorTimeStampInMilliseconds: Int
     
     private class func sensorIsUpperSensor(sensorID: Int) -> Bool {
         return sensorID == 1
     }
     
-    init(sensorID: Int, rawAcceleration: RawAcceleration, quaternion: Quaternion, creationDate: NSDate = NSDate()) {
+    init(sensorID: Int, sensorTimeStamp: Int, rawAcceleration: RawAcceleration, quaternion: Quaternion, creationDate: NSDate = NSDate()) {
+        self.sensorTimeStampInMilliseconds = sensorTimeStamp
         self.creationDate = creationDate
         self.isUpperSensor = SensorData.sensorIsUpperSensor(sensorID)
         self.rawAcceleration = rawAcceleration
@@ -47,6 +49,6 @@ class SensorData {
     }
     
     func toDictionary() -> Dictionary<String, AnyObject> {
-        return ["upperSensor":self.isUpperSensor, "creationDate": creationDate.timeIntervalSince1970, "gravity":self.gravity.toDictionary(), "rawAccelerometer":self.rawAcceleration.toDictionary()]
+        return ["upperSensor":self.isUpperSensor, "sensorTimeStamp":self.sensorTimeStampInMilliseconds, "creationDate": creationDate.timeIntervalSince1970, "gravity":self.gravity.toDictionary(), "rawAccelerometer":self.rawAcceleration.toDictionary()]
     }
 }

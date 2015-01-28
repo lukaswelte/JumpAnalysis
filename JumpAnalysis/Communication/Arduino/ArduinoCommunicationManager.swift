@@ -107,8 +107,9 @@ class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDel
 //MARK: BLEServiceData Delegate
     
     func didReceiveData(data: UnsafeMutablePointer<UInt8>, length: Int) {
-        if (length == 15) {
-            let sensorID = Int(data[14])
+        if (length == 16) {
+            let sensorID = Int(data[15])
+            let sensorTimestampInMilliseconds = Int(data[14])
             
             let helperQuaternion = BluetoothHelper.calculateQuaternionFromSensorData(data)
             
@@ -118,7 +119,7 @@ class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDel
             
             let rawAcceleration = RawAcceleration(x: helperRawAcceleration.x, y: helperRawAcceleration.y, z: helperRawAcceleration.z)
             
-            let sensorData = SensorData(sensorID: sensorID, rawAcceleration: rawAcceleration, quaternion: quaternion)
+            let sensorData = SensorData(sensorID: sensorID, sensorTimeStamp: sensorTimestampInMilliseconds, rawAcceleration: rawAcceleration, quaternion: quaternion)
             
             if let delegate = self.sensorDataDelegate {
                 delegate.didReceiveData(sensorData)
