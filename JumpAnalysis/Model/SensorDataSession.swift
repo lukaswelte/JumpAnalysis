@@ -24,7 +24,9 @@ class SensorDataSession: SensorDataDelegate {
     func upperSensorData() -> [SensorData] {
         return self.sensorData.filter { (data) -> Bool in
             data.isUpperSensor
-        }
+        }/*.sorted({ (first, second) -> Bool in
+            first.sensorTimeStampInMilliseconds <= second.sensorTimeStampInMilliseconds
+        })*/
     }
     
     func lowerSensorData() -> [SensorData] {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SensorData {
+class SensorData: Equatable {
     let creationDate: NSDate
     let gravity: Gravity
     let linearAcceleration: LinearAcceleration
@@ -48,7 +48,24 @@ class SensorData {
         return Gravity(x: x, y: y, z: z)
     }
     
+    
+//MARK: JSON Methods
     func toDictionary() -> Dictionary<String, AnyObject> {
-        return ["upperSensor":self.isUpperSensor, "sensorTimeStamp":self.sensorTimeStampInMilliseconds, "creationDate": creationDate.timeIntervalSince1970, "gravity":self.gravity.toDictionary(), "rawAccelerometer":self.rawAcceleration.toDictionary()]
+        return ["upperSensor":self.isUpperSensor, "sensorTimeStamp":self.sensorTimeStampInMilliseconds, "creationDate": creationDate.timeIntervalSince1970 * 1000.0, "gravity":self.gravity.toDictionary(), "rawAccelerometer":self.rawAcceleration.toDictionary(), "quaternion": self.quaternion.toDictionary(), "linearAcceleration":self.linearAcceleration.toDictionary()]
+    }
+    
+    init(fromDictionary: Dictionary<String, AnyObject>) {
+        self.isUpperSensor = fromDictionary["upperSensor"] as Bool;
+        self.sensorTimeStampInMilliseconds = fromDictionary["sensorTimeStamp"] as Int;
+        self.creationDate = NSDate(timeIntervalSince1970: fromDictionary["creationDate"] as NSTimeInterval / 1000.0)
+        self.rawAcceleration = RawAcceleration(fromDictionary: fromDictionary["rawAccelerometer"] as Dictionary<String, AnyObject>)
+        self.quaternion = Quaternion(fromDictionary: fromDictionary["quaternion"] as Dictionary<String, AnyObject>)
+        self.gravity = SensorData.calculateGravity(self.quaternion)
+        self.linearAcceleration = SensorData.calculateLinearAcceleration(self.rawAcceleration, quaternion: self.quaternion)
     }
 }
+
+func ==(lhs: SensorData, rhs: SensorData) -> Bool {
+    return lhs.isUpperSensor == rhs.isUpperSensor && lhs.sensorTimeStampInMilliseconds == rhs.sensorTimeStampInMilliseconds && lhs.creationDate.isEqualToDate(rhs.creationDate) && lhs.rawAcceleration == rhs.rawAcceleration && lhs.quaternion == rhs.quaternion && lhs.linearAcceleration == rhs.linearAcceleration && lhs.gravity == rhs.gravity
+}
+

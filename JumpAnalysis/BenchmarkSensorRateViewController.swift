@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import CoreMotion
 
 class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
 
@@ -20,14 +21,15 @@ class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
     
     var timer: NSTimer? = nil
     
+    let motionManager: CMMotionManager = CMMotionManager()
+    
     @IBOutlet weak var upperSensorRateLabel: UILabel!
     @IBOutlet weak var lowerSensorRateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
+
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -38,6 +40,11 @@ class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
         self.waitForBluetoothToStart { () -> () in
             self.communicationManager.startReceivingSensorData()
         }
+        
+        self.motionManager.accelerometerUpdateInterval = NSTimeInterval(0.01)
+        motionManager.startDeviceMotionUpdatesToQueue(NSOperationQueue.currentQueue(), withHandler: { (deviceMotion, error) -> Void in
+            self.lowerSensorPackets += 1
+        })
     }
     
     func evaluateRate() {
@@ -57,8 +64,11 @@ class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
     }
     
     override func viewDidDisappear(animated: Bool) {
+        self.motionManager.stopAccelerometerUpdates()
+        
         self.communicationManager.stopReceivingSensorData()
         self.communicationManager.sensorDataDelegate = nil
+        
         self.timer?.invalidate()
         self.timer = nil
     }

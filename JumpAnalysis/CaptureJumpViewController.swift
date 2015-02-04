@@ -22,6 +22,21 @@ class CaptureJumpViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.resetCharts()
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        self.resetCharts()
+    }
+    
+    func resetCharts() {
+        self.quaternionChart.removeSeries()
+        self.quaternionChart.setNeedsDisplay()
+        self.rawAccelerometerChart.removeSeries()
+        self.rawAccelerometerChart.setNeedsDisplay()
+    }
+    
     @IBAction func startStopMeasurement(sender: UIButton) {
         self.sensorDataSession.startStopMeasurement({
             self.isCollectingData = !self.isCollectingData
@@ -29,30 +44,32 @@ class CaptureJumpViewController: UIViewController {
             sender.setTitle(title, forState: .Normal)
             if (!self.isCollectingData) {
                 self.measurementDidFinish()
+            } else {
+                self.resetCharts()
             }
         })
     }
     
     func measurementDidFinish() {
-        self.updateCharts()
-        
-        
         let upperSensorData = self.sensorDataSession.upperSensorData()
         let sensorDataDictionaries = upperSensorData.map({sensorData in sensorData.toDictionary()})
         let json = JSON(sensorDataDictionaries)
         let jsonString = json.description
         FileHandler.writeToFile(NSDate().description.stringByAppendingPathExtension("json")!, content: jsonString)
+        
+        self.updateCharts(upperSensorData)
     }
     
-    func updateCharts() {
-        self.rawAccelerometerChart.removeSeries()
+    func updateCharts(upperSensorData: [SensorData]) {
+        self.resetCharts()
         
-        let upperSensorData = self.sensorDataSession.upperSensorData()
+        if upperSensorData.count <= 0 {
+            return
+        }
+        
         let rawAccelerometerSeries = self.rawAccelerometerChartSeries(upperSensorData)
         self.rawAccelerometerChart.addSeries(rawAccelerometerSeries)
         self.rawAccelerometerChart.setNeedsDisplay()
-        
-        self.quaternionChart.removeSeries()
         
         let quaternionSeries = self.quaternionChartSeries(upperSensorData)
         self.quaternionChart.addSeries(quaternionSeries)

@@ -17,6 +17,8 @@
 		801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */; };
 		801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
 		801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
+		802F79FA1A822DA900C45AA5 /* QuaternionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F79F91A822DA900C45AA5 /* QuaternionTests.swift */; };
+		802F79FC1A822F4700C45AA5 /* VectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F79FB1A822F4700C45AA5 /* VectorTests.swift */; };
 		80469B651A7641D000544715 /* BenchmarkSensorRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */; };
 		80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */; };
 		80489B941A6D011F0044BFF1 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
@@ -86,6 +88,8 @@
 		801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAnalysisTests.swift; sourceTree = "<group>"; };
 		801DA5661A6C65110028AAF3 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		801DA5681A6C666E0028AAF3 /* Gravity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
+		802F79F91A822DA900C45AA5 /* QuaternionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuaternionTests.swift; sourceTree = "<group>"; };
+		802F79FB1A822F4700C45AA5 /* VectorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorTests.swift; sourceTree = "<group>"; };
 		80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkSensorRateViewController.swift; sourceTree = "<group>"; };
 		80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDataTests.swift; sourceTree = "<group>"; };
 		80489B9C1A6D05340044BFF1 /* Chart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */,
 				80489B8B1A6CF4710044BFF1 /* SensorDataTests.swift */,
 				8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */,
+				802F79F91A822DA900C45AA5 /* QuaternionTests.swift */,
+				802F79FB1A822F4700C45AA5 /* VectorTests.swift */,
 				801DA5411A6C63480028AAF3 /* Supporting Files */,
 			);
 			path = JumpAnalysisTests;
@@ -452,9 +458,11 @@
 				80489B961A6D011F0044BFF1 /* Gravity.swift in Sources */,
 				8081BEEF1A6D3251004D4EF9 /* PerformanceTests.swift in Sources */,
 				801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */,
+				802F79FC1A822F4700C45AA5 /* VectorTests.swift in Sources */,
 				80489B8C1A6CF4710044BFF1 /* SensorDataTests.swift in Sources */,
 				80489B971A6D011F0044BFF1 /* LinearAcceleration.swift in Sources */,
 				8081BEE31A6D3251004D4EF9 /* ArrayTests.swift in Sources */,
+				802F79FA1A822DA900C45AA5 /* QuaternionTests.swift in Sources */,
 				8081BEFB1A6D3251004D4EF9 /* SubscriptTests.swift in Sources */,
 				8081BEE51A6D3251004D4EF9 /* BaseTests.swift in Sources */,
 				8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */,
