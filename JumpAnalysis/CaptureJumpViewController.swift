@@ -45,6 +45,7 @@ class CaptureJumpViewController: UIViewController {
             if (!self.isCollectingData) {
                 self.measurementDidFinish()
             } else {
+                self.sensorDataSession.resetData()
                 self.resetCharts()
             }
         })

@@ -71,6 +71,10 @@ class SensorDataSession: SensorDataDelegate {
             dispatch_get_main_queue(), closure)
     }
     
+    func resetData() {
+        self.sensorData = []
+    }
+    
 //Mark: SensorDataDelegate
     func didReceiveData(sensorData: SensorData) {
         if (!self.isCollectingData) {
