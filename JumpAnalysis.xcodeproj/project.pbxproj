@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80094FD51A6C81FA00DC547C /* BluetoothHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 80094FD41A6C81FA00DC547C /* BluetoothHelper.m */; };
 		801DA52C1A6C63480028AAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52B1A6C63480028AAF3 /* AppDelegate.swift */; };
 		801DA52E1A6C63480028AAF3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52D1A6C63480028AAF3 /* FirstViewController.swift */; };
 		801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */; };
@@ -73,8 +72,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		80094FD31A6C81FA00DC547C /* BluetoothHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluetoothHelper.h; path = BLE/BluetoothHelper.h; sourceTree = "<group>"; };
-		80094FD41A6C81FA00DC547C /* BluetoothHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BluetoothHelper.m; path = BLE/BluetoothHelper.m; sourceTree = "<group>"; };
 		801DA5261A6C63480028AAF3 /* JumpAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		801DA52A1A6C63480028AAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		801DA52B1A6C63480028AAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -253,8 +250,6 @@
 		8071D3441A6C74D500E303E8 /* Arduino */ = {
 			isa = PBXGroup;
 			children = (
-				80094FD31A6C81FA00DC547C /* BluetoothHelper.h */,
-				80094FD41A6C81FA00DC547C /* BluetoothHelper.m */,
 				8071D3451A6C74D500E303E8 /* BLE */,
 				8071D3561A6C756400E303E8 /* ArduinoCommunicationManager.swift */,
 			);
@@ -418,7 +413,6 @@
 				8081BECC1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */,
 				801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */,
 				801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */,
-				80094FD51A6C81FA00DC547C /* BluetoothHelper.m in Sources */,
 				8071D3551A6C74F000E303E8 /* SensorDataDelegate.swift in Sources */,
 				801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */,
 				801DA52C1A6C63480028AAF3 /* AppDelegate.swift in Sources */,

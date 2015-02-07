@@ -104,27 +104,45 @@ class ArduinoCommunicationManager: NSObject, BLEDiscoveryDelegate, BLEServiceDel
         NSLog("bleServiceDidReset");
     }
     
+    func reportMessage(message: String!) {
+        println("BLE Message: \(message)")
+    }
+    
 //MARK: BLEServiceData Delegate
     
     func didReceiveData(data: UnsafeMutablePointer<UInt8>, length: Int) {
-        if (length == 16) {
-            let sensorID = Int(data[15])
-            let sensorTimestampInMilliseconds = Int(data[14])
+        if (length == 14 && self.sensorDataDelegate != nil) {
+            let sensorTimestampInMilliseconds =  transformReceivedUIntsToInt([data[12], data[13]])
             
-            let helperQuaternion = BluetoothHelper.calculateQuaternionFromSensorData(data)
+            let linearAccelerationX = transformReceivedBytesIntoInt([data[0], data[1]])
+            let linearAccelerationY = transformReceivedBytesIntoInt([data[2], data[3]])
+            let linearAccelerationZ = transformReceivedBytesIntoInt([data[4], data[5]])
+            let linearAcceleration = LinearAcceleration(x: linearAccelerationX, y: linearAccelerationY, z: linearAccelerationZ)
             
-            let quaternion = Quaternion(w: helperQuaternion.w, x: helperQuaternion.x, y: helperQuaternion.y, z: helperQuaternion.z)
+            let rawAccelerationX = transformReceivedBytesIntoInt([data[6], data[7]])
+            let rawAccelerationY = transformReceivedBytesIntoInt([data[8], data[9]])
+            let rawAccelerationZ = transformReceivedBytesIntoInt([data[10], data[11]])
+            let rawAcceleration = RawAcceleration(x: rawAccelerationX, y: rawAccelerationY, z: rawAccelerationZ)
             
-            let helperRawAcceleration = BluetoothHelper.calculateAccelerationFromSensorData(data)
-            
-            let rawAcceleration = RawAcceleration(x: helperRawAcceleration.x, y: helperRawAcceleration.y, z: helperRawAcceleration.z)
-            
-            let sensorData = SensorData(sensorID: sensorID, sensorTimeStamp: sensorTimestampInMilliseconds, rawAcceleration: rawAcceleration, quaternion: quaternion)
-            
+            let sensorData = SensorData(sensorTimeStamp: sensorTimestampInMilliseconds, rawAcceleration: rawAcceleration, linearAcceleration: linearAcceleration)
+
             if let delegate = self.sensorDataDelegate {
                 delegate.didReceiveData(sensorData)
             }
         }
+    }
+    
+    func transformReceivedUIntsToInt(inputData: [UInt8]) -> Int {
+        let data = NSData(bytes: inputData, length: inputData.count)
+        
+        var u16 : UInt16 = 0 ;
+        data.getBytes(&u16)
+        
+        return Int(u16)
+    }
+    
+    func transformReceivedBytesIntoInt(inputData: [UInt8]) -> Int {
+        return transformReceivedUIntsToInt(inputData) - 32767
     }
     
 }

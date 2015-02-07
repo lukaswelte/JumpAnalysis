@@ -47,11 +47,7 @@ class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
         })
     }
     
-    func evaluateRate() {
-        let upperSensorRate = 1 / Float(upperSensorPackets)
-        
-        let lowerSensorRate = 1 / Float(lowerSensorPackets)
-        
+    func evaluateRate() {        
         self.upperSensorRateLabel.text = NSString(format: "%d updates/s", upperSensorPackets)
         self.lowerSensorRateLabel.text = NSString(format: "%d updates/s", lowerSensorPackets)
         
@@ -101,11 +97,7 @@ class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
 
 //MARK: Sensor Data Delegate
     func didReceiveData(data: SensorData) {
-        if data.isUpperSensor {
-            self.upperSensorPackets += 1
-        } else {
-            self.lowerSensorPackets += 1
-        }
+        self.upperSensorPackets += 1
     }
 
 }

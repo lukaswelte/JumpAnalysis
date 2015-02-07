@@ -9,7 +9,7 @@
 import XCTest
 
 class SensorDataTests: XCTestCase {
-
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,31 +20,14 @@ class SensorDataTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGravityIsAlwaysCalculatedTheSameWay() {
-        let quaternion = Quaternion(w: 0.97894287109, x: -0.068603515, y: 0.18804931640625, z: 0.03946484375)
-        let rawAcceleration = RawAcceleration(x: 0.068515625, y: 0.1880440625, z: 0.0390014675)
-        let sensorData = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
-        
-        let sensorData2 = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
-        
-        XCTAssertEqual(sensorData.gravity, sensorData2.gravity)
-    }
-    
-    func testLinearAccelerationIsAlwaysCalculatedTheSameWay() {
-        let quaternion = Quaternion(w: 0.97894287109, x: -0.068603515, y: 0.18804931640625, z: 0.03946484375)
-        let rawAcceleration = RawAcceleration(x: 0.068515625, y: 0.1880440625, z: 0.0390014675)
-        let sensorData = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
-        
-        let sensorData2 = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
-        
-        XCTAssertEqual(sensorData.linearAcceleration, sensorData2.linearAcceleration)
+    func getSensorData() -> SensorData {
+        return SensorData(sensorTimeStamp: 102, rawAcceleration: RawAcceleration(x: 21, y: -312, z: 31), linearAcceleration: LinearAcceleration(x: -12, y: 0, z: 13))
     }
 
     
     func testCanBeConvertedToJSON() {
-        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        let rawAcceleration = RawAcceleration(x: 0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        let sensorData = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
+        let rawAcceleration = RawAcceleration(x: 21, y: -312, z: 31)
+        let sensorData = getSensorData()
         
         let jsonSensorData = JSON(sensorData.toDictionary()).description
         XCTAssertNotEqual("", jsonSensorData)
@@ -56,9 +39,7 @@ class SensorDataTests: XCTestCase {
     }
     
     func testCanBeCreatedFromJson() {
-        let quaternion = Quaternion(w: 0.97894287109, x: -0.068603515, y: 0.18804931640625, z: 0.03946484375)
-        let rawAcceleration = RawAcceleration(x: 0.068515625, y: 0.1880440625, z: 0.0390014675)
-        let sensorData = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
+        let sensorData = getSensorData()
         
         let jsonSensorData = JSON(sensorData.toDictionary()).description
         XCTAssertNotEqual("", jsonSensorData)
@@ -75,33 +56,8 @@ class SensorDataTests: XCTestCase {
     }
     
     func testDoesEqualItself () {
-        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        let rawAcceleration = RawAcceleration(x: 0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        let sensorData = SensorData(sensorID: 0, sensorTimeStamp: 102, rawAcceleration: rawAcceleration, quaternion: quaternion)
+        let sensorData = getSensorData()
         XCTAssertEqual(sensorData, sensorData)
-    }
-    
-
-    func testPerformanceGravityFromQuaternion() {
-        // This is an example of a performance test case.
-        
-        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-            let gravity = SensorData.calculateGravity(quaternion)
-        }
-    }
-    
-    func testPerformanceLinearAccelerationFromQuaternion() {
-        // This is an example of a performance test case.
-        
-        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        let rawAcceleration = RawAcceleration(x: 0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
-        
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-            let linearAcceleration = SensorData.calculateLinearAcceleration(rawAcceleration, quaternion: quaternion)
-        }
     }
 
 }

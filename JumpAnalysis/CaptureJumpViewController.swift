@@ -52,7 +52,7 @@ class CaptureJumpViewController: UIViewController {
     }
     
     func measurementDidFinish() {
-        let upperSensorData = self.sensorDataSession.upperSensorData()
+        let upperSensorData = self.sensorDataSession.allSensorData()
         let sensorDataDictionaries = upperSensorData.map({sensorData in sensorData.toDictionary()})
         let json = JSON(sensorDataDictionaries)
         let jsonString = json.description
@@ -72,7 +72,7 @@ class CaptureJumpViewController: UIViewController {
         self.rawAccelerometerChart.addSeries(rawAccelerometerSeries)
         self.rawAccelerometerChart.setNeedsDisplay()
         
-        let quaternionSeries = self.quaternionChartSeries(upperSensorData)
+        let quaternionSeries = self.linearAccelerationChartSeries(upperSensorData)
         self.quaternionChart.addSeries(quaternionSeries)
         self.quaternionChart.setNeedsDisplay()
     }
@@ -95,12 +95,8 @@ class CaptureJumpViewController: UIViewController {
         return [yChart, xChart, zChart]
     }
     
-    func quaternionChartSeries(data:[SensorData]) -> [ChartSeries] {
-        let quaternions = data.map({sensorData in sensorData.quaternion})
-        
-        let wValues = quaternions.map({quaternion in Float(quaternion.w)})
-        let wChart = ChartSeries(wValues)
-        wChart.color = ChartColors.yellowColor()
+    func linearAccelerationChartSeries(data:[SensorData]) -> [ChartSeries] {
+        let quaternions = data.map({sensorData in sensorData.linearAcceleration})
         
         let yValues = quaternions.map({quaternion in Float(quaternion.y)})
         let yChart = ChartSeries(yValues)
@@ -114,7 +110,7 @@ class CaptureJumpViewController: UIViewController {
         let zChart = ChartSeries(zValues)
         zChart.color = ChartColors.redColor()
         
-        return [wChart, yChart, xChart, zChart]
+        return [yChart, xChart, zChart]
     }
 
     override func didReceiveMemoryWarning() {

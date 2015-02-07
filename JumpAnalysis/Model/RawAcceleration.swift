@@ -6,4 +6,4 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-typealias RawAcceleration = Vector<Double>
+typealias RawAcceleration = Vector<Int>

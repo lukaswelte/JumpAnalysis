@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-struct Vector<K: FloatLiteralConvertible where K:Equatable> : Equatable {
+struct Vector<K: Equatable> : Equatable {
     let x:K
     let y:K
     let z:K
     
     func toDictionary() -> Dictionary<String, AnyObject> {
-        let doubleX = self.x as Double
-        let doubleY = self.y as Double
-        let doubleZ = self.z as Double
+        let doubleX = self.x as Int
+        let doubleY = self.y as Int
+        let doubleZ = self.z as Int
         
         let dictionary:Dictionary<String, AnyObject> = ["x":doubleX, "y":doubleY, "z":doubleZ]
         return dictionary

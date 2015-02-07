@@ -10,6 +10,5 @@
 #define JumpAnalysis_JumpAnalysis_BridgingHeader_h
 
 #import "BLEDiscovery.h"
-#import "BluetoothHelper.h"
 
 #endif

@@ -17,32 +17,22 @@ class SensorDataSession: SensorDataDelegate {
     
     private var sensorData: [SensorData] = []
     
-    init() {
-        communicationManager.sensorDataDelegate = self
-    }
+    init() {}
     
-    func upperSensorData() -> [SensorData] {
-        return self.sensorData.filter { (data) -> Bool in
-            data.isUpperSensor
-        }/*.sorted({ (first, second) -> Bool in
-            first.sensorTimeStampInMilliseconds <= second.sensorTimeStampInMilliseconds
-        })*/
-    }
-    
-    func lowerSensorData() -> [SensorData] {
-        return self.sensorData.filter { (data) -> Bool in
-            !data.isUpperSensor
-        }
+    func allSensorData() -> [SensorData] {
+        return self.sensorData
     }
     
     func startStopMeasurement(onSuccess:()->()) {
         if (self.isCollectingData) {
+            self.communicationManager.sensorDataDelegate = nil
             self.communicationManager.stopReceivingSensorData()
             self.isCollectingData = false
             self.endDate = NSDate()
             onSuccess()
         } else {
             self.waitForBluetoothToStart {
+                self.communicationManager.sensorDataDelegate = self
                 self.communicationManager.startReceivingSensorData()
                 self.isCollectingData = true
                 self.startDate = NSDate()

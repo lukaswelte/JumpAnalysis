@@ -7,23 +7,23 @@
 //
 
 struct Quaternion: Equatable {
-    let w:Double
-    let x:Double
-    let y:Double
-    let z:Double
+    let w:Int
+    let x:Int
+    let y:Int
+    let z:Int
     
     func toDictionary() -> Dictionary<String, AnyObject> {
         return ["w": w, "x": x, "y": y, "z": z]
     }
     
     init(fromDictionary: Dictionary<String, AnyObject>) {
-        self.w = fromDictionary["w"] as Double
-        self.x = fromDictionary["x"] as Double
-        self.y = fromDictionary["y"] as Double
-        self.z = fromDictionary["z"] as Double
+        self.w = fromDictionary["w"] as Int
+        self.x = fromDictionary["x"] as Int
+        self.y = fromDictionary["y"] as Int
+        self.z = fromDictionary["z"] as Int
     }
     
-    init(w: Double, x: Double, y: Double, z: Double) {
+    init(w: Int, x: Int, y: Int, z: Int) {
         self.w = w
         self.x = x
         self.y = y

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -127,26 +127,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper Sensor: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-e1-yPr">
-                                <rect key="frame" x="16" y="28" width="116" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth Sensor:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-e1-yPr">
+                                <rect key="frame" x="16" y="28" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone Accelerometer: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYK-pK-swq">
+                                <rect key="frame" x="16" y="68" width="179" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qaa-0O-Pp2">
-                                <rect key="frame" x="140" y="28" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lower Sensor: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYK-pK-swq">
-                                <rect key="frame" x="16" y="68" width="116" height="21"/>
+                                <rect key="frame" x="203" y="28" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEn-TS-5nd">
-                                <rect key="frame" x="140" y="68" width="42" height="21"/>
+                                <rect key="frame" x="203" y="68" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -154,14 +154,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ycr-e1-yPr" firstAttribute="baseline" secondItem="Qaa-0O-Pp2" secondAttribute="baseline" id="1EE-JE-tzp"/>
-                            <constraint firstItem="ycr-e1-yPr" firstAttribute="top" secondItem="0kI-vm-3vM" secondAttribute="bottom" constant="8" symbolic="YES" id="5jm-v8-TM7"/>
-                            <constraint firstItem="ZYK-pK-swq" firstAttribute="leading" secondItem="ObC-Zz-IRE" secondAttribute="leadingMargin" id="8x4-ei-jXy"/>
-                            <constraint firstItem="ycr-e1-yPr" firstAttribute="leading" secondItem="ZYK-pK-swq" secondAttribute="leading" id="SVo-1r-pHR"/>
-                            <constraint firstItem="Qaa-0O-Pp2" firstAttribute="leading" secondItem="ycr-e1-yPr" secondAttribute="trailing" constant="8" symbolic="YES" id="WnP-n6-aX8"/>
-                            <constraint firstItem="ZYK-pK-swq" firstAttribute="top" secondItem="ycr-e1-yPr" secondAttribute="bottom" constant="19" id="dJA-JQ-szl"/>
-                            <constraint firstItem="Qaa-0O-Pp2" firstAttribute="leading" secondItem="hEn-TS-5nd" secondAttribute="leading" id="f2e-OD-7DZ"/>
-                            <constraint firstItem="hEn-TS-5nd" firstAttribute="baseline" secondItem="ZYK-pK-swq" secondAttribute="baseline" id="tAj-cq-c9V"/>
+                            <constraint firstItem="ycr-e1-yPr" firstAttribute="baseline" secondItem="Qaa-0O-Pp2" secondAttribute="baseline" id="3Ge-WE-lkC"/>
+                            <constraint firstItem="hEn-TS-5nd" firstAttribute="leading" secondItem="ZYK-pK-swq" secondAttribute="trailing" constant="8" symbolic="YES" id="7in-0o-cNy"/>
+                            <constraint firstItem="ycr-e1-yPr" firstAttribute="leading" secondItem="ZYK-pK-swq" secondAttribute="leading" id="L9h-Je-bbO"/>
+                            <constraint firstItem="ycr-e1-yPr" firstAttribute="top" secondItem="0kI-vm-3vM" secondAttribute="bottom" constant="8" symbolic="YES" id="TLp-Lb-Avp"/>
+                            <constraint firstItem="Qaa-0O-Pp2" firstAttribute="leading" secondItem="hEn-TS-5nd" secondAttribute="leading" id="X7I-rw-65Q"/>
+                            <constraint firstItem="ZYK-pK-swq" firstAttribute="baseline" secondItem="hEn-TS-5nd" secondAttribute="baseline" id="ew7-Zm-JpN"/>
+                            <constraint firstItem="ZYK-pK-swq" firstAttribute="top" secondItem="ycr-e1-yPr" secondAttribute="bottom" constant="19" id="jmz-hZ-mDD"/>
+                            <constraint firstItem="ycr-e1-yPr" firstAttribute="leading" secondItem="ObC-Zz-IRE" secondAttribute="leadingMargin" id="koO-bz-Zgm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sample Rate" id="Frs-SK-3HO"/>

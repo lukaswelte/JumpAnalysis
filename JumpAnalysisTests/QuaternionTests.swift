@@ -22,12 +22,12 @@ class QuaternionTests: XCTestCase {
     
     
     func testDoesEqualItself() {
-        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
+        let quaternion = Quaternion(w: 31, x: -312, y: 3123, z: 3123)
         XCTAssertEqual(quaternion, quaternion)
     }
     
     func testCanBeConvertedToAndCreatedFromJSON() {
-        let quaternion = Quaternion(w: 0.97894287109375, x: -0.068603515625, y: 0.18804931640625, z: 0.03900146484375)
+        let quaternion = Quaternion(w: 213, x: -043, y: 123, z: 123)
         let jsonString = JSON(quaternion.toDictionary()).description
         
         let dictionary = JSON(data: jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!)
