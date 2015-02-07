@@ -69,7 +69,7 @@ class CaptureJumpViewController: UIViewController {
         let jumpDictionary = ["id":self.jumpNumber(),"name":self.nameTextField.text, "weightInKg":convertStringToDouble(self.weightInKgTextField.text), "heightInMeter":convertStringToDouble(self.heightInMeterTextField.text), "additionalInformation":self.additionalInformationTextField.text, "sensorData":sensorDataDictionaries]
         let json = JSON(jumpDictionary)
         let jsonString = json.description
-        FileHandler.writeToFile("\(self.jumpNumber())-\(self.nameTextField.text).json", content: jsonString)
+        FileHandler.writeToFile("\(self.jumpNumber()).json", content: jsonString)
         self.updateCharts(upperSensorData)
         
         setJumpNumber(jumpNumber()+1)

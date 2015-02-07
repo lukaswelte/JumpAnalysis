@@ -173,7 +173,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--Sample Rate-->
+        <!--Benchmark-->
         <scene sceneID="rYX-as-0Lf">
             <objects>
                 <viewController id="Ff7-2r-qSf" customClass="BenchmarkSensorRateViewController" customModule="JumpAnalysis" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,7 +222,7 @@
                             <constraint firstItem="ycr-e1-yPr" firstAttribute="leading" secondItem="ObC-Zz-IRE" secondAttribute="leadingMargin" id="koO-bz-Zgm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sample Rate" id="Frs-SK-3HO"/>
+                    <tabBarItem key="tabBarItem" title="Benchmark" image="first" id="Frs-SK-3HO"/>
                     <connections>
                         <outlet property="lowerSensorRateLabel" destination="hEn-TS-5nd" id="DVS-0A-FOj"/>
                         <outlet property="upperSensorRateLabel" destination="Qaa-0O-Pp2" id="NXd-22-61b"/>
