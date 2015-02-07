@@ -125,6 +125,7 @@
 		8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
 		8081BEE11A6D3251004D4EF9 /* Tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tests.json; sourceTree = "<group>"; };
 		8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandlerTests.swift; sourceTree = "<group>"; };
+		80A144E81A86952800C33214 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +179,7 @@
 				801DA5361A6C63480028AAF3 /* LaunchScreen.xib */,
 				801DA5291A6C63480028AAF3 /* Supporting Files */,
 				8071D35B1A6C779700E303E8 /* JumpAnalysis-BridgingHeader.h */,
+				80A144E81A86952800C33214 /* Playground.playground */,
 			);
 			path = JumpAnalysis;
 			sourceTree = "<group>";

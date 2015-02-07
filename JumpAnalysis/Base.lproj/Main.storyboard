@@ -39,7 +39,7 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Analysis" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Analysis" image="first" id="6tT-GU-kcc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,19 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4DW-3j-8j0" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
-                                <rect key="frame" x="32" y="91" width="537" height="158"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txz-V7-gGP" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
-                                <rect key="frame" x="32" y="317" width="537" height="158"/>
+                                <rect key="frame" x="32" y="385" width="537" height="158"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
@@ -82,7 +70,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbr-c7-gfM">
-                                <rect key="frame" x="235" y="28" width="131" height="30"/>
+                                <rect key="frame" x="430" y="28" width="131" height="30"/>
                                 <state key="normal" title="Start Measurement">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -90,25 +78,95 @@
                                     <action selector="startStopMeasurement:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pyx-FI-tBu"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ygS-Ml-eJH">
+                                <rect key="frame" x="32" y="28" width="88" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Weight in kg" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jBy-Gk-uCO">
+                                <rect key="frame" x="32" y="66" width="88" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Height in m" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ans-YT-0Qh">
+                                <rect key="frame" x="32" y="104" width="88" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfY-VM-sQO">
+                                <rect key="frame" x="532" y="79" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linear Acceleration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epT-hf-5pg">
+                                <rect key="frame" x="32" y="356" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="U7E-v1-G80">
+                                <rect key="frame" x="467" y="104" width="94" height="29"/>
+                                <connections>
+                                    <action selector="jumpNumberChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="UIA-CR-CW7"/>
+                                </connections>
+                            </stepper>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Additional Information" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="glT-i0-JMh">
+                                <rect key="frame" x="32" y="142" width="529" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="lqY-s8-mFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jump Number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-lV-NO7">
+                                <rect key="frame" x="409" y="79" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="txz-V7-gGP" firstAttribute="top" secondItem="4DW-3j-8j0" secondAttribute="bottom" constant="68" id="6ye-Cg-y2H"/>
-                            <constraint firstItem="4DW-3j-8j0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="16" id="Glq-A1-DTY"/>
-                            <constraint firstItem="cbr-c7-gfM" firstAttribute="centerX" secondItem="4DW-3j-8j0" secondAttribute="centerX" id="JRy-5B-RGg"/>
-                            <constraint firstItem="txz-V7-gGP" firstAttribute="leading" secondItem="4DW-3j-8j0" secondAttribute="leading" id="Ovx-av-YUh"/>
-                            <constraint firstItem="4DW-3j-8j0" firstAttribute="top" secondItem="cbr-c7-gfM" secondAttribute="bottom" constant="33" id="YGn-D3-ZrA"/>
-                            <constraint firstItem="cbr-c7-gfM" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="YSe-55-0wD"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4DW-3j-8j0" secondAttribute="bottom" constant="302" id="dF3-bs-NhB"/>
-                            <constraint firstItem="cbr-c7-gfM" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="rBq-da-o4d"/>
-                            <constraint firstItem="txz-V7-gGP" firstAttribute="trailing" secondItem="4DW-3j-8j0" secondAttribute="trailing" id="ucE-el-YGN"/>
-                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="txz-V7-gGP" secondAttribute="bottom" constant="76" id="y9x-2k-N79"/>
+                            <constraint firstItem="Ans-YT-0Qh" firstAttribute="top" secondItem="jBy-Gk-uCO" secondAttribute="bottom" constant="8" symbolic="YES" id="0pD-Pn-5xA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cbr-c7-gfM" secondAttribute="trailing" constant="23" id="205-hw-WRB"/>
+                            <constraint firstItem="jBy-Gk-uCO" firstAttribute="trailing" secondItem="ygS-Ml-eJH" secondAttribute="trailing" id="5We-zF-Mas"/>
+                            <constraint firstItem="Ans-YT-0Qh" firstAttribute="trailing" secondItem="jBy-Gk-uCO" secondAttribute="trailing" id="8Au-uY-TTw"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4DW-3j-8j0" secondAttribute="bottom" constant="8" symbolic="YES" id="Duh-fs-Z8y"/>
+                            <constraint firstItem="ygS-Ml-eJH" firstAttribute="leading" secondItem="jBy-Gk-uCO" secondAttribute="leading" id="ELz-Ql-kMs"/>
+                            <constraint firstItem="4DW-3j-8j0" firstAttribute="top" secondItem="epT-hf-5pg" secondAttribute="bottom" constant="8" symbolic="YES" id="Ft4-om-yfE"/>
+                            <constraint firstItem="epT-hf-5pg" firstAttribute="leading" secondItem="glT-i0-JMh" secondAttribute="leading" id="H9X-Rh-Gfb"/>
+                            <constraint firstItem="4DW-3j-8j0" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="385" id="KiO-P4-cTp"/>
+                            <constraint firstItem="U7E-v1-G80" firstAttribute="leading" secondItem="EfY-VM-sQO" secondAttribute="trailing" constant="-94" id="L3R-9g-IGN"/>
+                            <constraint firstItem="U7E-v1-G80" firstAttribute="centerY" secondItem="EfY-VM-sQO" secondAttribute="centerY" constant="29" id="Of5-rO-KBA"/>
+                            <constraint firstItem="ygS-Ml-eJH" firstAttribute="top" secondItem="cbr-c7-gfM" secondAttribute="top" id="Ogm-Rk-MNg"/>
+                            <constraint firstItem="Ans-YT-0Qh" firstAttribute="top" secondItem="U7E-v1-G80" secondAttribute="top" id="QpK-op-Y3Z"/>
+                            <constraint firstItem="EfY-VM-sQO" firstAttribute="baseline" secondItem="GqP-lV-NO7" secondAttribute="baseline" id="W4N-uL-MMj"/>
+                            <constraint firstItem="glT-i0-JMh" firstAttribute="trailing" secondItem="U7E-v1-G80" secondAttribute="trailing" id="a3l-W9-xgJ"/>
+                            <constraint firstItem="glT-i0-JMh" firstAttribute="top" secondItem="U7E-v1-G80" secondAttribute="bottom" constant="9" id="a45-yE-Kor"/>
+                            <constraint firstItem="ygS-Ml-eJH" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" symbolic="YES" id="aGl-Gf-zno"/>
+                            <constraint firstItem="jBy-Gk-uCO" firstAttribute="top" secondItem="ygS-Ml-eJH" secondAttribute="bottom" constant="8" symbolic="YES" id="dMb-op-UuO"/>
+                            <constraint firstItem="U7E-v1-G80" firstAttribute="top" secondItem="cbr-c7-gfM" secondAttribute="bottom" constant="46" id="fzt-0X-7LT"/>
+                            <constraint firstItem="4DW-3j-8j0" firstAttribute="leading" secondItem="epT-hf-5pg" secondAttribute="leading" id="gXC-Jv-VOA"/>
+                            <constraint firstItem="glT-i0-JMh" firstAttribute="top" secondItem="Ans-YT-0Qh" secondAttribute="bottom" constant="8" symbolic="YES" id="hNJ-91-9Gu"/>
+                            <constraint firstItem="ygS-Ml-eJH" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="16" id="krQ-HL-i29"/>
+                            <constraint firstItem="glT-i0-JMh" firstAttribute="leading" secondItem="Ans-YT-0Qh" secondAttribute="leading" id="lh8-sa-qWi"/>
+                            <constraint firstItem="jBy-Gk-uCO" firstAttribute="leading" secondItem="Ans-YT-0Qh" secondAttribute="leading" id="pL6-l7-dgQ"/>
+                            <constraint firstItem="EfY-VM-sQO" firstAttribute="leading" secondItem="GqP-lV-NO7" secondAttribute="trailing" constant="8" symbolic="YES" id="twH-44-zNg"/>
+                            <constraint firstItem="4DW-3j-8j0" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="wMf-nz-WY9"/>
+                            <constraint firstItem="cbr-c7-gfM" firstAttribute="trailing" secondItem="U7E-v1-G80" secondAttribute="trailing" id="yEH-V1-HqV"/>
+                            <constraint firstItem="ygS-Ml-eJH" firstAttribute="bottom" secondItem="cbr-c7-gfM" secondAttribute="bottom" id="yqd-7u-DMY"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Capture Jump" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="quaternionChart" destination="txz-V7-gGP" id="UZ4-wr-Z8c"/>
-                        <outlet property="rawAccelerometerChart" destination="4DW-3j-8j0" id="Ggl-mc-rT2"/>
+                        <outlet property="additionalInformationTextField" destination="glT-i0-JMh" id="dDh-xb-XlW"/>
+                        <outlet property="heightInMeterTextField" destination="Ans-YT-0Qh" id="f9J-Jv-VXp"/>
+                        <outlet property="jumpNumberLabel" destination="EfY-VM-sQO" id="qLb-OG-AFq"/>
+                        <outlet property="jumpNumberStepper" destination="U7E-v1-G80" id="DWq-jl-Ato"/>
+                        <outlet property="linearAccelerometerChart" destination="4DW-3j-8j0" id="jgg-bn-5ho"/>
+                        <outlet property="nameTextField" destination="ygS-Ml-eJH" id="Tpa-Nk-8bh"/>
+                        <outlet property="weightInKgTextField" destination="jBy-Gk-uCO" id="edD-MJ-dxK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -192,7 +250,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="0.0" y="8"/>
         </scene>
     </scenes>
     <resources>

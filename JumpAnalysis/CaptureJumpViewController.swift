@@ -13,8 +13,13 @@ class CaptureJumpViewController: UIViewController {
     var isCollectingData = false
     var sensorDataSession = SensorDataSession()
     
-    @IBOutlet weak var rawAccelerometerChart: Chart!
-    @IBOutlet weak var quaternionChart: Chart!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var weightInKgTextField: UITextField!
+    @IBOutlet weak var heightInMeterTextField: UITextField!
+    @IBOutlet weak var jumpNumberLabel: UILabel!
+    @IBOutlet weak var jumpNumberStepper: UIStepper!
+    @IBOutlet weak var additionalInformationTextField: UITextField!
+    @IBOutlet weak var linearAccelerometerChart: Chart!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +27,12 @@ class CaptureJumpViewController: UIViewController {
         
     }
     
+    @IBAction func jumpNumberChanged(sender: UIStepper) {
+        self.setJumpNumber(Int(sender.value))
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        self.resetCharts()
+        self.updateJumpNumberUI()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -31,10 +40,8 @@ class CaptureJumpViewController: UIViewController {
     }
     
     func resetCharts() {
-        self.quaternionChart.removeSeries()
-        self.quaternionChart.setNeedsDisplay()
-        self.rawAccelerometerChart.removeSeries()
-        self.rawAccelerometerChart.setNeedsDisplay()
+        self.linearAccelerometerChart.removeSeries()
+        self.linearAccelerometerChart.setNeedsDisplay()
     }
     
     @IBAction func startStopMeasurement(sender: UIButton) {
@@ -51,62 +58,70 @@ class CaptureJumpViewController: UIViewController {
         })
     }
     
+    func convertStringToDouble(inputString: String) -> Double {
+        let dotNumberString = inputString.stringByReplacingOccurrencesOfString(",", withString: ".", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        return (dotNumberString as NSString).doubleValue
+    }
+    
     func measurementDidFinish() {
         let upperSensorData = self.sensorDataSession.allSensorData()
         let sensorDataDictionaries = upperSensorData.map({sensorData in sensorData.toDictionary()})
-        let json = JSON(sensorDataDictionaries)
+        let jumpDictionary = ["id":self.jumpNumber(),"name":self.nameTextField.text, "weightInKg":convertStringToDouble(self.weightInKgTextField.text), "heightInMeter":convertStringToDouble(self.heightInMeterTextField.text), "additionalInformation":self.additionalInformationTextField.text, "sensorData":sensorDataDictionaries]
+        let json = JSON(jumpDictionary)
         let jsonString = json.description
-        FileHandler.writeToFile(NSDate().description.stringByAppendingPathExtension("json")!, content: jsonString)
-        
+        FileHandler.writeToFile("\(self.jumpNumber())-\(self.nameTextField.text).json", content: jsonString)
         self.updateCharts(upperSensorData)
+        
+        setJumpNumber(jumpNumber()+1)
     }
     
-    func updateCharts(upperSensorData: [SensorData]) {
+    private func setJumpNumber(newJumpNumber: Int) {
+        NSUserDefaults.standardUserDefaults().setInteger(newJumpNumber, forKey: "captureJumpNumber")
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        self.updateJumpNumberUI()
+    }
+    
+    func jumpNumber() -> Int {
+        return NSUserDefaults.standardUserDefaults().integerForKey("captureJumpNumber")
+    }
+    
+    func updateJumpNumberUI() {
+        let currentJumpNumber = jumpNumber()
+        self.jumpNumberLabel.text = "\(currentJumpNumber)"
+        self.jumpNumberStepper.value = Double(currentJumpNumber)
+    }
+    
+    func updateCharts(sensorData: [SensorData]) {
         self.resetCharts()
         
-        if upperSensorData.count <= 0 {
+        if sensorData.count <= 0 {
             return
         }
         
-        let rawAccelerometerSeries = self.rawAccelerometerChartSeries(upperSensorData)
-        self.rawAccelerometerChart.addSeries(rawAccelerometerSeries)
-        self.rawAccelerometerChart.setNeedsDisplay()
-        
-        let quaternionSeries = self.linearAccelerationChartSeries(upperSensorData)
-        self.quaternionChart.addSeries(quaternionSeries)
-        self.quaternionChart.setNeedsDisplay()
-    }
-    
-    func rawAccelerometerChartSeries(data:[SensorData]) -> [ChartSeries] {
-        let rawAccelerations = data.map({sensorData in sensorData.rawAcceleration})
-        
-        let yValues = rawAccelerations.map({acceleration in Float(acceleration.y)})
-        let yChart = ChartSeries(yValues)
-        yChart.color = ChartColors.greenColor()
-        
-        let xValues = rawAccelerations.map({acceleration in Float(acceleration.x)})
-        let xChart = ChartSeries(xValues)
-        xChart.color = ChartColors.blueColor()
-        
-        let zValues = rawAccelerations.map({acceleration in Float(acceleration.z)})
-        let zChart = ChartSeries(zValues)
-        zChart.color = ChartColors.redColor()
-        
-        return [yChart, xChart, zChart]
+        let linearAccelerometerSeries = self.linearAccelerationChartSeries(sensorData)
+        self.linearAccelerometerChart.addSeries(linearAccelerometerSeries)
+        self.linearAccelerometerChart.setNeedsDisplay()
     }
     
     func linearAccelerationChartSeries(data:[SensorData]) -> [ChartSeries] {
-        let quaternions = data.map({sensorData in sensorData.linearAcceleration})
+        let linearAccelerations = data.map({sensorData in sensorData.linearAcceleration})
+        var yValues: [Float] = []
+        var xValues: [Float] = []
+        var zValues: [Float] = []
         
-        let yValues = quaternions.map({quaternion in Float(quaternion.y)})
+        for acceleration: LinearAcceleration in linearAccelerations {
+            yValues.append(Float(acceleration.y))
+            xValues.append(Float(acceleration.x))
+            zValues.append(Float(acceleration.z))
+        }
+        
         let yChart = ChartSeries(yValues)
         yChart.color = ChartColors.greenColor()
         
-        let xValues = quaternions.map({quaternion in Float(quaternion.x)})
         let xChart = ChartSeries(xValues)
         xChart.color = ChartColors.blueColor()
         
-        let zValues = quaternions.map({quaternion in Float(quaternion.z)})
         let zChart = ChartSeries(zValues)
         zChart.color = ChartColors.redColor()
         
@@ -116,6 +131,10 @@ class CaptureJumpViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        self.view.endEditing(true)
     }
 }
 
