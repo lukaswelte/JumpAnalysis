@@ -12,3 +12,4 @@ func convertStringToDouble(inputString: String) -> Double {
 }
 
 let doubleFunc = convertStringToDouble(numberString)
+

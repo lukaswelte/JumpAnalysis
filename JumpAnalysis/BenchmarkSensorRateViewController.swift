@@ -48,8 +48,8 @@ class BenchmarkSensorRateViewController: UIViewController, SensorDataDelegate {
     }
     
     func evaluateRate() {        
-        self.upperSensorRateLabel.text = NSString(format: "%d updates/s", upperSensorPackets)
-        self.lowerSensorRateLabel.text = NSString(format: "%d updates/s", lowerSensorPackets)
+        self.upperSensorRateLabel.text = "\(self.upperSensorPackets) updates/s"
+        self.lowerSensorRateLabel.text = "\(self.lowerSensorPackets) updates/s"
         
         self.resetPacketCounts()
     }

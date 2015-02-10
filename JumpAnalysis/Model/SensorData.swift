@@ -32,10 +32,10 @@ class SensorData: Equatable {
     }
     
     init(fromDictionary: Dictionary<String, AnyObject>) {
-        self.sensorTimeStampInMilliseconds = fromDictionary["sensorTimeStamp"] as Int;
-        self.creationDate = NSDate(timeIntervalSince1970: fromDictionary["creationDate"] as NSTimeInterval)
-        self.rawAcceleration = RawAcceleration(fromDictionary: fromDictionary["rawAccelerometer"] as Dictionary<String, AnyObject>)
-        self.linearAcceleration = LinearAcceleration(fromDictionary: fromDictionary["linearAcceleration"] as Dictionary<String, AnyObject>)
+        self.sensorTimeStampInMilliseconds = fromDictionary["sensorTimeStamp"] as! Int;
+        self.creationDate = NSDate(timeIntervalSince1970: fromDictionary["creationDate"] as! NSTimeInterval)
+        self.rawAcceleration = RawAcceleration(fromDictionary: fromDictionary["rawAccelerometer"] as! Dictionary<String, AnyObject>)
+        self.linearAcceleration = LinearAcceleration(fromDictionary: fromDictionary["linearAcceleration"] as! Dictionary<String, AnyObject>)
     }
 }
 

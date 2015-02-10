@@ -17,10 +17,10 @@ struct Quaternion: Equatable {
     }
     
     init(fromDictionary: Dictionary<String, AnyObject>) {
-        self.w = fromDictionary["w"] as Int
-        self.x = fromDictionary["x"] as Int
-        self.y = fromDictionary["y"] as Int
-        self.z = fromDictionary["z"] as Int
+        self.w = fromDictionary["w"] as! Int
+        self.x = fromDictionary["x"] as! Int
+        self.y = fromDictionary["y"] as! Int
+        self.z = fromDictionary["z"] as! Int
     }
     
     init(w: Int, x: Int, y: Int, z: Int) {
