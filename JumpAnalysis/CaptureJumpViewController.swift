@@ -21,6 +21,8 @@ class CaptureJumpViewController: UIViewController {
     @IBOutlet weak var additionalInformationTextField: UITextField!
     @IBOutlet weak var linearAccelerometerChart: Chart!
     
+    @IBOutlet weak var leftFootSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -66,7 +68,7 @@ class CaptureJumpViewController: UIViewController {
     func measurementDidFinish() {
         let upperSensorData = self.sensorDataSession.allSensorData()
         let sensorDataDictionaries = upperSensorData.map({sensorData in sensorData.toDictionary()})
-        let jumpDictionary = ["id":self.jumpNumber(),"name":self.nameTextField.text, "weightInKg":convertStringToDouble(self.weightInKgTextField.text), "heightInMeter":convertStringToDouble(self.heightInMeterTextField.text), "additionalInformation":self.additionalInformationTextField.text, "sensorData":sensorDataDictionaries]
+        let jumpDictionary = ["id":self.jumpNumber(),"name":self.nameTextField.text, "weightInKg":convertStringToDouble(self.weightInKgTextField.text), "heightInMeter":convertStringToDouble(self.heightInMeterTextField.text), "additionalInformation":self.additionalInformationTextField.text, "leftFoot": self.leftFootSwitch.on, "sensorData":sensorDataDictionaries]
         let json = JSON(jumpDictionary)
         let jsonString = json.description
         FileHandler.writeToFile("\(self.jumpNumber()).json", content: jsonString)
