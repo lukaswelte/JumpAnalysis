@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+private let _AnalyzationCoordinator = AnalyzationCoordinator()
+
+class AnalyzationCoordinator {
+    class var sharedInstance: AnalyzationCoordinator {
+        return _AnalyzationCoordinator
+    }
+    
+    let testData = TestDataLoader().retrieveTestData()
+    
+}
