@@ -122,6 +122,8 @@
 		80C5AF3C1AB6E91800F20010 /* 9.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEFD1AB6E91800F20010 /* 9.json */; };
 		80C5AF3D1AB6E91800F20010 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AEFE1AB6E91800F20010 /* TestData.swift */; };
 		80C5AF3E1AB6E91800F20010 /* TestDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AEFF1AB6E91800F20010 /* TestDataLoader.swift */; };
+		80C5AF431AB7102D00F20010 /* SimplePeakDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AF421AB7102D00F20010 /* SimplePeakDetection.swift */; };
+		80C5AF451AB7103A00F20010 /* AlgorithmProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AF441AB7103A00F20010 /* AlgorithmProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +254,8 @@
 		80C5AEFD1AB6E91800F20010 /* 9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 9.json; sourceTree = "<group>"; };
 		80C5AEFE1AB6E91800F20010 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		80C5AEFF1AB6E91800F20010 /* TestDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataLoader.swift; sourceTree = "<group>"; };
+		80C5AF421AB7102D00F20010 /* SimplePeakDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePeakDetection.swift; sourceTree = "<group>"; };
+		80C5AF441AB7103A00F20010 /* AlgorithmProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +436,7 @@
 		80C5AEBF1AB6E91800F20010 /* Analyzation */ = {
 			isa = PBXGroup;
 			children = (
+				80C5AF411AB7101200F20010 /* Algorithms */,
 				80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */,
 				80C5AEC11AB6E91800F20010 /* Data */,
 				80C5AEFE1AB6E91800F20010 /* TestData.swift */,
@@ -505,6 +510,15 @@
 				80C5AEFD1AB6E91800F20010 /* 9.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		80C5AF411AB7101200F20010 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				80C5AF421AB7102D00F20010 /* SimplePeakDetection.swift */,
+				80C5AF441AB7103A00F20010 /* AlgorithmProtocol.swift */,
+			);
+			path = Algorithms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +694,7 @@
 				8081BECC1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */,
 				801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */,
 				801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */,
+				80C5AF451AB7103A00F20010 /* AlgorithmProtocol.swift in Sources */,
 				8071D3551A6C74F000E303E8 /* SensorDataDelegate.swift in Sources */,
 				801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */,
 				80C5AF001AB6E91800F20010 /* AnalyzationCoordinator.swift in Sources */,
@@ -691,6 +706,7 @@
 				80489BA11A6D05340044BFF1 /* ChartColors.swift in Sources */,
 				8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */,
 				8071D33A1A6C671100E303E8 /* Vector.swift in Sources */,
+				80C5AF431AB7102D00F20010 /* SimplePeakDetection.swift in Sources */,
 				8081BED11A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */,
 				8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */,
 				80C5AF3E1AB6E91800F20010 /* TestDataLoader.swift in Sources */,

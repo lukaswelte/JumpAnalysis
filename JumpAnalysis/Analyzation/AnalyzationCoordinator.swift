@@ -17,4 +17,5 @@ class AnalyzationCoordinator {
     
     let testData = TestDataLoader().retrieveTestData()
     
+    let algorithms = []
 }
