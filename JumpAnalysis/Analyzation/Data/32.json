@@ -1,0 +1,6914 @@
+{
+  "jumpDistanceInCm" : 59,
+  "jumpDurationInMs" : 164,
+  "id" : 32,
+  "name" : "Onur",
+  "sensorData" : [
+    {
+      "linearAcceleration" : {
+        "z" : -99,
+        "x" : 152,
+        "y" : -40
+      },
+      "creationDate" : 1424606813.811476,
+      "sensorTimeStamp" : 43206,
+      "rawAccelerometer" : {
+        "z" : -1937,
+        "x" : 133,
+        "y" : 7942
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -108,
+        "x" : 145,
+        "y" : -43
+      },
+      "creationDate" : 1424606813.811612,
+      "sensorTimeStamp" : 43214,
+      "rawAccelerometer" : {
+        "z" : -1948,
+        "x" : 127,
+        "y" : 7939
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -97,
+        "x" : 126,
+        "y" : -36
+      },
+      "creationDate" : 1424606813.811725,
+      "sensorTimeStamp" : 43227,
+      "rawAccelerometer" : {
+        "z" : -1940,
+        "x" : 107,
+        "y" : 7945
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -94,
+        "x" : 104,
+        "y" : -24
+      },
+      "creationDate" : 1424606813.921104,
+      "sensorTimeStamp" : 43237,
+      "rawAccelerometer" : {
+        "z" : -1937,
+        "x" : 85,
+        "y" : 7957
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -109,
+        "x" : 92,
+        "y" : -30
+      },
+      "creationDate" : 1424606813.921293,
+      "sensorTimeStamp" : 43245,
+      "rawAccelerometer" : {
+        "z" : -1953,
+        "x" : 72,
+        "y" : 7951
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -115,
+        "x" : 111,
+        "y" : -42
+      },
+      "creationDate" : 1424606813.921549,
+      "sensorTimeStamp" : 43255,
+      "rawAccelerometer" : {
+        "z" : -1960,
+        "x" : 90,
+        "y" : 7938
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -106,
+        "x" : 138,
+        "y" : -45
+      },
+      "creationDate" : 1424606813.921683,
+      "sensorTimeStamp" : 43266,
+      "rawAccelerometer" : {
+        "z" : -1952,
+        "x" : 117,
+        "y" : 7935
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 148,
+        "y" : -40
+      },
+      "creationDate" : 1424606813.921818,
+      "sensorTimeStamp" : 43276,
+      "rawAccelerometer" : {
+        "z" : -1952,
+        "x" : 127,
+        "y" : 7940
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -105,
+        "x" : 140,
+        "y" : -35
+      },
+      "creationDate" : 1424606813.921961,
+      "sensorTimeStamp" : 43286,
+      "rawAccelerometer" : {
+        "z" : -1954,
+        "x" : 118,
+        "y" : 7944
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 129,
+        "y" : -35
+      },
+      "creationDate" : 1424606813.922094,
+      "sensorTimeStamp" : 43296,
+      "rawAccelerometer" : {
+        "z" : -1954,
+        "x" : 108,
+        "y" : 7944
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -100,
+        "x" : 117,
+        "y" : -41
+      },
+      "creationDate" : 1424606813.922227,
+      "sensorTimeStamp" : 43307,
+      "rawAccelerometer" : {
+        "z" : -1952,
+        "x" : 96,
+        "y" : 7938
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -91,
+        "x" : 108,
+        "y" : -42
+      },
+      "creationDate" : 1424606813.922439,
+      "sensorTimeStamp" : 43317,
+      "rawAccelerometer" : {
+        "z" : -1944,
+        "x" : 87,
+        "y" : 7936
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -86,
+        "x" : 98,
+        "y" : -36
+      },
+      "creationDate" : 1424606813.941761,
+      "sensorTimeStamp" : 43325,
+      "rawAccelerometer" : {
+        "z" : -1940,
+        "x" : 77,
+        "y" : 7942
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -97,
+        "x" : 93,
+        "y" : -36
+      },
+      "creationDate" : 1424606813.94192,
+      "sensorTimeStamp" : 43335,
+      "rawAccelerometer" : {
+        "z" : -1951,
+        "x" : 72,
+        "y" : 7942
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -99,
+        "x" : 100,
+        "y" : -39
+      },
+      "creationDate" : 1424606813.942054,
+      "sensorTimeStamp" : 43345,
+      "rawAccelerometer" : {
+        "z" : -1954,
+        "x" : 79,
+        "y" : 7938
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -89,
+        "x" : 117,
+        "y" : -41
+      },
+      "creationDate" : 1424606813.959118,
+      "sensorTimeStamp" : 43356,
+      "rawAccelerometer" : {
+        "z" : -1944,
+        "x" : 95,
+        "y" : 7937
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -76,
+        "x" : 130,
+        "y" : -41
+      },
+      "creationDate" : 1424606813.95956,
+      "sensorTimeStamp" : 43366,
+      "rawAccelerometer" : {
+        "z" : -1932,
+        "x" : 109,
+        "y" : 7936
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -69,
+        "x" : 127,
+        "y" : -37
+      },
+      "creationDate" : 1424606813.960604,
+      "sensorTimeStamp" : 43376,
+      "rawAccelerometer" : {
+        "z" : -1925,
+        "x" : 105,
+        "y" : 7940
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -68,
+        "x" : 117,
+        "y" : -33
+      },
+      "creationDate" : 1424606813.989031,
+      "sensorTimeStamp" : 43386,
+      "rawAccelerometer" : {
+        "z" : -1925,
+        "x" : 95,
+        "y" : 7944
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -72,
+        "x" : 104,
+        "y" : -34
+      },
+      "creationDate" : 1424606813.989962,
+      "sensorTimeStamp" : 43397,
+      "rawAccelerometer" : {
+        "z" : -1930,
+        "x" : 81,
+        "y" : 7943
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -60,
+        "x" : 96,
+        "y" : -37
+      },
+      "creationDate" : 1424606813.990734,
+      "sensorTimeStamp" : 43405,
+      "rawAccelerometer" : {
+        "z" : -1919,
+        "x" : 73,
+        "y" : 7940
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -54,
+        "x" : 89,
+        "y" : -37
+      },
+      "creationDate" : 1424606814.021572,
+      "sensorTimeStamp" : 43415,
+      "rawAccelerometer" : {
+        "z" : -1914,
+        "x" : 67,
+        "y" : 7939
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -54,
+        "x" : 91,
+        "y" : -33
+      },
+      "creationDate" : 1424606814.022077,
+      "sensorTimeStamp" : 43427,
+      "rawAccelerometer" : {
+        "z" : -1914,
+        "x" : 69,
+        "y" : 7943
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -50,
+        "x" : 106,
+        "y" : -38
+      },
+      "creationDate" : 1424606814.02319,
+      "sensorTimeStamp" : 43436,
+      "rawAccelerometer" : {
+        "z" : -1910,
+        "x" : 86,
+        "y" : 7938
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -40,
+        "x" : 140,
+        "y" : -48
+      },
+      "creationDate" : 1424606814.04944,
+      "sensorTimeStamp" : 43446,
+      "rawAccelerometer" : {
+        "z" : -1900,
+        "x" : 121,
+        "y" : 7928
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -18,
+        "x" : 178,
+        "y" : -49
+      },
+      "creationDate" : 1424606814.04991,
+      "sensorTimeStamp" : 43456,
+      "rawAccelerometer" : {
+        "z" : -1880,
+        "x" : 162,
+        "y" : 7927
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 6,
+        "x" : 207,
+        "y" : -44
+      },
+      "creationDate" : 1424606814.051281,
+      "sensorTimeStamp" : 43466,
+      "rawAccelerometer" : {
+        "z" : -1855,
+        "x" : 194,
+        "y" : 7932
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 21,
+        "x" : 190,
+        "y" : -38
+      },
+      "creationDate" : 1424606814.109378,
+      "sensorTimeStamp" : 43476,
+      "rawAccelerometer" : {
+        "z" : -1840,
+        "x" : 181,
+        "y" : 7938
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 32,
+        "x" : 140,
+        "y" : -27
+      },
+      "creationDate" : 1424606814.109927,
+      "sensorTimeStamp" : 43485,
+      "rawAccelerometer" : {
+        "z" : -1829,
+        "x" : 132,
+        "y" : 7949
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 18,
+        "x" : 74,
+        "y" : -19
+      },
+      "creationDate" : 1424606814.110206,
+      "sensorTimeStamp" : 43495,
+      "rawAccelerometer" : {
+        "z" : -1844,
+        "x" : 67,
+        "y" : 7957
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1,
+        "x" : 26,
+        "y" : -22
+      },
+      "creationDate" : 1424606814.111204,
+      "sensorTimeStamp" : 43507,
+      "rawAccelerometer" : {
+        "z" : -1867,
+        "x" : 17,
+        "y" : 7954
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -16,
+        "x" : -4,
+        "y" : -21
+      },
+      "creationDate" : 1424606814.140762,
+      "sensorTimeStamp" : 43515,
+      "rawAccelerometer" : {
+        "z" : -1885,
+        "x" : -15,
+        "y" : 7954
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -20,
+        "x" : -21,
+        "y" : -18
+      },
+      "creationDate" : 1424606814.141477,
+      "sensorTimeStamp" : 43526,
+      "rawAccelerometer" : {
+        "z" : -1890,
+        "x" : -33,
+        "y" : 7956
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -31,
+        "x" : -29,
+        "y" : -20
+      },
+      "creationDate" : 1424606814.142362,
+      "sensorTimeStamp" : 43536,
+      "rawAccelerometer" : {
+        "z" : -1903,
+        "x" : -43,
+        "y" : 7954
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -42,
+        "x" : -30,
+        "y" : -19
+      },
+      "creationDate" : 1424606814.142632,
+      "sensorTimeStamp" : 43546,
+      "rawAccelerometer" : {
+        "z" : -1916,
+        "x" : -45,
+        "y" : 7954
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -46,
+        "x" : -16,
+        "y" : -15
+      },
+      "creationDate" : 1424606814.169737,
+      "sensorTimeStamp" : 43556,
+      "rawAccelerometer" : {
+        "z" : -1921,
+        "x" : -31,
+        "y" : 7958
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -50,
+        "x" : 0,
+        "y" : -7
+      },
+      "creationDate" : 1424606814.17001,
+      "sensorTimeStamp" : 43565,
+      "rawAccelerometer" : {
+        "z" : -1925,
+        "x" : -13,
+        "y" : 7966
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -64,
+        "x" : 0,
+        "y" : -4
+      },
+      "creationDate" : 1424606814.170921,
+      "sensorTimeStamp" : 43575,
+      "rawAccelerometer" : {
+        "z" : -1938,
+        "x" : -12,
+        "y" : 7969
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -85,
+        "x" : 14,
+        "y" : -12
+      },
+      "creationDate" : 1424606814.17227,
+      "sensorTimeStamp" : 43587,
+      "rawAccelerometer" : {
+        "z" : -1957,
+        "x" : 2,
+        "y" : 7962
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -98,
+        "x" : 39,
+        "y" : -31
+      },
+      "creationDate" : 1424606814.19966,
+      "sensorTimeStamp" : 43595,
+      "rawAccelerometer" : {
+        "z" : -1969,
+        "x" : 27,
+        "y" : 7943
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -96,
+        "x" : 70,
+        "y" : -38
+      },
+      "creationDate" : 1424606814.200008,
+      "sensorTimeStamp" : 43606,
+      "rawAccelerometer" : {
+        "z" : -1967,
+        "x" : 58,
+        "y" : 7936
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -102,
+        "x" : 95,
+        "y" : -40
+      },
+      "creationDate" : 1424606814.201131,
+      "sensorTimeStamp" : 43616,
+      "rawAccelerometer" : {
+        "z" : -1973,
+        "x" : 82,
+        "y" : 7934
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 109,
+        "y" : -40
+      },
+      "creationDate" : 1424606814.229761,
+      "sensorTimeStamp" : 43626,
+      "rawAccelerometer" : {
+        "z" : -1975,
+        "x" : 95,
+        "y" : 7934
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -107,
+        "x" : 120,
+        "y" : -40
+      },
+      "creationDate" : 1424606814.23012,
+      "sensorTimeStamp" : 43636,
+      "rawAccelerometer" : {
+        "z" : -1979,
+        "x" : 106,
+        "y" : 7934
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -110,
+        "x" : 122,
+        "y" : -39
+      },
+      "creationDate" : 1424606814.231118,
+      "sensorTimeStamp" : 43644,
+      "rawAccelerometer" : {
+        "z" : -1982,
+        "x" : 109,
+        "y" : 7935
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -105,
+        "x" : 124,
+        "y" : -34
+      },
+      "creationDate" : 1424606814.259644,
+      "sensorTimeStamp" : 43655,
+      "rawAccelerometer" : {
+        "z" : -1978,
+        "x" : 111,
+        "y" : 7939
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -110,
+        "x" : 120,
+        "y" : -34
+      },
+      "creationDate" : 1424606814.260252,
+      "sensorTimeStamp" : 43667,
+      "rawAccelerometer" : {
+        "z" : -1982,
+        "x" : 108,
+        "y" : 7940
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -119,
+        "x" : 117,
+        "y" : -41
+      },
+      "creationDate" : 1424606814.26109,
+      "sensorTimeStamp" : 43675,
+      "rawAccelerometer" : {
+        "z" : -1992,
+        "x" : 106,
+        "y" : 7933
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -123,
+        "x" : 122,
+        "y" : -47
+      },
+      "creationDate" : 1424606814.290374,
+      "sensorTimeStamp" : 43685,
+      "rawAccelerometer" : {
+        "z" : -1996,
+        "x" : 110,
+        "y" : 7926
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -109,
+        "x" : 128,
+        "y" : -45
+      },
+      "creationDate" : 1424606814.290676,
+      "sensorTimeStamp" : 43696,
+      "rawAccelerometer" : {
+        "z" : -1983,
+        "x" : 115,
+        "y" : 7928
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -105,
+        "x" : 131,
+        "y" : -40
+      },
+      "creationDate" : 1424606814.291204,
+      "sensorTimeStamp" : 43706,
+      "rawAccelerometer" : {
+        "z" : -1979,
+        "x" : 118,
+        "y" : 7933
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 140,
+        "y" : -39
+      },
+      "creationDate" : 1424606814.319621,
+      "sensorTimeStamp" : 43716,
+      "rawAccelerometer" : {
+        "z" : -1978,
+        "x" : 127,
+        "y" : 7934
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -105,
+        "x" : 154,
+        "y" : -42
+      },
+      "creationDate" : 1424606814.319967,
+      "sensorTimeStamp" : 43726,
+      "rawAccelerometer" : {
+        "z" : -1979,
+        "x" : 142,
+        "y" : 7931
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -105,
+        "x" : 166,
+        "y" : -43
+      },
+      "creationDate" : 1424606814.321275,
+      "sensorTimeStamp" : 43735,
+      "rawAccelerometer" : {
+        "z" : -1979,
+        "x" : 156,
+        "y" : 7930
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -103,
+        "x" : 174,
+        "y" : -42
+      },
+      "creationDate" : 1424606814.349421,
+      "sensorTimeStamp" : 43747,
+      "rawAccelerometer" : {
+        "z" : -1976,
+        "x" : 164,
+        "y" : 7932
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 176,
+        "y" : -41
+      },
+      "creationDate" : 1424606814.34997,
+      "sensorTimeStamp" : 43755,
+      "rawAccelerometer" : {
+        "z" : -1976,
+        "x" : 167,
+        "y" : 7933
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -102,
+        "x" : 172,
+        "y" : -40
+      },
+      "creationDate" : 1424606814.351114,
+      "sensorTimeStamp" : 43765,
+      "rawAccelerometer" : {
+        "z" : -1975,
+        "x" : 164,
+        "y" : 7933
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -99,
+        "x" : 162,
+        "y" : -38
+      },
+      "creationDate" : 1424606814.37959,
+      "sensorTimeStamp" : 43776,
+      "rawAccelerometer" : {
+        "z" : -1971,
+        "x" : 155,
+        "y" : 7936
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 151,
+        "y" : -43
+      },
+      "creationDate" : 1424606814.379912,
+      "sensorTimeStamp" : 43786,
+      "rawAccelerometer" : {
+        "z" : -1975,
+        "x" : 144,
+        "y" : 7931
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -121,
+        "x" : 141,
+        "y" : -50
+      },
+      "creationDate" : 1424606814.381209,
+      "sensorTimeStamp" : 43796,
+      "rawAccelerometer" : {
+        "z" : -1992,
+        "x" : 134,
+        "y" : 7924
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -133,
+        "x" : 138,
+        "y" : -56
+      },
+      "creationDate" : 1424606814.40937,
+      "sensorTimeStamp" : 43806,
+      "rawAccelerometer" : {
+        "z" : -2005,
+        "x" : 130,
+        "y" : 7918
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -138,
+        "x" : 135,
+        "y" : -58
+      },
+      "creationDate" : 1424606814.409894,
+      "sensorTimeStamp" : 43814,
+      "rawAccelerometer" : {
+        "z" : -2011,
+        "x" : 127,
+        "y" : 7915
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -140,
+        "x" : 129,
+        "y" : -58
+      },
+      "creationDate" : 1424606814.410934,
+      "sensorTimeStamp" : 43827,
+      "rawAccelerometer" : {
+        "z" : -2014,
+        "x" : 121,
+        "y" : 7915
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -133,
+        "x" : 131,
+        "y" : -54
+      },
+      "creationDate" : 1424606814.439282,
+      "sensorTimeStamp" : 43835,
+      "rawAccelerometer" : {
+        "z" : -2008,
+        "x" : 123,
+        "y" : 7920
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -124,
+        "x" : 128,
+        "y" : -43
+      },
+      "creationDate" : 1424606814.440019,
+      "sensorTimeStamp" : 43845,
+      "rawAccelerometer" : {
+        "z" : -1998,
+        "x" : 119,
+        "y" : 7930
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -119,
+        "x" : 120,
+        "y" : -37
+      },
+      "creationDate" : 1424606814.441005,
+      "sensorTimeStamp" : 43855,
+      "rawAccelerometer" : {
+        "z" : -1993,
+        "x" : 111,
+        "y" : 7936
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -102,
+        "x" : 111,
+        "y" : -41
+      },
+      "creationDate" : 1424606814.529349,
+      "sensorTimeStamp" : 43866,
+      "rawAccelerometer" : {
+        "z" : -1975,
+        "x" : 102,
+        "y" : 7932
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -92,
+        "x" : 112,
+        "y" : -40
+      },
+      "creationDate" : 1424606814.529923,
+      "sensorTimeStamp" : 43876,
+      "rawAccelerometer" : {
+        "z" : -1964,
+        "x" : 102,
+        "y" : 7934
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -77,
+        "x" : 112,
+        "y" : -35
+      },
+      "creationDate" : 1424606814.530502,
+      "sensorTimeStamp" : 43886,
+      "rawAccelerometer" : {
+        "z" : -1947,
+        "x" : 102,
+        "y" : 7939
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -71,
+        "x" : 109,
+        "y" : -29
+      },
+      "creationDate" : 1424606814.531576,
+      "sensorTimeStamp" : 43894,
+      "rawAccelerometer" : {
+        "z" : -1940,
+        "x" : 98,
+        "y" : 7945
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -76,
+        "x" : 92,
+        "y" : -20
+      },
+      "creationDate" : 1424606814.559386,
+      "sensorTimeStamp" : 43907,
+      "rawAccelerometer" : {
+        "z" : -1944,
+        "x" : 79,
+        "y" : 7954
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -92,
+        "x" : 82,
+        "y" : -15
+      },
+      "creationDate" : 1424606814.560109,
+      "sensorTimeStamp" : 43917,
+      "rawAccelerometer" : {
+        "z" : -1959,
+        "x" : 67,
+        "y" : 7960
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -111,
+        "x" : 80,
+        "y" : -4
+      },
+      "creationDate" : 1424606814.560749,
+      "sensorTimeStamp" : 43925,
+      "rawAccelerometer" : {
+        "z" : -1980,
+        "x" : 61,
+        "y" : 7970
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -102,
+        "x" : 108,
+        "y" : -2
+      },
+      "creationDate" : 1424606814.56156,
+      "sensorTimeStamp" : 43935,
+      "rawAccelerometer" : {
+        "z" : -1973,
+        "x" : 85,
+        "y" : 7972
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -59,
+        "x" : 209,
+        "y" : -35
+      },
+      "creationDate" : 1424606814.58932,
+      "sensorTimeStamp" : 43956,
+      "rawAccelerometer" : {
+        "z" : -1931,
+        "x" : 176,
+        "y" : 7939
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -53,
+        "x" : 237,
+        "y" : -32
+      },
+      "creationDate" : 1424606814.589907,
+      "sensorTimeStamp" : 43966,
+      "rawAccelerometer" : {
+        "z" : -1924,
+        "x" : 199,
+        "y" : 7942
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -41,
+        "x" : 244,
+        "y" : -38
+      },
+      "creationDate" : 1424606814.590629,
+      "sensorTimeStamp" : 43974,
+      "rawAccelerometer" : {
+        "z" : -1913,
+        "x" : 202,
+        "y" : 7935
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -29,
+        "x" : 226,
+        "y" : -44
+      },
+      "creationDate" : 1424606814.59167,
+      "sensorTimeStamp" : 43986,
+      "rawAccelerometer" : {
+        "z" : -1902,
+        "x" : 181,
+        "y" : 7930
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -18,
+        "x" : 178,
+        "y" : -25
+      },
+      "creationDate" : 1424606814.619883,
+      "sensorTimeStamp" : 43997,
+      "rawAccelerometer" : {
+        "z" : -1891,
+        "x" : 129,
+        "y" : 7948
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -36,
+        "x" : 125,
+        "y" : 6
+      },
+      "creationDate" : 1424606814.620513,
+      "sensorTimeStamp" : 44005,
+      "rawAccelerometer" : {
+        "z" : -1912,
+        "x" : 71,
+        "y" : 7980
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -58,
+        "x" : 97,
+        "y" : 7
+      },
+      "creationDate" : 1424606814.620802,
+      "sensorTimeStamp" : 44015,
+      "rawAccelerometer" : {
+        "z" : -1933,
+        "x" : 37,
+        "y" : 7981
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -71,
+        "x" : 115,
+        "y" : -11
+      },
+      "creationDate" : 1424606814.621564,
+      "sensorTimeStamp" : 44025,
+      "rawAccelerometer" : {
+        "z" : -1947,
+        "x" : 49,
+        "y" : 7961
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -55,
+        "x" : 149,
+        "y" : -6
+      },
+      "creationDate" : 1424606814.649284,
+      "sensorTimeStamp" : 44036,
+      "rawAccelerometer" : {
+        "z" : -1927,
+        "x" : 76,
+        "y" : 7967
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -32,
+        "x" : 168,
+        "y" : 8
+      },
+      "creationDate" : 1424606814.650099,
+      "sensorTimeStamp" : 44046,
+      "rawAccelerometer" : {
+        "z" : -1898,
+        "x" : 87,
+        "y" : 7984
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -4,
+        "x" : 159,
+        "y" : 16
+      },
+      "creationDate" : 1424606814.650836,
+      "sensorTimeStamp" : 44056,
+      "rawAccelerometer" : {
+        "z" : -1864,
+        "x" : 70,
+        "y" : 7993
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 19,
+        "x" : 125,
+        "y" : 12
+      },
+      "creationDate" : 1424606814.65162,
+      "sensorTimeStamp" : 44066,
+      "rawAccelerometer" : {
+        "z" : -1830,
+        "x" : 27,
+        "y" : 7991
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 35,
+        "x" : 81,
+        "y" : 19
+      },
+      "creationDate" : 1424606814.679253,
+      "sensorTimeStamp" : 44077,
+      "rawAccelerometer" : {
+        "z" : -1803,
+        "x" : -26,
+        "y" : 8001
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 43,
+        "x" : 47,
+        "y" : 38
+      },
+      "creationDate" : 1424606814.679845,
+      "sensorTimeStamp" : 44085,
+      "rawAccelerometer" : {
+        "z" : -1783,
+        "x" : -70,
+        "y" : 8022
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 25,
+        "x" : 57,
+        "y" : 34
+      },
+      "creationDate" : 1424606814.681112,
+      "sensorTimeStamp" : 44095,
+      "rawAccelerometer" : {
+        "z" : -1788,
+        "x" : -70,
+        "y" : 8021
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9,
+        "x" : 90,
+        "y" : 12
+      },
+      "creationDate" : 1424606814.709297,
+      "sensorTimeStamp" : 44105,
+      "rawAccelerometer" : {
+        "z" : -1808,
+        "x" : -45,
+        "y" : 8003
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -57,
+        "x" : 108,
+        "y" : -11
+      },
+      "creationDate" : 1424606814.709787,
+      "sensorTimeStamp" : 44115,
+      "rawAccelerometer" : {
+        "z" : -1841,
+        "x" : -34,
+        "y" : 7982
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -104,
+        "x" : 94,
+        "y" : -25
+      },
+      "creationDate" : 1424606814.711129,
+      "sensorTimeStamp" : 44126,
+      "rawAccelerometer" : {
+        "z" : -1875,
+        "x" : -53,
+        "y" : 7971
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -157,
+        "x" : 68,
+        "y" : -30
+      },
+      "creationDate" : 1424606814.739291,
+      "sensorTimeStamp" : 44136,
+      "rawAccelerometer" : {
+        "z" : -1913,
+        "x" : -87,
+        "y" : 7968
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -205,
+        "x" : 46,
+        "y" : -34
+      },
+      "creationDate" : 1424606814.739872,
+      "sensorTimeStamp" : 44146,
+      "rawAccelerometer" : {
+        "z" : -1946,
+        "x" : -116,
+        "y" : 7968
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -235,
+        "x" : 30,
+        "y" : -37
+      },
+      "creationDate" : 1424606814.741078,
+      "sensorTimeStamp" : 44156,
+      "rawAccelerometer" : {
+        "z" : -1961,
+        "x" : -142,
+        "y" : 7968
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -259,
+        "x" : 32,
+        "y" : -42
+      },
+      "creationDate" : 1424606814.769275,
+      "sensorTimeStamp" : 44165,
+      "rawAccelerometer" : {
+        "z" : -1968,
+        "x" : -150,
+        "y" : 7966
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -268,
+        "x" : 44,
+        "y" : -55
+      },
+      "creationDate" : 1424606814.76976,
+      "sensorTimeStamp" : 44175,
+      "rawAccelerometer" : {
+        "z" : -1959,
+        "x" : -147,
+        "y" : 7957
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -285,
+        "x" : 67,
+        "y" : -69
+      },
+      "creationDate" : 1424606814.771177,
+      "sensorTimeStamp" : 44185,
+      "rawAccelerometer" : {
+        "z" : -1959,
+        "x" : -133,
+        "y" : 7946
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -303,
+        "x" : 92,
+        "y" : -86
+      },
+      "creationDate" : 1424606814.799254,
+      "sensorTimeStamp" : 44195,
+      "rawAccelerometer" : {
+        "z" : -1960,
+        "x" : -116,
+        "y" : 7932
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -315,
+        "x" : 114,
+        "y" : -94
+      },
+      "creationDate" : 1424606814.799869,
+      "sensorTimeStamp" : 44206,
+      "rawAccelerometer" : {
+        "z" : -1955,
+        "x" : -100,
+        "y" : 7928
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -309,
+        "x" : 121,
+        "y" : -88
+      },
+      "creationDate" : 1424606814.801163,
+      "sensorTimeStamp" : 44216,
+      "rawAccelerometer" : {
+        "z" : -1931,
+        "x" : -101,
+        "y" : 7937
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -299,
+        "x" : 132,
+        "y" : -78
+      },
+      "creationDate" : 1424606814.829302,
+      "sensorTimeStamp" : 44226,
+      "rawAccelerometer" : {
+        "z" : -1904,
+        "x" : -97,
+        "y" : 7951
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -291,
+        "x" : 154,
+        "y" : -80
+      },
+      "creationDate" : 1424606814.829914,
+      "sensorTimeStamp" : 44236,
+      "rawAccelerometer" : {
+        "z" : -1878,
+        "x" : -83,
+        "y" : 7952
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -283,
+        "x" : 185,
+        "y" : -95
+      },
+      "creationDate" : 1424606814.83117,
+      "sensorTimeStamp" : 44244,
+      "rawAccelerometer" : {
+        "z" : -1853,
+        "x" : -58,
+        "y" : 7940
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -274,
+        "x" : 240,
+        "y" : -115
+      },
+      "creationDate" : 1424606814.859677,
+      "sensorTimeStamp" : 44255,
+      "rawAccelerometer" : {
+        "z" : -1829,
+        "x" : -9,
+        "y" : 7923
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -255,
+        "x" : 313,
+        "y" : -121
+      },
+      "creationDate" : 1424606814.860707,
+      "sensorTimeStamp" : 44265,
+      "rawAccelerometer" : {
+        "z" : -1795,
+        "x" : 59,
+        "y" : 7920
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -202,
+        "x" : 393,
+        "y" : -104
+      },
+      "creationDate" : 1424606814.861574,
+      "sensorTimeStamp" : 44275,
+      "rawAccelerometer" : {
+        "z" : -1727,
+        "x" : 137,
+        "y" : 7939
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -137,
+        "x" : 438,
+        "y" : -82
+      },
+      "creationDate" : 1424606814.889304,
+      "sensorTimeStamp" : 44285,
+      "rawAccelerometer" : {
+        "z" : -1645,
+        "x" : 180,
+        "y" : 7965
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -77,
+        "x" : 429,
+        "y" : -61
+      },
+      "creationDate" : 1424606814.88985,
+      "sensorTimeStamp" : 44296,
+      "rawAccelerometer" : {
+        "z" : -1568,
+        "x" : 169,
+        "y" : 7989
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -23,
+        "x" : 388,
+        "y" : -48
+      },
+      "creationDate" : 1424606814.891174,
+      "sensorTimeStamp" : 44306,
+      "rawAccelerometer" : {
+        "z" : -1495,
+        "x" : 125,
+        "y" : 8005
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 10,
+        "x" : 326,
+        "y" : -39
+      },
+      "creationDate" : 1424606814.919456,
+      "sensorTimeStamp" : 44316,
+      "rawAccelerometer" : {
+        "z" : -1441,
+        "x" : 57,
+        "y" : 8017
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 28,
+        "x" : 258,
+        "y" : -39
+      },
+      "creationDate" : 1424606814.920286,
+      "sensorTimeStamp" : 44324,
+      "rawAccelerometer" : {
+        "z" : -1403,
+        "x" : -18,
+        "y" : 8021
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 33,
+        "x" : 197,
+        "y" : -26
+      },
+      "creationDate" : 1424606814.921062,
+      "sensorTimeStamp" : 44335,
+      "rawAccelerometer" : {
+        "z" : -1379,
+        "x" : -87,
+        "y" : 8036
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 32,
+        "x" : 159,
+        "y" : -28
+      },
+      "creationDate" : 1424606814.949237,
+      "sensorTimeStamp" : 44347,
+      "rawAccelerometer" : {
+        "z" : -1361,
+        "x" : -134,
+        "y" : 8038
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 29,
+        "x" : 147,
+        "y" : -42
+      },
+      "creationDate" : 1424606814.949739,
+      "sensorTimeStamp" : 44355,
+      "rawAccelerometer" : {
+        "z" : -1342,
+        "x" : -157,
+        "y" : 8028
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 63,
+        "x" : 183,
+        "y" : -34
+      },
+      "creationDate" : 1424606814.951199,
+      "sensorTimeStamp" : 44365,
+      "rawAccelerometer" : {
+        "z" : -1286,
+        "x" : -129,
+        "y" : 8039
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 130,
+        "x" : 253,
+        "y" : -9
+      },
+      "creationDate" : 1424606814.979243,
+      "sensorTimeStamp" : 44376,
+      "rawAccelerometer" : {
+        "z" : -1190,
+        "x" : -64,
+        "y" : 8068
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 202,
+        "x" : 323,
+        "y" : 8
+      },
+      "creationDate" : 1424606814.979726,
+      "sensorTimeStamp" : 44386,
+      "rawAccelerometer" : {
+        "z" : -1086,
+        "x" : 2,
+        "y" : 8091
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 244,
+        "x" : 360,
+        "y" : 2
+      },
+      "creationDate" : 1424606814.981157,
+      "sensorTimeStamp" : 44396,
+      "rawAccelerometer" : {
+        "z" : -1007,
+        "x" : 35,
+        "y" : 8091
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 266,
+        "x" : 365,
+        "y" : -3
+      },
+      "creationDate" : 1424606815.009421,
+      "sensorTimeStamp" : 44404,
+      "rawAccelerometer" : {
+        "z" : -948,
+        "x" : 34,
+        "y" : 8091
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 289,
+        "x" : 314,
+        "y" : 2
+      },
+      "creationDate" : 1424606815.010721,
+      "sensorTimeStamp" : 44414,
+      "rawAccelerometer" : {
+        "z" : -887,
+        "x" : -27,
+        "y" : 8101
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 307,
+        "x" : 234,
+        "y" : 19
+      },
+      "creationDate" : 1424606815.010984,
+      "sensorTimeStamp" : 44427,
+      "rawAccelerometer" : {
+        "z" : -831,
+        "x" : -120,
+        "y" : 8123
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 286,
+        "x" : 163,
+        "y" : 21
+      },
+      "creationDate" : 1424606815.039312,
+      "sensorTimeStamp" : 44435,
+      "rawAccelerometer" : {
+        "z" : -814,
+        "x" : -206,
+        "y" : 8130
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 242,
+        "x" : 165,
+        "y" : -13
+      },
+      "creationDate" : 1424606815.039906,
+      "sensorTimeStamp" : 44445,
+      "rawAccelerometer" : {
+        "z" : -823,
+        "x" : -219,
+        "y" : 8099
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 206,
+        "x" : 261,
+        "y" : -44
+      },
+      "creationDate" : 1424606815.041026,
+      "sensorTimeStamp" : 44455,
+      "rawAccelerometer" : {
+        "z" : -824,
+        "x" : -135,
+        "y" : 8071
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 179,
+        "x" : 387,
+        "y" : -51
+      },
+      "creationDate" : 1424606815.06934,
+      "sensorTimeStamp" : 44466,
+      "rawAccelerometer" : {
+        "z" : -817,
+        "x" : -16,
+        "y" : 8069
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 141,
+        "x" : 474,
+        "y" : -55
+      },
+      "creationDate" : 1424606815.069988,
+      "sensorTimeStamp" : 44476,
+      "rawAccelerometer" : {
+        "z" : -821,
+        "x" : 63,
+        "y" : 8069
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 97,
+        "x" : 509,
+        "y" : -66
+      },
+      "creationDate" : 1424606815.071078,
+      "sensorTimeStamp" : 44484,
+      "rawAccelerometer" : {
+        "z" : -836,
+        "x" : 90,
+        "y" : 8061
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 96,
+        "x" : 539,
+        "y" : -50
+      },
+      "creationDate" : 1424606815.099262,
+      "sensorTimeStamp" : 44494,
+      "rawAccelerometer" : {
+        "z" : -810,
+        "x" : 110,
+        "y" : 8079
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 140,
+        "x" : 543,
+        "y" : -25
+      },
+      "creationDate" : 1424606815.099873,
+      "sensorTimeStamp" : 44507,
+      "rawAccelerometer" : {
+        "z" : -738,
+        "x" : 105,
+        "y" : 8107
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 186,
+        "x" : 491,
+        "y" : -19
+      },
+      "creationDate" : 1424606815.101206,
+      "sensorTimeStamp" : 44515,
+      "rawAccelerometer" : {
+        "z" : -662,
+        "x" : 43,
+        "y" : 8115
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 186,
+        "x" : 383,
+        "y" : -35
+      },
+      "creationDate" : 1424606815.129321,
+      "sensorTimeStamp" : 44525,
+      "rawAccelerometer" : {
+        "z" : -634,
+        "x" : -78,
+        "y" : 8102
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 151,
+        "x" : 203,
+        "y" : -36
+      },
+      "creationDate" : 1424606815.12984,
+      "sensorTimeStamp" : 44535,
+      "rawAccelerometer" : {
+        "z" : -644,
+        "x" : -274,
+        "y" : 8101
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 97,
+        "x" : -32,
+        "y" : -34
+      },
+      "creationDate" : 1424606815.131194,
+      "sensorTimeStamp" : 44546,
+      "rawAccelerometer" : {
+        "z" : -680,
+        "x" : -534,
+        "y" : 8104
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 37,
+        "x" : -269,
+        "y" : -40
+      },
+      "creationDate" : 1424606815.159227,
+      "sensorTimeStamp" : 44556,
+      "rawAccelerometer" : {
+        "z" : -724,
+        "x" : -803,
+        "y" : 8098
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -16,
+        "x" : -416,
+        "y" : -23
+      },
+      "creationDate" : 1424606815.159813,
+      "sensorTimeStamp" : 44566,
+      "rawAccelerometer" : {
+        "z" : -761,
+        "x" : -987,
+        "y" : 8114
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -47,
+        "x" : -410,
+        "y" : 13
+      },
+      "creationDate" : 1424606815.16113,
+      "sensorTimeStamp" : 44574,
+      "rawAccelerometer" : {
+        "z" : -771,
+        "x" : -1016,
+        "y" : 8150
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -88,
+        "x" : -289,
+        "y" : 39
+      },
+      "creationDate" : 1424606815.189278,
+      "sensorTimeStamp" : 44587,
+      "rawAccelerometer" : {
+        "z" : -785,
+        "x" : -920,
+        "y" : 8176
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -117,
+        "x" : -150,
+        "y" : 29
+      },
+      "creationDate" : 1424606815.189952,
+      "sensorTimeStamp" : 44595,
+      "rawAccelerometer" : {
+        "z" : -787,
+        "x" : -799,
+        "y" : 8168
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -115,
+        "x" : -88,
+        "y" : 3
+      },
+      "creationDate" : 1424606815.191184,
+      "sensorTimeStamp" : 44605,
+      "rawAccelerometer" : {
+        "z" : -757,
+        "x" : -751,
+        "y" : 8143
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -119,
+        "x" : -125,
+        "y" : -22
+      },
+      "creationDate" : 1424606815.219645,
+      "sensorTimeStamp" : 44615,
+      "rawAccelerometer" : {
+        "z" : -734,
+        "x" : -802,
+        "y" : 8117
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -158,
+        "x" : -210,
+        "y" : -38
+      },
+      "creationDate" : 1424606815.219969,
+      "sensorTimeStamp" : 44625,
+      "rawAccelerometer" : {
+        "z" : -748,
+        "x" : -904,
+        "y" : 8102
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -263,
+        "x" : -288,
+        "y" : -34
+      },
+      "creationDate" : 1424606815.221021,
+      "sensorTimeStamp" : 44636,
+      "rawAccelerometer" : {
+        "z" : -833,
+        "x" : -1001,
+        "y" : 8105
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -381,
+        "x" : -348,
+        "y" : -45
+      },
+      "creationDate" : 1424606815.249277,
+      "sensorTimeStamp" : 44646,
+      "rawAccelerometer" : {
+        "z" : -938,
+        "x" : -1082,
+        "y" : 8094
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -450,
+        "x" : -419,
+        "y" : -46
+      },
+      "creationDate" : 1424606815.249773,
+      "sensorTimeStamp" : 44654,
+      "rawAccelerometer" : {
+        "z" : -997,
+        "x" : -1176,
+        "y" : 8091
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -469,
+        "x" : -495,
+        "y" : -21
+      },
+      "creationDate" : 1424606815.251192,
+      "sensorTimeStamp" : 44666,
+      "rawAccelerometer" : {
+        "z" : -1004,
+        "x" : -1280,
+        "y" : 8114
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -436,
+        "x" : -531,
+        "y" : 6
+      },
+      "creationDate" : 1424606815.279294,
+      "sensorTimeStamp" : 44675,
+      "rawAccelerometer" : {
+        "z" : -954,
+        "x" : -1344,
+        "y" : 8140
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -350,
+        "x" : -533,
+        "y" : 25
+      },
+      "creationDate" : 1424606815.27981,
+      "sensorTimeStamp" : 44685,
+      "rawAccelerometer" : {
+        "z" : -844,
+        "x" : -1373,
+        "y" : 8158
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -249,
+        "x" : -493,
+        "y" : 17
+      },
+      "creationDate" : 1424606815.281118,
+      "sensorTimeStamp" : 44695,
+      "rawAccelerometer" : {
+        "z" : -715,
+        "x" : -1358,
+        "y" : 8149
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -178,
+        "x" : -440,
+        "y" : 3
+      },
+      "creationDate" : 1424606815.309282,
+      "sensorTimeStamp" : 44705,
+      "rawAccelerometer" : {
+        "z" : -616,
+        "x" : -1329,
+        "y" : 8135
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -162,
+        "x" : -352,
+        "y" : 0
+      },
+      "creationDate" : 1424606815.310018,
+      "sensorTimeStamp" : 44716,
+      "rawAccelerometer" : {
+        "z" : -574,
+        "x" : -1261,
+        "y" : 8130
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -209,
+        "x" : -221,
+        "y" : 3
+      },
+      "creationDate" : 1424606815.311033,
+      "sensorTimeStamp" : 44726,
+      "rawAccelerometer" : {
+        "z" : -596,
+        "x" : -1150,
+        "y" : 8132
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -283,
+        "x" : -44,
+        "y" : -10
+      },
+      "creationDate" : 1424606815.339334,
+      "sensorTimeStamp" : 44736,
+      "rawAccelerometer" : {
+        "z" : -650,
+        "x" : -991,
+        "y" : 8117
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -331,
+        "x" : 180,
+        "y" : -43
+      },
+      "creationDate" : 1424606815.339906,
+      "sensorTimeStamp" : 44746,
+      "rawAccelerometer" : {
+        "z" : -679,
+        "x" : -779,
+        "y" : 8084
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -344,
+        "x" : 434,
+        "y" : -44
+      },
+      "creationDate" : 1424606815.341064,
+      "sensorTimeStamp" : 44754,
+      "rawAccelerometer" : {
+        "z" : -673,
+        "x" : -532,
+        "y" : 8083
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -324,
+        "x" : 690,
+        "y" : -35
+      },
+      "creationDate" : 1424606815.369327,
+      "sensorTimeStamp" : 44765,
+      "rawAccelerometer" : {
+        "z" : -628,
+        "x" : -278,
+        "y" : 8092
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -301,
+        "x" : 892,
+        "y" : -39
+      },
+      "creationDate" : 1424606815.369799,
+      "sensorTimeStamp" : 44775,
+      "rawAccelerometer" : {
+        "z" : -579,
+        "x" : -76,
+        "y" : 8089
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -279,
+        "x" : 978,
+        "y" : -70
+      },
+      "creationDate" : 1424606815.371234,
+      "sensorTimeStamp" : 44785,
+      "rawAccelerometer" : {
+        "z" : -532,
+        "x" : 9,
+        "y" : 8059
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -266,
+        "x" : 934,
+        "y" : -97
+      },
+      "creationDate" : 1424606815.399266,
+      "sensorTimeStamp" : 44795,
+      "rawAccelerometer" : {
+        "z" : -495,
+        "x" : -42,
+        "y" : 8032
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -276,
+        "x" : 780,
+        "y" : -64
+      },
+      "creationDate" : 1424606815.399747,
+      "sensorTimeStamp" : 44806,
+      "rawAccelerometer" : {
+        "z" : -482,
+        "x" : -211,
+        "y" : 8063
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -312,
+        "x" : 574,
+        "y" : -15
+      },
+      "creationDate" : 1424606815.401223,
+      "sensorTimeStamp" : 44816,
+      "rawAccelerometer" : {
+        "z" : -499,
+        "x" : -436,
+        "y" : 8111
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -364,
+        "x" : 402,
+        "y" : 13
+      },
+      "creationDate" : 1424606815.429424,
+      "sensorTimeStamp" : 44826,
+      "rawAccelerometer" : {
+        "z" : -535,
+        "x" : -628,
+        "y" : 8137
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -423,
+        "x" : 281,
+        "y" : 5
+      },
+      "creationDate" : 1424606815.429997,
+      "sensorTimeStamp" : 44834,
+      "rawAccelerometer" : {
+        "z" : -580,
+        "x" : -768,
+        "y" : 8127
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -446,
+        "x" : 214,
+        "y" : -9
+      },
+      "creationDate" : 1424606815.431152,
+      "sensorTimeStamp" : 44845,
+      "rawAccelerometer" : {
+        "z" : -587,
+        "x" : -850,
+        "y" : 8110
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -433,
+        "x" : 146,
+        "y" : -13
+      },
+      "creationDate" : 1424606815.459322,
+      "sensorTimeStamp" : 44855,
+      "rawAccelerometer" : {
+        "z" : -555,
+        "x" : -933,
+        "y" : 8105
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -391,
+        "x" : 18,
+        "y" : 19
+      },
+      "creationDate" : 1424606815.459937,
+      "sensorTimeStamp" : 44865,
+      "rawAccelerometer" : {
+        "z" : -489,
+        "x" : -1079,
+        "y" : 8136
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -324,
+        "x" : -175,
+        "y" : 59
+      },
+      "creationDate" : 1424606815.461198,
+      "sensorTimeStamp" : 44875,
+      "rawAccelerometer" : {
+        "z" : -396,
+        "x" : -1297,
+        "y" : 8173
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -255,
+        "x" : -355,
+        "y" : 76
+      },
+      "creationDate" : 1424606815.489278,
+      "sensorTimeStamp" : 44886,
+      "rawAccelerometer" : {
+        "z" : -298,
+        "x" : -1505,
+        "y" : 8187
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -203,
+        "x" : -411,
+        "y" : 72
+      },
+      "creationDate" : 1424606815.489772,
+      "sensorTimeStamp" : 44896,
+      "rawAccelerometer" : {
+        "z" : -216,
+        "x" : -1588,
+        "y" : 8179
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -142,
+        "x" : -366,
+        "y" : 64
+      },
+      "creationDate" : 1424606815.491103,
+      "sensorTimeStamp" : 44906,
+      "rawAccelerometer" : {
+        "z" : -124,
+        "x" : -1564,
+        "y" : 8168
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -68,
+        "x" : -285,
+        "y" : 48
+      },
+      "creationDate" : 1424606815.519341,
+      "sensorTimeStamp" : 44914,
+      "rawAccelerometer" : {
+        "z" : -16,
+        "x" : -1501,
+        "y" : 8149
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 22,
+        "x" : -201,
+        "y" : 5
+      },
+      "creationDate" : 1424606815.519838,
+      "sensorTimeStamp" : 44924,
+      "rawAccelerometer" : {
+        "z" : 112,
+        "x" : -1433,
+        "y" : 8103
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 156,
+        "x" : -91,
+        "y" : -63
+      },
+      "creationDate" : 1424606815.52103,
+      "sensorTimeStamp" : 44935,
+      "rawAccelerometer" : {
+        "z" : 286,
+        "x" : -1339,
+        "y" : 8031
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 374,
+        "x" : 45,
+        "y" : -133
+      },
+      "creationDate" : 1424606815.549339,
+      "sensorTimeStamp" : 44945,
+      "rawAccelerometer" : {
+        "z" : 552,
+        "x" : -1216,
+        "y" : 7958
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 621,
+        "x" : 201,
+        "y" : -199
+      },
+      "creationDate" : 1424606815.549871,
+      "sensorTimeStamp" : 44955,
+      "rawAccelerometer" : {
+        "z" : 857,
+        "x" : -1068,
+        "y" : 7889
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 797,
+        "x" : 278,
+        "y" : -227
+      },
+      "creationDate" : 1424606815.551211,
+      "sensorTimeStamp" : 44965,
+      "rawAccelerometer" : {
+        "z" : 1094,
+        "x" : -998,
+        "y" : 7858
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 856,
+        "x" : 165,
+        "y" : -213
+      },
+      "creationDate" : 1424606815.579286,
+      "sensorTimeStamp" : 44976,
+      "rawAccelerometer" : {
+        "z" : 1211,
+        "x" : -1126,
+        "y" : 7867
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 825,
+        "x" : -53,
+        "y" : -217
+      },
+      "creationDate" : 1424606815.579888,
+      "sensorTimeStamp" : 44986,
+      "rawAccelerometer" : {
+        "z" : 1230,
+        "x" : -1375,
+        "y" : 7856
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 864,
+        "x" : -211,
+        "y" : -198
+      },
+      "creationDate" : 1424606815.581103,
+      "sensorTimeStamp" : 44994,
+      "rawAccelerometer" : {
+        "z" : 1314,
+        "x" : -1570,
+        "y" : 7867
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1061,
+        "x" : -233,
+        "y" : -235
+      },
+      "creationDate" : 1424606815.609355,
+      "sensorTimeStamp" : 45004,
+      "rawAccelerometer" : {
+        "z" : 1564,
+        "x" : -1628,
+        "y" : 7820
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1412,
+        "x" : -177,
+        "y" : -344
+      },
+      "creationDate" : 1424606815.610071,
+      "sensorTimeStamp" : 45015,
+      "rawAccelerometer" : {
+        "z" : 1983,
+        "x" : -1608,
+        "y" : 7701
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1797,
+        "x" : -98,
+        "y" : -448
+      },
+      "creationDate" : 1424606815.610899,
+      "sensorTimeStamp" : 45025,
+      "rawAccelerometer" : {
+        "z" : 2453,
+        "x" : -1561,
+        "y" : 7584
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2171,
+        "x" : 18,
+        "y" : -555
+      },
+      "creationDate" : 1424606815.639334,
+      "sensorTimeStamp" : 45035,
+      "rawAccelerometer" : {
+        "z" : 2925,
+        "x" : -1474,
+        "y" : 7463
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2548,
+        "x" : 286,
+        "y" : -650
+      },
+      "creationDate" : 1424606815.639878,
+      "sensorTimeStamp" : 45045,
+      "rawAccelerometer" : {
+        "z" : 3415,
+        "x" : -1227,
+        "y" : 7353
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2833,
+        "x" : 765,
+        "y" : -733
+      },
+      "creationDate" : 1424606815.641124,
+      "sensorTimeStamp" : 45056,
+      "rawAccelerometer" : {
+        "z" : 3826,
+        "x" : -758,
+        "y" : 7253
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2807,
+        "x" : 1345,
+        "y" : -783
+      },
+      "creationDate" : 1424606815.669268,
+      "sensorTimeStamp" : 45066,
+      "rawAccelerometer" : {
+        "z" : 3922,
+        "x" : -175,
+        "y" : 7188
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2440,
+        "x" : 1940,
+        "y" : -802
+      },
+      "creationDate" : 1424606815.669835,
+      "sensorTimeStamp" : 45076,
+      "rawAccelerometer" : {
+        "z" : 3650,
+        "x" : 430,
+        "y" : 7157
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1943,
+        "x" : 2522,
+        "y" : -841
+      },
+      "creationDate" : 1424606815.671207,
+      "sensorTimeStamp" : 45084,
+      "rawAccelerometer" : {
+        "z" : 3220,
+        "x" : 1026,
+        "y" : 7110
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1554,
+        "x" : 2941,
+        "y" : -900
+      },
+      "creationDate" : 1424606815.699271,
+      "sensorTimeStamp" : 45094,
+      "rawAccelerometer" : {
+        "z" : 2891,
+        "x" : 1456,
+        "y" : 7043
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1464,
+        "x" : 3035,
+        "y" : -919
+      },
+      "creationDate" : 1424606815.699946,
+      "sensorTimeStamp" : 45105,
+      "rawAccelerometer" : {
+        "z" : 2863,
+        "x" : 1550,
+        "y" : 7013
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1673,
+        "x" : 2775,
+        "y" : -800
+      },
+      "creationDate" : 1424606815.701218,
+      "sensorTimeStamp" : 45115,
+      "rawAccelerometer" : {
+        "z" : 3145,
+        "x" : 1274,
+        "y" : 7116
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1885,
+        "x" : 2326,
+        "y" : -581
+      },
+      "creationDate" : 1424606815.729326,
+      "sensorTimeStamp" : 45125,
+      "rawAccelerometer" : {
+        "z" : 3436,
+        "x" : 797,
+        "y" : 7315
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1684,
+        "x" : 1919,
+        "y" : -377
+      },
+      "creationDate" : 1424606815.7299,
+      "sensorTimeStamp" : 45135,
+      "rawAccelerometer" : {
+        "z" : 3299,
+        "x" : 363,
+        "y" : 7500
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1072,
+        "x" : 1884,
+        "y" : -276
+      },
+      "creationDate" : 1424606815.731224,
+      "sensorTimeStamp" : 45146,
+      "rawAccelerometer" : {
+        "z" : 2719,
+        "x" : 313,
+        "y" : 7592
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 340,
+        "x" : 2131,
+        "y" : -202
+      },
+      "creationDate" : 1424606815.759334,
+      "sensorTimeStamp" : 45156,
+      "rawAccelerometer" : {
+        "z" : 1991,
+        "x" : 560,
+        "y" : 7665
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -388,
+        "x" : 2426,
+        "y" : -78
+      },
+      "creationDate" : 1424606815.759947,
+      "sensorTimeStamp" : 45164,
+      "rawAccelerometer" : {
+        "z" : 1255,
+        "x" : 858,
+        "y" : 7792
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1035,
+        "x" : 2502,
+        "y" : -30
+      },
+      "creationDate" : 1424606815.761217,
+      "sensorTimeStamp" : 45174,
+      "rawAccelerometer" : {
+        "z" : 594,
+        "x" : 942,
+        "y" : 7844
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1556,
+        "x" : 2365,
+        "y" : -153
+      },
+      "creationDate" : 1424606815.789673,
+      "sensorTimeStamp" : 45187,
+      "rawAccelerometer" : {
+        "z" : 45,
+        "x" : 813,
+        "y" : 7728
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1782,
+        "x" : 1992,
+        "y" : -136
+      },
+      "creationDate" : 1424606815.790008,
+      "sensorTimeStamp" : 45195,
+      "rawAccelerometer" : {
+        "z" : -223,
+        "x" : 443,
+        "y" : 7754
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1937,
+        "x" : 1520,
+        "y" : 80
+      },
+      "creationDate" : 1424606815.791148,
+      "sensorTimeStamp" : 45205,
+      "rawAccelerometer" : {
+        "z" : -430,
+        "x" : -33,
+        "y" : 7980
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2404,
+        "x" : 1344,
+        "y" : 190
+      },
+      "creationDate" : 1424606815.819171,
+      "sensorTimeStamp" : 45215,
+      "rawAccelerometer" : {
+        "z" : -957,
+        "x" : -205,
+        "y" : 8103
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2850,
+        "x" : 1596,
+        "y" : 113
+      },
+      "creationDate" : 1424606815.819919,
+      "sensorTimeStamp" : 45225,
+      "rawAccelerometer" : {
+        "z" : -1476,
+        "x" : 78,
+        "y" : 8044
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2982,
+        "x" : 1781,
+        "y" : 96
+      },
+      "creationDate" : 1424606815.821154,
+      "sensorTimeStamp" : 45236,
+      "rawAccelerometer" : {
+        "z" : -1691,
+        "x" : 313,
+        "y" : 8051
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2672,
+        "x" : 1413,
+        "y" : 556
+      },
+      "creationDate" : 1424606815.849325,
+      "sensorTimeStamp" : 45244,
+      "rawAccelerometer" : {
+        "z" : -1469,
+        "x" : -7,
+        "y" : 8534
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2148,
+        "x" : 460,
+        "y" : 1461
+      },
+      "creationDate" : 1424606815.850334,
+      "sensorTimeStamp" : 45254,
+      "rawAccelerometer" : {
+        "z" : -1029,
+        "x" : -930,
+        "y" : 9455
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1895,
+        "x" : -691,
+        "y" : 2162
+      },
+      "creationDate" : 1424606815.851352,
+      "sensorTimeStamp" : 45266,
+      "rawAccelerometer" : {
+        "z" : -861,
+        "x" : -2080,
+        "y" : 10168
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2003,
+        "x" : -1336,
+        "y" : 2207
+      },
+      "creationDate" : 1424606815.879362,
+      "sensorTimeStamp" : 45275,
+      "rawAccelerometer" : {
+        "z" : -1050,
+        "x" : -2729,
+        "y" : 10223
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2320,
+        "x" : -1403,
+        "y" : 1727
+      },
+      "creationDate" : 1424606815.879857,
+      "sensorTimeStamp" : 45285,
+      "rawAccelerometer" : {
+        "z" : -1465,
+        "x" : -2787,
+        "y" : 9755
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2836,
+        "x" : -1581,
+        "y" : 985
+      },
+      "creationDate" : 1424606815.90935,
+      "sensorTimeStamp" : 45295,
+      "rawAccelerometer" : {
+        "z" : -2126,
+        "x" : -2961,
+        "y" : 9029
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3346,
+        "x" : -2210,
+        "y" : 458
+      },
+      "creationDate" : 1424606815.910101,
+      "sensorTimeStamp" : 45305,
+      "rawAccelerometer" : {
+        "z" : -2834,
+        "x" : -3604,
+        "y" : 8514
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3677,
+        "x" : -3209,
+        "y" : 546
+      },
+      "creationDate" : 1424606815.910687,
+      "sensorTimeStamp" : 45316,
+      "rawAccelerometer" : {
+        "z" : -3406,
+        "x" : -4633,
+        "y" : 8608
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3726,
+        "x" : -4215,
+        "y" : 1352
+      },
+      "creationDate" : 1424606815.911551,
+      "sensorTimeStamp" : 45326,
+      "rawAccelerometer" : {
+        "z" : -3722,
+        "x" : -5670,
+        "y" : 9414
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3391,
+        "x" : -4892,
+        "y" : 2723
+      },
+      "creationDate" : 1424606815.939345,
+      "sensorTimeStamp" : 45334,
+      "rawAccelerometer" : {
+        "z" : -3655,
+        "x" : -6363,
+        "y" : 10777
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2709,
+        "x" : -5064,
+        "y" : 4219
+      },
+      "creationDate" : 1424606815.940005,
+      "sensorTimeStamp" : 45346,
+      "rawAccelerometer" : {
+        "z" : -3221,
+        "x" : -6522,
+        "y" : 12264
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1684,
+        "x" : -4696,
+        "y" : 5303
+      },
+      "creationDate" : 1424606815.941024,
+      "sensorTimeStamp" : 45355,
+      "rawAccelerometer" : {
+        "z" : -2408,
+        "x" : -6108,
+        "y" : 13340
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -268,
+        "x" : -3824,
+        "y" : 5982
+      },
+      "creationDate" : 1424606815.96931,
+      "sensorTimeStamp" : 45365,
+      "rawAccelerometer" : {
+        "z" : -1171,
+        "x" : -5166,
+        "y" : 14012
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1536,
+        "x" : -2733,
+        "y" : 6616
+      },
+      "creationDate" : 1424606815.969893,
+      "sensorTimeStamp" : 45375,
+      "rawAccelerometer" : {
+        "z" : 481,
+        "x" : -3987,
+        "y" : 14641
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3662,
+        "x" : -1835,
+        "y" : 7079
+      },
+      "creationDate" : 1424606815.971109,
+      "sensorTimeStamp" : 45385,
+      "rawAccelerometer" : {
+        "z" : 2487,
+        "x" : -2994,
+        "y" : 15103
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 6056,
+        "x" : -1106,
+        "y" : 7417
+      },
+      "creationDate" : 1424606815.999311,
+      "sensorTimeStamp" : 45395,
+      "rawAccelerometer" : {
+        "z" : 4814,
+        "x" : -2179,
+        "y" : 15442
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 8413,
+        "x" : -24,
+        "y" : 7657
+      },
+      "creationDate" : 1424606815.999792,
+      "sensorTimeStamp" : 45406,
+      "rawAccelerometer" : {
+        "z" : 7169,
+        "x" : -1021,
+        "y" : 15692
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 10337,
+        "x" : 1462,
+        "y" : 7652
+      },
+      "creationDate" : 1424606816.001144,
+      "sensorTimeStamp" : 45414,
+      "rawAccelerometer" : {
+        "z" : 9141,
+        "x" : 547,
+        "y" : 15704
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 11762,
+        "x" : 2529,
+        "y" : 6737
+      },
+      "creationDate" : 1424606816.029311,
+      "sensorTimeStamp" : 45426,
+      "rawAccelerometer" : {
+        "z" : 10633,
+        "x" : 1695,
+        "y" : 14807
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 12463,
+        "x" : 2728,
+        "y" : 5321
+      },
+      "creationDate" : 1424606816.029793,
+      "sensorTimeStamp" : 45434,
+      "rawAccelerometer" : {
+        "z" : 11420,
+        "x" : 1970,
+        "y" : 13410
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 12144,
+        "x" : 2224,
+        "y" : 3754
+      },
+      "creationDate" : 1424606816.031203,
+      "sensorTimeStamp" : 45445,
+      "rawAccelerometer" : {
+        "z" : 11209,
+        "x" : 1527,
+        "y" : 11862
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 10714,
+        "x" : 1368,
+        "y" : 1979
+      },
+      "creationDate" : 1424606816.059454,
+      "sensorTimeStamp" : 45455,
+      "rawAccelerometer" : {
+        "z" : 9884,
+        "x" : 711,
+        "y" : 10102
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 8574,
+        "x" : 84,
+        "y" : 259
+      },
+      "creationDate" : 1424606816.059996,
+      "sensorTimeStamp" : 45465,
+      "rawAccelerometer" : {
+        "z" : 7829,
+        "x" : -561,
+        "y" : 8391
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 6109,
+        "x" : -1515,
+        "y" : -1181
+      },
+      "creationDate" : 1424606816.061246,
+      "sensorTimeStamp" : 45475,
+      "rawAccelerometer" : {
+        "z" : 5442,
+        "x" : -2190,
+        "y" : 6955
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3784,
+        "x" : -2858,
+        "y" : -2311
+      },
+      "creationDate" : 1424606816.089349,
+      "sensorTimeStamp" : 45486,
+      "rawAccelerometer" : {
+        "z" : 3187,
+        "x" : -3607,
+        "y" : 5823
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1948,
+        "x" : -3197,
+        "y" : -2976
+      },
+      "creationDate" : 1424606816.090046,
+      "sensorTimeStamp" : 45494,
+      "rawAccelerometer" : {
+        "z" : 1420,
+        "x" : -4036,
+        "y" : 5154
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 502,
+        "x" : -2503,
+        "y" : -3402
+      },
+      "creationDate" : 1424606816.091142,
+      "sensorTimeStamp" : 45506,
+      "rawAccelerometer" : {
+        "z" : 56,
+        "x" : -3397,
+        "y" : 4727
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -673,
+        "x" : -1366,
+        "y" : -3692
+      },
+      "creationDate" : 1424606816.119787,
+      "sensorTimeStamp" : 45514,
+      "rawAccelerometer" : {
+        "z" : -1029,
+        "x" : -2267,
+        "y" : 4441
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1302,
+        "x" : -314,
+        "y" : -3748
+      },
+      "creationDate" : 1424606816.121099,
+      "sensorTimeStamp" : 45524,
+      "rawAccelerometer" : {
+        "z" : -1557,
+        "x" : -1191,
+        "y" : 4391
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1418,
+        "x" : 316,
+        "y" : -3789
+      },
+      "creationDate" : 1424606816.121362,
+      "sensorTimeStamp" : 45535,
+      "rawAccelerometer" : {
+        "z" : -1548,
+        "x" : -531,
+        "y" : 4356
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1417,
+        "x" : 597,
+        "y" : -4026
+      },
+      "creationDate" : 1424606816.149315,
+      "sensorTimeStamp" : 45545,
+      "rawAccelerometer" : {
+        "z" : -1395,
+        "x" : -232,
+        "y" : 4122
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1444,
+        "x" : 690,
+        "y" : -4535
+      },
+      "creationDate" : 1424606816.149911,
+      "sensorTimeStamp" : 45555,
+      "rawAccelerometer" : {
+        "z" : -1264,
+        "x" : -136,
+        "y" : 3612
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1378,
+        "x" : 906,
+        "y" : -5182
+      },
+      "creationDate" : 1424606816.151228,
+      "sensorTimeStamp" : 45565,
+      "rawAccelerometer" : {
+        "z" : -1051,
+        "x" : 81,
+        "y" : 2960
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1075,
+        "x" : 1249,
+        "y" : -5849
+      },
+      "creationDate" : 1424606816.179354,
+      "sensorTimeStamp" : 45574,
+      "rawAccelerometer" : {
+        "z" : -614,
+        "x" : 442,
+        "y" : 2289
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -423,
+        "x" : 1478,
+        "y" : -6459
+      },
+      "creationDate" : 1424606816.179922,
+      "sensorTimeStamp" : 45586,
+      "rawAccelerometer" : {
+        "z" : 174,
+        "x" : 708,
+        "y" : 1674
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 536,
+        "x" : 1327,
+        "y" : -6799
+      },
+      "creationDate" : 1424606816.181214,
+      "sensorTimeStamp" : 45596,
+      "rawAccelerometer" : {
+        "z" : 1306,
+        "x" : 600,
+        "y" : 1322
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1652,
+        "x" : 917,
+        "y" : -6910
+      },
+      "creationDate" : 1424606816.209382,
+      "sensorTimeStamp" : 45604,
+      "rawAccelerometer" : {
+        "z" : 2652,
+        "x" : 214,
+        "y" : 1189
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2716,
+        "x" : 748,
+        "y" : -7137
+      },
+      "creationDate" : 1424606816.210153,
+      "sensorTimeStamp" : 45615,
+      "rawAccelerometer" : {
+        "z" : 3993,
+        "x" : 28,
+        "y" : 921
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3314,
+        "x" : 1009,
+        "y" : -7485
+      },
+      "creationDate" : 1424606816.210969,
+      "sensorTimeStamp" : 45625,
+      "rawAccelerometer" : {
+        "z" : 4858,
+        "x" : 244,
+        "y" : 522
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3046,
+        "x" : 1431,
+        "y" : -7961
+      },
+      "creationDate" : 1424606816.239401,
+      "sensorTimeStamp" : 45635,
+      "rawAccelerometer" : {
+        "z" : 4778,
+        "x" : 610,
+        "y" : 2
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2665,
+        "x" : 1723,
+        "y" : -8364
+      },
+      "creationDate" : 1424606816.239923,
+      "sensorTimeStamp" : 45645,
+      "rawAccelerometer" : {
+        "z" : 4513,
+        "x" : 845,
+        "y" : -433
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2841,
+        "x" : 1456,
+        "y" : -8067
+      },
+      "creationDate" : 1424606816.240955,
+      "sensorTimeStamp" : 45654,
+      "rawAccelerometer" : {
+        "z" : 4819,
+        "x" : 507,
+        "y" : -176
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2242,
+        "x" : 466,
+        "y" : -7066
+      },
+      "creationDate" : 1424606816.269279,
+      "sensorTimeStamp" : 45666,
+      "rawAccelerometer" : {
+        "z" : 4347,
+        "x" : -586,
+        "y" : 779
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2126,
+        "x" : -1010,
+        "y" : -4270
+      },
+      "creationDate" : 1424606816.269805,
+      "sensorTimeStamp" : 45676,
+      "rawAccelerometer" : {
+        "z" : 9,
+        "x" : -2223,
+        "y" : 3544
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -6352,
+        "x" : -1166,
+        "y" : -867
+      },
+      "creationDate" : 1424606816.271137,
+      "sensorTimeStamp" : 45684,
+      "rawAccelerometer" : {
+        "z" : -4339,
+        "x" : -2563,
+        "y" : 6949
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9421,
+        "x" : 51,
+        "y" : 1615
+      },
+      "creationDate" : 1424606816.299383,
+      "sensorTimeStamp" : 45694,
+      "rawAccelerometer" : {
+        "z" : -7533,
+        "x" : -1411,
+        "y" : 9451
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -10014,
+        "x" : 961,
+        "y" : 3425
+      },
+      "creationDate" : 1424606816.300012,
+      "sensorTimeStamp" : 45705,
+      "rawAccelerometer" : {
+        "z" : -8162,
+        "x" : -382,
+        "y" : 11290
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9852,
+        "x" : 1604,
+        "y" : 2388
+      },
+      "creationDate" : 1424606816.301239,
+      "sensorTimeStamp" : 45715,
+      "rawAccelerometer" : {
+        "z" : -7936,
+        "x" : 378,
+        "y" : 10257
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9527,
+        "x" : 2135,
+        "y" : -775
+      },
+      "creationDate" : 1424606816.329315,
+      "sensorTimeStamp" : 45725,
+      "rawAccelerometer" : {
+        "z" : -7590,
+        "x" : 933,
+        "y" : 7091
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -8791,
+        "x" : 2110,
+        "y" : -948
+      },
+      "creationDate" : 1424606816.329798,
+      "sensorTimeStamp" : 45735,
+      "rawAccelerometer" : {
+        "z" : -6870,
+        "x" : 882,
+        "y" : 6919
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -7394,
+        "x" : 1257,
+        "y" : 1546
+      },
+      "creationDate" : 1424606816.331261,
+      "sensorTimeStamp" : 45746,
+      "rawAccelerometer" : {
+        "z" : -5567,
+        "x" : -20,
+        "y" : 9429
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -5666,
+        "x" : -319,
+        "y" : 3376
+      },
+      "creationDate" : 1424606816.359372,
+      "sensorTimeStamp" : 45756,
+      "rawAccelerometer" : {
+        "z" : -3953,
+        "x" : -1665,
+        "y" : 11273
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -4272,
+        "x" : -1782,
+        "y" : 4484
+      },
+      "creationDate" : 1424606816.360018,
+      "sensorTimeStamp" : 45764,
+      "rawAccelerometer" : {
+        "z" : -2606,
+        "x" : -3195,
+        "y" : 12379
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3653,
+        "x" : -2299,
+        "y" : 4305
+      },
+      "creationDate" : 1424606816.361101,
+      "sensorTimeStamp" : 45774,
+      "rawAccelerometer" : {
+        "z" : -2021,
+        "x" : -3773,
+        "y" : 12195
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3460,
+        "x" : -3020,
+        "y" : 4460
+      },
+      "creationDate" : 1424606816.389295,
+      "sensorTimeStamp" : 45785,
+      "rawAccelerometer" : {
+        "z" : -1862,
+        "x" : -4544,
+        "y" : 12349
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3336,
+        "x" : -3567,
+        "y" : 4961
+      },
+      "creationDate" : 1424606816.389778,
+      "sensorTimeStamp" : 45795,
+      "rawAccelerometer" : {
+        "z" : -1789,
+        "x" : -5120,
+        "y" : 12854
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2301,
+        "x" : -3457,
+        "y" : 5746
+      },
+      "creationDate" : 1424606816.391145,
+      "sensorTimeStamp" : 45805,
+      "rawAccelerometer" : {
+        "z" : -789,
+        "x" : -5010,
+        "y" : 13646
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -163,
+        "x" : -3142,
+        "y" : 6475
+      },
+      "creationDate" : 1424606816.419504,
+      "sensorTimeStamp" : 45815,
+      "rawAccelerometer" : {
+        "z" : 1386,
+        "x" : -4671,
+        "y" : 14372
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1818,
+        "x" : -2660,
+        "y" : 6890
+      },
+      "creationDate" : 1424606816.42014,
+      "sensorTimeStamp" : 45826,
+      "rawAccelerometer" : {
+        "z" : 3523,
+        "x" : -4155,
+        "y" : 14761
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2389,
+        "x" : -1447,
+        "y" : 6787
+      },
+      "creationDate" : 1424606816.42107,
+      "sensorTimeStamp" : 45836,
+      "rawAccelerometer" : {
+        "z" : 4327,
+        "x" : -2884,
+        "y" : 14615
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1617,
+        "x" : 22,
+        "y" : 6243
+      },
+      "creationDate" : 1424606816.449308,
+      "sensorTimeStamp" : 45846,
+      "rawAccelerometer" : {
+        "z" : 3785,
+        "x" : -1330,
+        "y" : 14026
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -145,
+        "x" : 953,
+        "y" : 5310
+      },
+      "creationDate" : 1424606816.449834,
+      "sensorTimeStamp" : 45854,
+      "rawAccelerometer" : {
+        "z" : 2209,
+        "x" : -316,
+        "y" : 13053
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2627,
+        "x" : 1331,
+        "y" : 3887
+      },
+      "creationDate" : 1424606816.451251,
+      "sensorTimeStamp" : 45864,
+      "rawAccelerometer" : {
+        "z" : -147,
+        "x" : 109,
+        "y" : 11598
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -5481,
+        "x" : 1481,
+        "y" : 2195
+      },
+      "creationDate" : 1424606816.479316,
+      "sensorTimeStamp" : 45875,
+      "rawAccelerometer" : {
+        "z" : -2944,
+        "x" : 259,
+        "y" : 9887
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -7863,
+        "x" : 1677,
+        "y" : 457
+      },
+      "creationDate" : 1424606816.479917,
+      "sensorTimeStamp" : 45885,
+      "rawAccelerometer" : {
+        "z" : -5338,
+        "x" : 420,
+        "y" : 8147
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9318,
+        "x" : 1722,
+        "y" : -1404
+      },
+      "creationDate" : 1424606816.481174,
+      "sensorTimeStamp" : 45895,
+      "rawAccelerometer" : {
+        "z" : -6837,
+        "x" : 409,
+        "y" : 6290
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9924,
+        "x" : 916,
+        "y" : -3117
+      },
+      "creationDate" : 1424606816.50935,
+      "sensorTimeStamp" : 45903,
+      "rawAccelerometer" : {
+        "z" : -7500,
+        "x" : -481,
+        "y" : 4581
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9633,
+        "x" : 19,
+        "y" : -4432
+      },
+      "creationDate" : 1424606816.510074,
+      "sensorTimeStamp" : 45916,
+      "rawAccelerometer" : {
+        "z" : -7249,
+        "x" : -1466,
+        "y" : 3262
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -9037,
+        "x" : -22,
+        "y" : -5288
+      },
+      "creationDate" : 1424606816.511096,
+      "sensorTimeStamp" : 45926,
+      "rawAccelerometer" : {
+        "z" : -6652,
+        "x" : -1516,
+        "y" : 2403
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -8173,
+        "x" : 956,
+        "y" : -5852
+      },
+      "creationDate" : 1424606816.539339,
+      "sensorTimeStamp" : 45934,
+      "rawAccelerometer" : {
+        "z" : -5776,
+        "x" : -457,
+        "y" : 1851
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -7286,
+        "x" : 2589,
+        "y" : -6181
+      },
+      "creationDate" : 1424606816.539887,
+      "sensorTimeStamp" : 45944,
+      "rawAccelerometer" : {
+        "z" : -4878,
+        "x" : 1322,
+        "y" : 1544
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -6384,
+        "x" : 4475,
+        "y" : -6139
+      },
+      "creationDate" : 1424606816.541146,
+      "sensorTimeStamp" : 45955,
+      "rawAccelerometer" : {
+        "z" : -4006,
+        "x" : 3401,
+        "y" : 1625
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -4635,
+        "x" : 6308,
+        "y" : -4848
+      },
+      "creationDate" : 1424606816.569331,
+      "sensorTimeStamp" : 45965,
+      "rawAccelerometer" : {
+        "z" : -2302,
+        "x" : 5462,
+        "y" : 2957
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2082,
+        "x" : 7158,
+        "y" : -2154
+      },
+      "creationDate" : 1424606816.56987,
+      "sensorTimeStamp" : 45975,
+      "rawAccelerometer" : {
+        "z" : 223,
+        "x" : 6530,
+        "y" : 5680
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 177,
+        "x" : 5893,
+        "y" : 676
+      },
+      "creationDate" : 1424606816.571181,
+      "sensorTimeStamp" : 45985,
+      "rawAccelerometer" : {
+        "z" : 2484,
+        "x" : 5359,
+        "y" : 8518
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1517,
+        "x" : 2781,
+        "y" : 2755
+      },
+      "creationDate" : 1424606816.599366,
+      "sensorTimeStamp" : 45996,
+      "rawAccelerometer" : {
+        "z" : 3772,
+        "x" : 2146,
+        "y" : 10604
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2934,
+        "x" : -362,
+        "y" : 3407
+      },
+      "creationDate" : 1424606816.599916,
+      "sensorTimeStamp" : 46006,
+      "rawAccelerometer" : {
+        "z" : 5142,
+        "x" : -1208,
+        "y" : 11250
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3728,
+        "x" : -2110,
+        "y" : 2549
+      },
+      "creationDate" : 1424606816.601244,
+      "sensorTimeStamp" : 46014,
+      "rawAccelerometer" : {
+        "z" : 5924,
+        "x" : -3142,
+        "y" : 10373
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3932,
+        "x" : -2804,
+        "y" : 1429
+      },
+      "creationDate" : 1424606816.629326,
+      "sensorTimeStamp" : 46024,
+      "rawAccelerometer" : {
+        "z" : 6139,
+        "x" : -3976,
+        "y" : 9230
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 3656,
+        "x" : -3028,
+        "y" : 82
+      },
+      "creationDate" : 1424606816.629816,
+      "sensorTimeStamp" : 46034,
+      "rawAccelerometer" : {
+        "z" : 5894,
+        "x" : -4296,
+        "y" : 7859
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 2801,
+        "x" : -3205,
+        "y" : -1140
+      },
+      "creationDate" : 1424606816.63124,
+      "sensorTimeStamp" : 46045,
+      "rawAccelerometer" : {
+        "z" : 5058,
+        "x" : -4542,
+        "y" : 6619
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1496,
+        "x" : -3556,
+        "y" : -1804
+      },
+      "creationDate" : 1424606816.659313,
+      "sensorTimeStamp" : 46055,
+      "rawAccelerometer" : {
+        "z" : 3740,
+        "x" : -4945,
+        "y" : 5950
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 161,
+        "x" : -4004,
+        "y" : -1771
+      },
+      "creationDate" : 1424606816.659883,
+      "sensorTimeStamp" : 46065,
+      "rawAccelerometer" : {
+        "z" : 2371,
+        "x" : -5443,
+        "y" : 5984
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1249,
+        "x" : -4419,
+        "y" : -1127
+      },
+      "creationDate" : 1424606816.661244,
+      "sensorTimeStamp" : 46075,
+      "rawAccelerometer" : {
+        "z" : 910,
+        "x" : -5914,
+        "y" : 6631
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2622,
+        "x" : -4447,
+        "y" : -263
+      },
+      "creationDate" : 1424606816.689312,
+      "sensorTimeStamp" : 46086,
+      "rawAccelerometer" : {
+        "z" : -547,
+        "x" : -6002,
+        "y" : 7506
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3372,
+        "x" : -3946,
+        "y" : 204
+      },
+      "creationDate" : 1424606816.689927,
+      "sensorTimeStamp" : 46094,
+      "rawAccelerometer" : {
+        "z" : -1396,
+        "x" : -5543,
+        "y" : 7991
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -3125,
+        "x" : -3175,
+        "y" : 242
+      },
+      "creationDate" : 1424606816.691129,
+      "sensorTimeStamp" : 46104,
+      "rawAccelerometer" : {
+        "z" : -1225,
+        "x" : -4783,
+        "y" : 8046
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2254,
+        "x" : -2266,
+        "y" : 288
+      },
+      "creationDate" : 1424606816.719502,
+      "sensorTimeStamp" : 46114,
+      "rawAccelerometer" : {
+        "z" : -399,
+        "x" : -3856,
+        "y" : 8107
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1352,
+        "x" : -1318,
+        "y" : 661
+      },
+      "creationDate" : 1424606816.720109,
+      "sensorTimeStamp" : 46125,
+      "rawAccelerometer" : {
+        "z" : 488,
+        "x" : -2858,
+        "y" : 8493
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -797,
+        "x" : -369,
+        "y" : 1294
+      },
+      "creationDate" : 1424606816.720993,
+      "sensorTimeStamp" : 46135,
+      "rawAccelerometer" : {
+        "z" : 1045,
+        "x" : -1834,
+        "y" : 9140
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -433,
+        "x" : 879,
+        "y" : 2036
+      },
+      "creationDate" : 1424606816.749356,
+      "sensorTimeStamp" : 46145,
+      "rawAccelerometer" : {
+        "z" : 1405,
+        "x" : -490,
+        "y" : 9900
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 36,
+        "x" : 2292,
+        "y" : 2598
+      },
+      "creationDate" : 1424606816.749973,
+      "sensorTimeStamp" : 46155,
+      "rawAccelerometer" : {
+        "z" : 1871,
+        "x" : 1029,
+        "y" : 10481
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 614,
+        "x" : 3663,
+        "y" : 2771
+      },
+      "creationDate" : 1424606816.751236,
+      "sensorTimeStamp" : 46166,
+      "rawAccelerometer" : {
+        "z" : 2448,
+        "x" : 2508,
+        "y" : 10671
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1310,
+        "x" : 4666,
+        "y" : 2595
+      },
+      "creationDate" : 1424606816.779315,
+      "sensorTimeStamp" : 46176,
+      "rawAccelerometer" : {
+        "z" : 3156,
+        "x" : 3614,
+        "y" : 10506
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1701,
+        "x" : 5120,
+        "y" : 2266
+      },
+      "creationDate" : 1424606816.779814,
+      "sensorTimeStamp" : 46184,
+      "rawAccelerometer" : {
+        "z" : 3570,
+        "x" : 4155,
+        "y" : 10183
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1576,
+        "x" : 5082,
+        "y" : 2020
+      },
+      "creationDate" : 1424606816.781245,
+      "sensorTimeStamp" : 46194,
+      "rawAccelerometer" : {
+        "z" : 3461,
+        "x" : 4179,
+        "y" : 9940
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1011,
+        "x" : 4670,
+        "y" : 1622
+      },
+      "creationDate" : 1424606816.809332,
+      "sensorTimeStamp" : 46204,
+      "rawAccelerometer" : {
+        "z" : 2892,
+        "x" : 3805,
+        "y" : 9547
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 184,
+        "x" : 3881,
+        "y" : 923
+      },
+      "creationDate" : 1424606816.810004,
+      "sensorTimeStamp" : 46215,
+      "rawAccelerometer" : {
+        "z" : 2041,
+        "x" : 3037,
+        "y" : 8856
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -600,
+        "x" : 2610,
+        "y" : 175
+      },
+      "creationDate" : 1424606816.811072,
+      "sensorTimeStamp" : 46225,
+      "rawAccelerometer" : {
+        "z" : 1216,
+        "x" : 1767,
+        "y" : 8118
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1233,
+        "x" : 889,
+        "y" : -305
+      },
+      "creationDate" : 1424606816.839346,
+      "sensorTimeStamp" : 46235,
+      "rawAccelerometer" : {
+        "z" : 528,
+        "x" : 18,
+        "y" : 7646
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1834,
+        "x" : -1069,
+        "y" : -455
+      },
+      "creationDate" : 1424606816.839907,
+      "sensorTimeStamp" : 46245,
+      "rawAccelerometer" : {
+        "z" : -154,
+        "x" : -2000,
+        "y" : 7506
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2233,
+        "x" : -2911,
+        "y" : -462
+      },
+      "creationDate" : 1424606816.869444,
+      "sensorTimeStamp" : 46256,
+      "rawAccelerometer" : {
+        "z" : -655,
+        "x" : -3934,
+        "y" : 7509
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2268,
+        "x" : -4039,
+        "y" : -581
+      },
+      "creationDate" : 1424606816.870164,
+      "sensorTimeStamp" : 46264,
+      "rawAccelerometer" : {
+        "z" : -776,
+        "x" : -5151,
+        "y" : 7396
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -2012,
+        "x" : -4266,
+        "y" : -745
+      },
+      "creationDate" : 1424606816.870845,
+      "sensorTimeStamp" : 46274,
+      "rawAccelerometer" : {
+        "z" : -562,
+        "x" : -5426,
+        "y" : 7232
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1588,
+        "x" : -4010,
+        "y" : -781
+      },
+      "creationDate" : 1424606816.871669,
+      "sensorTimeStamp" : 46284,
+      "rawAccelerometer" : {
+        "z" : -139,
+        "x" : -5183,
+        "y" : 7195
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1266,
+        "x" : -3716,
+        "y" : -650
+      },
+      "creationDate" : 1424606816.89931,
+      "sensorTimeStamp" : 46295,
+      "rawAccelerometer" : {
+        "z" : 194,
+        "x" : -4883,
+        "y" : 7325
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1141,
+        "x" : -3572,
+        "y" : -296
+      },
+      "creationDate" : 1424606816.899811,
+      "sensorTimeStamp" : 46305,
+      "rawAccelerometer" : {
+        "z" : 323,
+        "x" : -4731,
+        "y" : 7679
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1179,
+        "x" : -3371,
+        "y" : 86
+      },
+      "creationDate" : 1424606816.901355,
+      "sensorTimeStamp" : 46315,
+      "rawAccelerometer" : {
+        "z" : 275,
+        "x" : -4524,
+        "y" : 8065
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1140,
+        "x" : -3043,
+        "y" : 157
+      },
+      "creationDate" : 1424606816.929482,
+      "sensorTimeStamp" : 46325,
+      "rawAccelerometer" : {
+        "z" : 295,
+        "x" : -4199,
+        "y" : 8139
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -884,
+        "x" : -2825,
+        "y" : -141
+      },
+      "creationDate" : 1424606816.929911,
+      "sensorTimeStamp" : 46336,
+      "rawAccelerometer" : {
+        "z" : 531,
+        "x" : -3998,
+        "y" : 7841
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -510,
+        "x" : -2666,
+        "y" : -699
+      },
+      "creationDate" : 1424606816.931255,
+      "sensorTimeStamp" : 46344,
+      "rawAccelerometer" : {
+        "z" : 886,
+        "x" : -3870,
+        "y" : 7281
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -186,
+        "x" : -2273,
+        "y" : -1230
+      },
+      "creationDate" : 1424606816.959327,
+      "sensorTimeStamp" : 46354,
+      "rawAccelerometer" : {
+        "z" : 1188,
+        "x" : -3511,
+        "y" : 6749
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 150,
+        "x" : -1389,
+        "y" : -1318
+      },
+      "creationDate" : 1424606816.959801,
+      "sensorTimeStamp" : 46364,
+      "rawAccelerometer" : {
+        "z" : 1512,
+        "x" : -2643,
+        "y" : 6661
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 612,
+        "x" : -224,
+        "y" : -1009
+      },
+      "creationDate" : 1424606816.961257,
+      "sensorTimeStamp" : 46374,
+      "rawAccelerometer" : {
+        "z" : 1977,
+        "x" : -1467,
+        "y" : 6971
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1104,
+        "x" : 994,
+        "y" : -465
+      },
+      "creationDate" : 1424606816.989299,
+      "sensorTimeStamp" : 46385,
+      "rawAccelerometer" : {
+        "z" : 2487,
+        "x" : -211,
+        "y" : 7518
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1483,
+        "x" : 2036,
+        "y" : 37
+      },
+      "creationDate" : 1424606816.989796,
+      "sensorTimeStamp" : 46395,
+      "rawAccelerometer" : {
+        "z" : 2888,
+        "x" : 880,
+        "y" : 8024
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1658,
+        "x" : 2719,
+        "y" : 255
+      },
+      "creationDate" : 1424606816.991255,
+      "sensorTimeStamp" : 46405,
+      "rawAccelerometer" : {
+        "z" : 3083,
+        "x" : 1606,
+        "y" : 8245
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1729,
+        "x" : 3244,
+        "y" : 349
+      },
+      "creationDate" : 1424606817.020127,
+      "sensorTimeStamp" : 46415,
+      "rawAccelerometer" : {
+        "z" : 3165,
+        "x" : 2160,
+        "y" : 8340
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1804,
+        "x" : 3608,
+        "y" : 335
+      },
+      "creationDate" : 1424606817.021221,
+      "sensorTimeStamp" : 46424,
+      "rawAccelerometer" : {
+        "z" : 3242,
+        "x" : 2543,
+        "y" : 8329
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1863,
+        "x" : 3664,
+        "y" : 295
+      },
+      "creationDate" : 1424606817.021344,
+      "sensorTimeStamp" : 46434,
+      "rawAccelerometer" : {
+        "z" : 3292,
+        "x" : 2602,
+        "y" : 8291
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1917,
+        "x" : 3464,
+        "y" : 531
+      },
+      "creationDate" : 1424606817.079513,
+      "sensorTimeStamp" : 46444,
+      "rawAccelerometer" : {
+        "z" : 3329,
+        "x" : 2394,
+        "y" : 8529
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1797,
+        "x" : 3097,
+        "y" : 844
+      },
+      "creationDate" : 1424606817.079975,
+      "sensorTimeStamp" : 46454,
+      "rawAccelerometer" : {
+        "z" : 3195,
+        "x" : 2017,
+        "y" : 8843
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1429,
+        "x" : 2693,
+        "y" : 1079
+      },
+      "creationDate" : 1424606817.080889,
+      "sensorTimeStamp" : 46465,
+      "rawAccelerometer" : {
+        "z" : 2819,
+        "x" : 1609,
+        "y" : 9079
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1015,
+        "x" : 2448,
+        "y" : 1178
+      },
+      "creationDate" : 1424606817.081673,
+      "sensorTimeStamp" : 46475,
+      "rawAccelerometer" : {
+        "z" : 2405,
+        "x" : 1373,
+        "y" : 9179
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 700,
+        "x" : 2308,
+        "y" : 998
+      },
+      "creationDate" : 1424606817.109658,
+      "sensorTimeStamp" : 46485,
+      "rawAccelerometer" : {
+        "z" : 2102,
+        "x" : 1252,
+        "y" : 8999
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 458,
+        "x" : 2072,
+        "y" : 587
+      },
+      "creationDate" : 1424606817.110229,
+      "sensorTimeStamp" : 46495,
+      "rawAccelerometer" : {
+        "z" : 1873,
+        "x" : 1035,
+        "y" : 8588
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 215,
+        "x" : 1672,
+        "y" : 9
+      },
+      "creationDate" : 1424606817.110877,
+      "sensorTimeStamp" : 46505,
+      "rawAccelerometer" : {
+        "z" : 1639,
+        "x" : 644,
+        "y" : 8010
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -54,
+        "x" : 1137,
+        "y" : -615
+      },
+      "creationDate" : 1424606817.11162,
+      "sensorTimeStamp" : 46514,
+      "rawAccelerometer" : {
+        "z" : 1367,
+        "x" : 107,
+        "y" : 7385
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -291,
+        "x" : 514,
+        "y" : -1063
+      },
+      "creationDate" : 1424606817.139432,
+      "sensorTimeStamp" : 46524,
+      "rawAccelerometer" : {
+        "z" : 1117,
+        "x" : -528,
+        "y" : 6938
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -331,
+        "x" : -117,
+        "y" : -1096
+      },
+      "creationDate" : 1424606817.14011,
+      "sensorTimeStamp" : 46536,
+      "rawAccelerometer" : {
+        "z" : 1062,
+        "x" : -1179,
+        "y" : 6905
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -95,
+        "x" : -560,
+        "y" : -839
+      },
+      "creationDate" : 1424606817.140878,
+      "sensorTimeStamp" : 46544,
+      "rawAccelerometer" : {
+        "z" : 1294,
+        "x" : -1639,
+        "y" : 7160
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 383,
+        "x" : -771,
+        "y" : -600
+      },
+      "creationDate" : 1424606817.141415,
+      "sensorTimeStamp" : 46555,
+      "rawAccelerometer" : {
+        "z" : 1790,
+        "x" : -1861,
+        "y" : 7395
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 845,
+        "x" : -791,
+        "y" : -486
+      },
+      "creationDate" : 1424606817.169621,
+      "sensorTimeStamp" : 46565,
+      "rawAccelerometer" : {
+        "z" : 2291,
+        "x" : -1886,
+        "y" : 7502
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1025,
+        "x" : -632,
+        "y" : -463
+      },
+      "creationDate" : 1424606817.169934,
+      "sensorTimeStamp" : 46575,
+      "rawAccelerometer" : {
+        "z" : 2521,
+        "x" : -1728,
+        "y" : 7515
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 935,
+        "x" : -233,
+        "y" : -352
+      },
+      "creationDate" : 1424606817.171212,
+      "sensorTimeStamp" : 46585,
+      "rawAccelerometer" : {
+        "z" : 2469,
+        "x" : -1333,
+        "y" : 7618
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 734,
+        "x" : 258,
+        "y" : -342
+      },
+      "creationDate" : 1424606817.199328,
+      "sensorTimeStamp" : 46594,
+      "rawAccelerometer" : {
+        "z" : 2279,
+        "x" : -845,
+        "y" : 7626
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 442,
+        "x" : 542,
+        "y" : -565
+      },
+      "creationDate" : 1424606817.199826,
+      "sensorTimeStamp" : 46604,
+      "rawAccelerometer" : {
+        "z" : 1973,
+        "x" : -567,
+        "y" : 7404
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 234,
+        "x" : 512,
+        "y" : -703
+      },
+      "creationDate" : 1424606817.20126,
+      "sensorTimeStamp" : 46616,
+      "rawAccelerometer" : {
+        "z" : 1736,
+        "x" : -608,
+        "y" : 7271
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 299,
+        "x" : 345,
+        "y" : -633
+      },
+      "creationDate" : 1424606817.229497,
+      "sensorTimeStamp" : 46624,
+      "rawAccelerometer" : {
+        "z" : 1777,
+        "x" : -790,
+        "y" : 7343
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 708,
+        "x" : 314,
+        "y" : -367
+      },
+      "creationDate" : 1424606817.230071,
+      "sensorTimeStamp" : 46635,
+      "rawAccelerometer" : {
+        "z" : 2182,
+        "x" : -829,
+        "y" : 7609
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1163,
+        "x" : 420,
+        "y" : -7
+      },
+      "creationDate" : 1424606817.2318,
+      "sensorTimeStamp" : 46645,
+      "rawAccelerometer" : {
+        "z" : 2660,
+        "x" : -709,
+        "y" : 7966
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1314,
+        "x" : 504,
+        "y" : 341
+      },
+      "creationDate" : 1424606817.2594,
+      "sensorTimeStamp" : 46655,
+      "rawAccelerometer" : {
+        "z" : 2843,
+        "x" : -591,
+        "y" : 8314
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1135,
+        "x" : 562,
+        "y" : 534
+      },
+      "creationDate" : 1424606817.260051,
+      "sensorTimeStamp" : 46665,
+      "rawAccelerometer" : {
+        "z" : 2684,
+        "x" : -497,
+        "y" : 8507
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 740,
+        "x" : 584,
+        "y" : 473
+      },
+      "creationDate" : 1424606817.261266,
+      "sensorTimeStamp" : 46673,
+      "rawAccelerometer" : {
+        "z" : 2292,
+        "x" : -445,
+        "y" : 8450
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 311,
+        "x" : 515,
+        "y" : 313
+      },
+      "creationDate" : 1424606817.289343,
+      "sensorTimeStamp" : 46684,
+      "rawAccelerometer" : {
+        "z" : 1854,
+        "x" : -496,
+        "y" : 8294
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -76,
+        "x" : 352,
+        "y" : 117
+      },
+      "creationDate" : 1424606817.289969,
+      "sensorTimeStamp" : 46696,
+      "rawAccelerometer" : {
+        "z" : 1452,
+        "x" : -653,
+        "y" : 8102
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -343,
+        "x" : 198,
+        "y" : -141
+      },
+      "creationDate" : 1424606817.291152,
+      "sensorTimeStamp" : 46704,
+      "rawAccelerometer" : {
+        "z" : 1175,
+        "x" : -807,
+        "y" : 7845
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -478,
+        "x" : 49,
+        "y" : -413
+      },
+      "creationDate" : 1424606817.319604,
+      "sensorTimeStamp" : 46714,
+      "rawAccelerometer" : {
+        "z" : 1031,
+        "x" : -963,
+        "y" : 7574
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -502,
+        "x" : -204,
+        "y" : -658
+      },
+      "creationDate" : 1424606817.320283,
+      "sensorTimeStamp" : 46725,
+      "rawAccelerometer" : {
+        "z" : 1000,
+        "x" : -1233,
+        "y" : 7327
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -498,
+        "x" : -627,
+        "y" : -785
+      },
+      "creationDate" : 1424606817.321041,
+      "sensorTimeStamp" : 46735,
+      "rawAccelerometer" : {
+        "z" : 993,
+        "x" : -1685,
+        "y" : 7199
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -584,
+        "x" : -1002,
+        "y" : -592
+      },
+      "creationDate" : 1424606817.349414,
+      "sensorTimeStamp" : 46745,
+      "rawAccelerometer" : {
+        "z" : 885,
+        "x" : -2100,
+        "y" : 7391
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -862,
+        "x" : -1053,
+        "y" : -115
+      },
+      "creationDate" : 1424606817.349997,
+      "sensorTimeStamp" : 46753,
+      "rawAccelerometer" : {
+        "z" : 571,
+        "x" : -2189,
+        "y" : 7869
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1144,
+        "x" : -750,
+        "y" : 260
+      },
+      "creationDate" : 1424606817.351268,
+      "sensorTimeStamp" : 46764,
+      "rawAccelerometer" : {
+        "z" : 248,
+        "x" : -1911,
+        "y" : 8248
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1190,
+        "x" : -325,
+        "y" : 334
+      },
+      "creationDate" : 1424606817.379319,
+      "sensorTimeStamp" : 46776,
+      "rawAccelerometer" : {
+        "z" : 175,
+        "x" : -1494,
+        "y" : 8326
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -876,
+        "x" : 5,
+        "y" : 207
+      },
+      "creationDate" : 1424606817.379809,
+      "sensorTimeStamp" : 46784,
+      "rawAccelerometer" : {
+        "z" : 481,
+        "x" : -1160,
+        "y" : 8201
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -349,
+        "x" : 86,
+        "y" : 71
+      },
+      "creationDate" : 1424606817.381263,
+      "sensorTimeStamp" : 46794,
+      "rawAccelerometer" : {
+        "z" : 1022,
+        "x" : -1074,
+        "y" : 8063
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 30,
+        "x" : -37,
+        "y" : 143
+      },
+      "creationDate" : 1424606817.409328,
+      "sensorTimeStamp" : 46804,
+      "rawAccelerometer" : {
+        "z" : 1425,
+        "x" : -1195,
+        "y" : 8132
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 101,
+        "x" : 12,
+        "y" : 467
+      },
+      "creationDate" : 1424606817.409973,
+      "sensorTimeStamp" : 46815,
+      "rawAccelerometer" : {
+        "z" : 1516,
+        "x" : -1139,
+        "y" : 8453
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -16,
+        "x" : 514,
+        "y" : 949
+      },
+      "creationDate" : 1424606817.411093,
+      "sensorTimeStamp" : 46825,
+      "rawAccelerometer" : {
+        "z" : 1415,
+        "x" : -616,
+        "y" : 8934
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -144,
+        "x" : 1311,
+        "y" : 1391
+      },
+      "creationDate" : 1424606817.439469,
+      "sensorTimeStamp" : 46833,
+      "rawAccelerometer" : {
+        "z" : 1305,
+        "x" : 223,
+        "y" : 9380
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -234,
+        "x" : 2084,
+        "y" : 1437
+      },
+      "creationDate" : 1424606817.44009,
+      "sensorTimeStamp" : 46845,
+      "rawAccelerometer" : {
+        "z" : 1232,
+        "x" : 1049,
+        "y" : 9429
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -330,
+        "x" : 2385,
+        "y" : 999
+      },
+      "creationDate" : 1424606817.441022,
+      "sensorTimeStamp" : 46856,
+      "rawAccelerometer" : {
+        "z" : 1149,
+        "x" : 1397,
+        "y" : 8995
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -427,
+        "x" : 2170,
+        "y" : 346
+      },
+      "creationDate" : 1424606817.4694,
+      "sensorTimeStamp" : 46864,
+      "rawAccelerometer" : {
+        "z" : 1063,
+        "x" : 1207,
+        "y" : 8343
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -432,
+        "x" : 1514,
+        "y" : -197
+      },
+      "creationDate" : 1424606817.469921,
+      "sensorTimeStamp" : 46874,
+      "rawAccelerometer" : {
+        "z" : 1064,
+        "x" : 547,
+        "y" : 7797
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -441,
+        "x" : 507,
+        "y" : -474
+      },
+      "creationDate" : 1424606817.471253,
+      "sensorTimeStamp" : 46884,
+      "rawAccelerometer" : {
+        "z" : 1053,
+        "x" : -496,
+        "y" : 7517
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -599,
+        "x" : -571,
+        "y" : -416
+      },
+      "creationDate" : 1424606817.529517,
+      "sensorTimeStamp" : 46895,
+      "rawAccelerometer" : {
+        "z" : 882,
+        "x" : -1631,
+        "y" : 7570
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -839,
+        "x" : -1337,
+        "y" : -127
+      },
+      "creationDate" : 1424606817.530102,
+      "sensorTimeStamp" : 46905,
+      "rawAccelerometer" : {
+        "z" : 613,
+        "x" : -2454,
+        "y" : 7856
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1016,
+        "x" : -1580,
+        "y" : 73
+      },
+      "creationDate" : 1424606817.530913,
+      "sensorTimeStamp" : 46915,
+      "rawAccelerometer" : {
+        "z" : 406,
+        "x" : -2737,
+        "y" : 8057
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1051,
+        "x" : -1426,
+        "y" : -115
+      },
+      "creationDate" : 1424606817.531677,
+      "sensorTimeStamp" : 46923,
+      "rawAccelerometer" : {
+        "z" : 355,
+        "x" : -2595,
+        "y" : 7868
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -986,
+        "x" : -1258,
+        "y" : -478
+      },
+      "creationDate" : 1424606817.589645,
+      "sensorTimeStamp" : 46936,
+      "rawAccelerometer" : {
+        "z" : 421,
+        "x" : -2427,
+        "y" : 7505
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -839,
+        "x" : -1235,
+        "y" : -722
+      },
+      "creationDate" : 1424606817.590249,
+      "sensorTimeStamp" : 46944,
+      "rawAccelerometer" : {
+        "z" : 571,
+        "x" : -2411,
+        "y" : 7260
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -621,
+        "x" : -1288,
+        "y" : -783
+      },
+      "creationDate" : 1424606817.591365,
+      "sensorTimeStamp" : 46954,
+      "rawAccelerometer" : {
+        "z" : 784,
+        "x" : -2482,
+        "y" : 7197
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -357,
+        "x" : -1152,
+        "y" : -589
+      },
+      "creationDate" : 1424606817.591816,
+      "sensorTimeStamp" : 46964,
+      "rawAccelerometer" : {
+        "z" : 1039,
+        "x" : -2365,
+        "y" : 7390
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -41,
+        "x" : -663,
+        "y" : -243
+      },
+      "creationDate" : 1424606817.620442,
+      "sensorTimeStamp" : 46974,
+      "rawAccelerometer" : {
+        "z" : 1351,
+        "x" : -1878,
+        "y" : 7737
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 353,
+        "x" : 34,
+        "y" : 76
+      },
+      "creationDate" : 1424606817.620756,
+      "sensorTimeStamp" : 46985,
+      "rawAccelerometer" : {
+        "z" : 1756,
+        "x" : -1159,
+        "y" : 8058
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 726,
+        "x" : 658,
+        "y" : 358
+      },
+      "creationDate" : 1424606817.621039,
+      "sensorTimeStamp" : 46995,
+      "rawAccelerometer" : {
+        "z" : 2156,
+        "x" : -499,
+        "y" : 8340
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1000,
+        "x" : 954,
+        "y" : 442
+      },
+      "creationDate" : 1424606817.621736,
+      "sensorTimeStamp" : 47003,
+      "rawAccelerometer" : {
+        "z" : 2461,
+        "x" : -166,
+        "y" : 8424
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1064,
+        "x" : 900,
+        "y" : 322
+      },
+      "creationDate" : 1424606817.649413,
+      "sensorTimeStamp" : 47015,
+      "rawAccelerometer" : {
+        "z" : 2554,
+        "x" : -199,
+        "y" : 8301
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 967,
+        "x" : 777,
+        "y" : 192
+      },
+      "creationDate" : 1424606817.650193,
+      "sensorTimeStamp" : 47024,
+      "rawAccelerometer" : {
+        "z" : 2479,
+        "x" : -320,
+        "y" : 8168
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 759,
+        "x" : 762,
+        "y" : 200
+      },
+      "creationDate" : 1424606817.650747,
+      "sensorTimeStamp" : 47034,
+      "rawAccelerometer" : {
+        "z" : 2287,
+        "x" : -340,
+        "y" : 8172
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 498,
+        "x" : 897,
+        "y" : 418
+      },
+      "creationDate" : 1424606817.65178,
+      "sensorTimeStamp" : 47044,
+      "rawAccelerometer" : {
+        "z" : 2040,
+        "x" : -203,
+        "y" : 8388
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 209,
+        "x" : 1058,
+        "y" : 603
+      },
+      "creationDate" : 1424606817.70941,
+      "sensorTimeStamp" : 47054,
+      "rawAccelerometer" : {
+        "z" : 1760,
+        "x" : -30,
+        "y" : 8572
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -89,
+        "x" : 1080,
+        "y" : 419
+      },
+      "creationDate" : 1424606817.710137,
+      "sensorTimeStamp" : 47065,
+      "rawAccelerometer" : {
+        "z" : 1468,
+        "x" : 11,
+        "y" : 8389
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -340,
+        "x" : 943,
+        "y" : -75
+      },
+      "creationDate" : 1424606817.711321,
+      "sensorTimeStamp" : 47075,
+      "rawAccelerometer" : {
+        "z" : 1225,
+        "x" : -111,
+        "y" : 7895
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -486,
+        "x" : 630,
+        "y" : -743
+      },
+      "creationDate" : 1424606817.711591,
+      "sensorTimeStamp" : 47083,
+      "rawAccelerometer" : {
+        "z" : 1088,
+        "x" : -418,
+        "y" : 7226
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -471,
+        "x" : 111,
+        "y" : -1350
+      },
+      "creationDate" : 1424606817.712241,
+      "sensorTimeStamp" : 47095,
+      "rawAccelerometer" : {
+        "z" : 1113,
+        "x" : -950,
+        "y" : 6615
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -377,
+        "x" : -548,
+        "y" : -1606
+      },
+      "creationDate" : 1424606817.739381,
+      "sensorTimeStamp" : 47106,
+      "rawAccelerometer" : {
+        "z" : 1211,
+        "x" : -1640,
+        "y" : 6355
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -301,
+        "x" : -1090,
+        "y" : -1237
+      },
+      "creationDate" : 1424606817.740054,
+      "sensorTimeStamp" : 47114,
+      "rawAccelerometer" : {
+        "z" : 1280,
+        "x" : -2223,
+        "y" : 6720
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -306,
+        "x" : -1211,
+        "y" : -211
+      },
+      "creationDate" : 1424606817.740868,
+      "sensorTimeStamp" : 47124,
+      "rawAccelerometer" : {
+        "z" : 1260,
+        "x" : -2378,
+        "y" : 7744
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -362,
+        "x" : -773,
+        "y" : 942
+      },
+      "creationDate" : 1424606817.741659,
+      "sensorTimeStamp" : 47134,
+      "rawAccelerometer" : {
+        "z" : 1188,
+        "x" : -1949,
+        "y" : 8899
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -426,
+        "x" : 72,
+        "y" : 1568
+      },
+      "creationDate" : 1424606817.769382,
+      "sensorTimeStamp" : 47144,
+      "rawAccelerometer" : {
+        "z" : 1122,
+        "x" : -1075,
+        "y" : 9530
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -438,
+        "x" : 781,
+        "y" : 1417
+      },
+      "creationDate" : 1424606817.770199,
+      "sensorTimeStamp" : 47155,
+      "rawAccelerometer" : {
+        "z" : 1121,
+        "x" : -315,
+        "y" : 9384
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -443,
+        "x" : 1034,
+        "y" : 820
+      },
+      "creationDate" : 1424606817.770933,
+      "sensorTimeStamp" : 47163,
+      "rawAccelerometer" : {
+        "z" : 1131,
+        "x" : -15,
+        "y" : 8790
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -452,
+        "x" : 913,
+        "y" : 166
+      },
+      "creationDate" : 1424606817.771676,
+      "sensorTimeStamp" : 47175,
+      "rawAccelerometer" : {
+        "z" : 1132,
+        "x" : -106,
+        "y" : 8138
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -535,
+        "x" : 594,
+        "y" : -310
+      },
+      "creationDate" : 1424606817.799398,
+      "sensorTimeStamp" : 47185,
+      "rawAccelerometer" : {
+        "z" : 1048,
+        "x" : -417,
+        "y" : 7662
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -711,
+        "x" : 444,
+        "y" : -433
+      },
+      "creationDate" : 1424606817.799971,
+      "sensorTimeStamp" : 47194,
+      "rawAccelerometer" : {
+        "z" : 853,
+        "x" : -569,
+        "y" : 7542
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -901,
+        "x" : 592,
+        "y" : -291
+      },
+      "creationDate" : 1424606817.800678,
+      "sensorTimeStamp" : 47204,
+      "rawAccelerometer" : {
+        "z" : 635,
+        "x" : -408,
+        "y" : 7691
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1010,
+        "x" : 800,
+        "y" : -194
+      },
+      "creationDate" : 1424606817.801887,
+      "sensorTimeStamp" : 47214,
+      "rawAccelerometer" : {
+        "z" : 500,
+        "x" : -173,
+        "y" : 7797
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1018,
+        "x" : 725,
+        "y" : -315
+      },
+      "creationDate" : 1424606817.829349,
+      "sensorTimeStamp" : 47224,
+      "rawAccelerometer" : {
+        "z" : 471,
+        "x" : -220,
+        "y" : 7683
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -986,
+        "x" : 231,
+        "y" : -651
+      },
+      "creationDate" : 1424606817.829827,
+      "sensorTimeStamp" : 47235,
+      "rawAccelerometer" : {
+        "z" : 482,
+        "x" : -708,
+        "y" : 7352
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -928,
+        "x" : -579,
+        "y" : -1099
+      },
+      "creationDate" : 1424606817.831264,
+      "sensorTimeStamp" : 47245,
+      "rawAccelerometer" : {
+        "z" : 518,
+        "x" : -1542,
+        "y" : 6906
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -866,
+        "x" : -1314,
+        "y" : -1470
+      },
+      "creationDate" : 1424606817.859431,
+      "sensorTimeStamp" : 47255,
+      "rawAccelerometer" : {
+        "z" : 550,
+        "x" : -2321,
+        "y" : 6534
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -798,
+        "x" : -1580,
+        "y" : -1515
+      },
+      "creationDate" : 1424606817.889336,
+      "sensorTimeStamp" : 47265,
+      "rawAccelerometer" : {
+        "z" : 580,
+        "x" : -2629,
+        "y" : 6490
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -756,
+        "x" : -1312,
+        "y" : -1198
+      },
+      "creationDate" : 1424606817.919513,
+      "sensorTimeStamp" : 47273,
+      "rawAccelerometer" : {
+        "z" : 577,
+        "x" : -2382,
+        "y" : 6813
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -732,
+        "x" : -767,
+        "y" : -775
+      },
+      "creationDate" : 1424606817.920402,
+      "sensorTimeStamp" : 47284,
+      "rawAccelerometer" : {
+        "z" : 556,
+        "x" : -1832,
+        "y" : 7243
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -776,
+        "x" : -262,
+        "y" : -499
+      },
+      "creationDate" : 1424606817.920955,
+      "sensorTimeStamp" : 47294,
+      "rawAccelerometer" : {
+        "z" : 468,
+        "x" : -1304,
+        "y" : 7529
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -854,
+        "x" : 64,
+        "y" : -523
+      },
+      "creationDate" : 1424606817.921316,
+      "sensorTimeStamp" : 47304,
+      "rawAccelerometer" : {
+        "z" : 344,
+        "x" : -948,
+        "y" : 7516
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -940,
+        "x" : 210,
+        "y" : -892
+      },
+      "creationDate" : 1424606817.922309,
+      "sensorTimeStamp" : 47314,
+      "rawAccelerometer" : {
+        "z" : 211,
+        "x" : -774,
+        "y" : 7157
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -1035,
+        "x" : 55,
+        "y" : -1558
+      },
+      "creationDate" : 1424606817.949435,
+      "sensorTimeStamp" : 47325,
+      "rawAccelerometer" : {
+        "z" : 64,
+        "x" : -909,
+        "y" : 6502
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -947,
+        "x" : -523,
+        "y" : -2208
+      },
+      "creationDate" : 1424606817.950159,
+      "sensorTimeStamp" : 47335,
+      "rawAccelerometer" : {
+        "z" : 96,
+        "x" : -1492,
+        "y" : 5858
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -735,
+        "x" : -1414,
+        "y" : -2328
+      },
+      "creationDate" : 1424606817.950847,
+      "sensorTimeStamp" : 47345,
+      "rawAccelerometer" : {
+        "z" : 245,
+        "x" : -2425,
+        "y" : 5741
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -400,
+        "x" : -2179,
+        "y" : -1331
+      },
+      "creationDate" : 1424606817.951676,
+      "sensorTimeStamp" : 47353,
+      "rawAccelerometer" : {
+        "z" : 505,
+        "x" : -3253,
+        "y" : 6738
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 29,
+        "x" : -2445,
+        "y" : 587
+      },
+      "creationDate" : 1424606817.979456,
+      "sensorTimeStamp" : 47364,
+      "rawAccelerometer" : {
+        "z" : 859,
+        "x" : -3578,
+        "y" : 8657
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 436,
+        "x" : -1844,
+        "y" : 2468
+      },
+      "creationDate" : 1424606817.980204,
+      "sensorTimeStamp" : 47374,
+      "rawAccelerometer" : {
+        "z" : 1205,
+        "x" : -2997,
+        "y" : 10541
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 767,
+        "x" : -371,
+        "y" : 3235
+      },
+      "creationDate" : 1424606817.980824,
+      "sensorTimeStamp" : 47384,
+      "rawAccelerometer" : {
+        "z" : 1514,
+        "x" : -1460,
+        "y" : 11320
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 908,
+        "x" : 1298,
+        "y" : 3081
+      },
+      "creationDate" : 1424606817.981632,
+      "sensorTimeStamp" : 47394,
+      "rawAccelerometer" : {
+        "z" : 1667,
+        "x" : 335,
+        "y" : 11180
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 788,
+        "x" : 2455,
+        "y" : 2476
+      },
+      "creationDate" : 1424606818.009438,
+      "sensorTimeStamp" : 47405,
+      "rawAccelerometer" : {
+        "z" : 1553,
+        "x" : 1628,
+        "y" : 10590
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 429,
+        "x" : 2870,
+        "y" : 1669
+      },
+      "creationDate" : 1424606818.009945,
+      "sensorTimeStamp" : 47415,
+      "rawAccelerometer" : {
+        "z" : 1184,
+        "x" : 2156,
+        "y" : 9794
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 23,
+        "x" : 2808,
+        "y" : 911
+      },
+      "creationDate" : 1424606818.011198,
+      "sensorTimeStamp" : 47425,
+      "rawAccelerometer" : {
+        "z" : 754,
+        "x" : 2167,
+        "y" : 9045
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -246,
+        "x" : 2494,
+        "y" : 309
+      },
+      "creationDate" : 1424606818.039885,
+      "sensorTimeStamp" : 47435,
+      "rawAccelerometer" : {
+        "z" : 441,
+        "x" : 1886,
+        "y" : 8449
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -350,
+        "x" : 2023,
+        "y" : -160
+      },
+      "creationDate" : 1424606818.041105,
+      "sensorTimeStamp" : 47443,
+      "rawAccelerometer" : {
+        "z" : 282,
+        "x" : 1419,
+        "y" : 7984
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -452,
+        "x" : 1461,
+        "y" : -425
+      },
+      "creationDate" : 1424606818.041439,
+      "sensorTimeStamp" : 47454,
+      "rawAccelerometer" : {
+        "z" : 116,
+        "x" : 850,
+        "y" : 7723
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -616,
+        "x" : 935,
+        "y" : -411
+      },
+      "creationDate" : 1424606818.069425,
+      "sensorTimeStamp" : 47464,
+      "rawAccelerometer" : {
+        "z" : -119,
+        "x" : 313,
+        "y" : 7741
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -683,
+        "x" : 550,
+        "y" : -125
+      },
+      "creationDate" : 1424606818.070045,
+      "sensorTimeStamp" : 47474,
+      "rawAccelerometer" : {
+        "z" : -257,
+        "x" : -80,
+        "y" : 8030
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -553,
+        "x" : 284,
+        "y" : 355
+      },
+      "creationDate" : 1424606818.071299,
+      "sensorTimeStamp" : 47484,
+      "rawAccelerometer" : {
+        "z" : -186,
+        "x" : -351,
+        "y" : 8513
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -270,
+        "x" : 85,
+        "y" : 855
+      },
+      "creationDate" : 1424606818.099413,
+      "sensorTimeStamp" : 47495,
+      "rawAccelerometer" : {
+        "z" : 57,
+        "x" : -552,
+        "y" : 9015
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 86,
+        "x" : 55,
+        "y" : 1217
+      },
+      "creationDate" : 1424606818.10003,
+      "sensorTimeStamp" : 47505,
+      "rawAccelerometer" : {
+        "z" : 399,
+        "x" : -581,
+        "y" : 9378
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 416,
+        "x" : 304,
+        "y" : 1328
+      },
+      "creationDate" : 1424606818.101227,
+      "sensorTimeStamp" : 47515,
+      "rawAccelerometer" : {
+        "z" : 731,
+        "x" : -321,
+        "y" : 9489
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 588,
+        "x" : 708,
+        "y" : 1164
+      },
+      "creationDate" : 1424606818.15946,
+      "sensorTimeStamp" : 47523,
+      "rawAccelerometer" : {
+        "z" : 913,
+        "x" : 109,
+        "y" : 9327
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 571,
+        "x" : 1043,
+        "y" : 851
+      },
+      "creationDate" : 1424606818.160146,
+      "sensorTimeStamp" : 47534,
+      "rawAccelerometer" : {
+        "z" : 898,
+        "x" : 480,
+        "y" : 9016
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 395,
+        "x" : 1168,
+        "y" : 476
+      },
+      "creationDate" : 1424606818.160948,
+      "sensorTimeStamp" : 47546,
+      "rawAccelerometer" : {
+        "z" : 707,
+        "x" : 640,
+        "y" : 8645
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 165,
+        "x" : 1032,
+        "y" : 88
+      },
+      "creationDate" : 1424606818.161678,
+      "sensorTimeStamp" : 47554,
+      "rawAccelerometer" : {
+        "z" : 450,
+        "x" : 524,
+        "y" : 8259
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -25,
+        "x" : 677,
+        "y" : -204
+      },
+      "creationDate" : 1424606818.189412,
+      "sensorTimeStamp" : 47564,
+      "rawAccelerometer" : {
+        "z" : 225,
+        "x" : 169,
+        "y" : 7967
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -121,
+        "x" : 253,
+        "y" : -341
+      },
+      "creationDate" : 1424606818.190138,
+      "sensorTimeStamp" : 47575,
+      "rawAccelerometer" : {
+        "z" : 98,
+        "x" : -276,
+        "y" : 7829
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -100,
+        "x" : -31,
+        "y" : -350
+      },
+      "creationDate" : 1424606818.190761,
+      "sensorTimeStamp" : 47585,
+      "rawAccelerometer" : {
+        "z" : 95,
+        "x" : -591,
+        "y" : 7819
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 51,
+        "x" : -99,
+        "y" : -271
+      },
+      "creationDate" : 1424606818.191647,
+      "sensorTimeStamp" : 47595,
+      "rawAccelerometer" : {
+        "z" : 231,
+        "x" : -686,
+        "y" : 7896
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 336,
+        "x" : 37,
+        "y" : -132
+      },
+      "creationDate" : 1424606818.220014,
+      "sensorTimeStamp" : 47603,
+      "rawAccelerometer" : {
+        "z" : 515,
+        "x" : -562,
+        "y" : 8035
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 744,
+        "x" : 303,
+        "y" : 59
+      },
+      "creationDate" : 1424606818.220727,
+      "sensorTimeStamp" : 47613,
+      "rawAccelerometer" : {
+        "z" : 940,
+        "x" : -295,
+        "y" : 8226
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1195,
+        "x" : 537,
+        "y" : 323
+      },
+      "creationDate" : 1424606818.221021,
+      "sensorTimeStamp" : 47626,
+      "rawAccelerometer" : {
+        "z" : 1428,
+        "x" : -47,
+        "y" : 8490
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1518,
+        "x" : 611,
+        "y" : 548
+      },
+      "creationDate" : 1424606818.221977,
+      "sensorTimeStamp" : 47634,
+      "rawAccelerometer" : {
+        "z" : 1795,
+        "x" : 39,
+        "y" : 8715
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1686,
+        "x" : 479,
+        "y" : 555
+      },
+      "creationDate" : 1424606818.24939,
+      "sensorTimeStamp" : 47644,
+      "rawAccelerometer" : {
+        "z" : 2001,
+        "x" : -89,
+        "y" : 8720
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1748,
+        "x" : 248,
+        "y" : 417
+      },
+      "creationDate" : 1424606818.249873,
+      "sensorTimeStamp" : 47654,
+      "rawAccelerometer" : {
+        "z" : 2094,
+        "x" : -329,
+        "y" : 8581
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1706,
+        "x" : 22,
+        "y" : 223
+      },
+      "creationDate" : 1424606818.251273,
+      "sensorTimeStamp" : 47665,
+      "rawAccelerometer" : {
+        "z" : 2082,
+        "x" : -573,
+        "y" : 8384
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1636,
+        "x" : -189,
+        "y" : 73
+      },
+      "creationDate" : 1424606818.279382,
+      "sensorTimeStamp" : 47675,
+      "rawAccelerometer" : {
+        "z" : 2045,
+        "x" : -809,
+        "y" : 8231
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1499,
+        "x" : -424,
+        "y" : 36
+      },
+      "creationDate" : 1424606818.279933,
+      "sensorTimeStamp" : 47683,
+      "rawAccelerometer" : {
+        "z" : 1945,
+        "x" : -1070,
+        "y" : 8190
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 1195,
+        "x" : -627,
+        "y" : 59
+      },
+      "creationDate" : 1424606818.281277,
+      "sensorTimeStamp" : 47693,
+      "rawAccelerometer" : {
+        "z" : 1677,
+        "x" : -1301,
+        "y" : 8208
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 742,
+        "x" : -700,
+        "y" : 62
+      },
+      "creationDate" : 1424606818.309384,
+      "sensorTimeStamp" : 47706,
+      "rawAccelerometer" : {
+        "z" : 1248,
+        "x" : -1399,
+        "y" : 8208
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 198,
+        "x" : -557,
+        "y" : 29
+      },
+      "creationDate" : 1424606818.309983,
+      "sensorTimeStamp" : 47714,
+      "rawAccelerometer" : {
+        "z" : 716,
+        "x" : -1275,
+        "y" : 8173
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -326,
+        "x" : -257,
+        "y" : -27
+      },
+      "creationDate" : 1424606818.311201,
+      "sensorTimeStamp" : 47724,
+      "rawAccelerometer" : {
+        "z" : 194,
+        "x" : -984,
+        "y" : 8114
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -706,
+        "x" : 61,
+        "y" : -51
+      },
+      "creationDate" : 1424606818.339399,
+      "sensorTimeStamp" : 47734,
+      "rawAccelerometer" : {
+        "z" : -184,
+        "x" : -670,
+        "y" : 8090
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -896,
+        "x" : 307,
+        "y" : 1
+      },
+      "creationDate" : 1424606818.339945,
+      "sensorTimeStamp" : 47745,
+      "rawAccelerometer" : {
+        "z" : -369,
+        "x" : -425,
+        "y" : 8142
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -900,
+        "x" : 465,
+        "y" : 81
+      },
+      "creationDate" : 1424606818.341189,
+      "sensorTimeStamp" : 47755,
+      "rawAccelerometer" : {
+        "z" : -359,
+        "x" : -266,
+        "y" : 8222
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -835,
+        "x" : 557,
+        "y" : 159
+      },
+      "creationDate" : 1424606818.369389,
+      "sensorTimeStamp" : 47763,
+      "rawAccelerometer" : {
+        "z" : -270,
+        "x" : -169,
+        "y" : 8298
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -792,
+        "x" : 586,
+        "y" : 191
+      },
+      "creationDate" : 1424606818.369906,
+      "sensorTimeStamp" : 47775,
+      "rawAccelerometer" : {
+        "z" : -202,
+        "x" : -133,
+        "y" : 8329
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -773,
+        "x" : 552,
+        "y" : 149
+      },
+      "creationDate" : 1424606818.371273,
+      "sensorTimeStamp" : 47785,
+      "rawAccelerometer" : {
+        "z" : -163,
+        "x" : -166,
+        "y" : 8286
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -743,
+        "x" : 445,
+        "y" : 92
+      },
+      "creationDate" : 1424606818.399361,
+      "sensorTimeStamp" : 47794,
+      "rawAccelerometer" : {
+        "z" : -120,
+        "x" : -275,
+        "y" : 8228
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -676,
+        "x" : 279,
+        "y" : 52
+      },
+      "creationDate" : 1424606818.399984,
+      "sensorTimeStamp" : 47804,
+      "rawAccelerometer" : {
+        "z" : -45,
+        "x" : -451,
+        "y" : 8186
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -568,
+        "x" : 105,
+        "y" : 51
+      },
+      "creationDate" : 1424606818.401307,
+      "sensorTimeStamp" : 47814,
+      "rawAccelerometer" : {
+        "z" : 72,
+        "x" : -639,
+        "y" : 8183
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -438,
+        "x" : -5,
+        "y" : 67
+      },
+      "creationDate" : 1424606818.429355,
+      "sensorTimeStamp" : 47824,
+      "rawAccelerometer" : {
+        "z" : 215,
+        "x" : -764,
+        "y" : 8197
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -263,
+        "x" : -13,
+        "y" : 78
+      },
+      "creationDate" : 1424606818.42995,
+      "sensorTimeStamp" : 47835,
+      "rawAccelerometer" : {
+        "z" : 407,
+        "x" : -780,
+        "y" : 8206
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -82,
+        "x" : 46,
+        "y" : 104
+      },
+      "creationDate" : 1424606818.431294,
+      "sensorTimeStamp" : 47843,
+      "rawAccelerometer" : {
+        "z" : 609,
+        "x" : -722,
+        "y" : 8230
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 36,
+        "x" : 135,
+        "y" : 101
+      },
+      "creationDate" : 1424606818.459423,
+      "sensorTimeStamp" : 47855,
+      "rawAccelerometer" : {
+        "z" : 753,
+        "x" : -628,
+        "y" : 8225
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 107,
+        "x" : 215,
+        "y" : 44
+      },
+      "creationDate" : 1424606818.460121,
+      "sensorTimeStamp" : 47865,
+      "rawAccelerometer" : {
+        "z" : 845,
+        "x" : -538,
+        "y" : 8167
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 151,
+        "x" : 278,
+        "y" : -40
+      },
+      "creationDate" : 1424606818.461204,
+      "sensorTimeStamp" : 47874,
+      "rawAccelerometer" : {
+        "z" : 907,
+        "x" : -463,
+        "y" : 8082
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 148,
+        "x" : 269,
+        "y" : -110
+      },
+      "creationDate" : 1424606818.489318,
+      "sensorTimeStamp" : 47884,
+      "rawAccelerometer" : {
+        "z" : 919,
+        "x" : -463,
+        "y" : 8011
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 118,
+        "x" : 127,
+        "y" : -130
+      },
+      "creationDate" : 1424606818.489872,
+      "sensorTimeStamp" : 47894,
+      "rawAccelerometer" : {
+        "z" : 896,
+        "x" : -607,
+        "y" : 7991
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 70,
+        "x" : -128,
+        "y" : -103
+      },
+      "creationDate" : 1424606818.491249,
+      "sensorTimeStamp" : 47904,
+      "rawAccelerometer" : {
+        "z" : 851,
+        "x" : -875,
+        "y" : 8016
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 37,
+        "x" : -445,
+        "y" : -72
+      },
+      "creationDate" : 1424606818.609575,
+      "sensorTimeStamp" : 47915,
+      "rawAccelerometer" : {
+        "z" : 816,
+        "x" : -1214,
+        "y" : 8045
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 30,
+        "x" : -760,
+        "y" : -53
+      },
+      "creationDate" : 1424606818.610251,
+      "sensorTimeStamp" : 47923,
+      "rawAccelerometer" : {
+        "z" : 804,
+        "x" : -1556,
+        "y" : 8062
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 49,
+        "x" : -1014,
+        "y" : -38
+      },
+      "creationDate" : 1424606818.611449,
+      "sensorTimeStamp" : 47935,
+      "rawAccelerometer" : {
+        "z" : 819,
+        "x" : -1838,
+        "y" : 8074
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 56,
+        "x" : -1135,
+        "y" : -17
+      },
+      "creationDate" : 1424606818.61226,
+      "sensorTimeStamp" : 47945,
+      "rawAccelerometer" : {
+        "z" : 825,
+        "x" : -1984,
+        "y" : 8093
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 77,
+        "x" : -1055,
+        "y" : -18
+      },
+      "creationDate" : 1424606818.612378,
+      "sensorTimeStamp" : 47953,
+      "rawAccelerometer" : {
+        "z" : 848,
+        "x" : -1920,
+        "y" : 8090
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 128,
+        "x" : -809,
+        "y" : -16
+      },
+      "creationDate" : 1424606818.63951,
+      "sensorTimeStamp" : 47964,
+      "rawAccelerometer" : {
+        "z" : 904,
+        "x" : -1677,
+        "y" : 8091
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 221,
+        "x" : -508,
+        "y" : 3
+      },
+      "creationDate" : 1424606818.640102,
+      "sensorTimeStamp" : 47974,
+      "rawAccelerometer" : {
+        "z" : 1006,
+        "x" : -1368,
+        "y" : 8112
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 317,
+        "x" : -237,
+        "y" : 24
+      },
+      "creationDate" : 1424606818.64089,
+      "sensorTimeStamp" : 47984,
+      "rawAccelerometer" : {
+        "z" : 1115,
+        "x" : -1084,
+        "y" : 8132
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 388,
+        "x" : -45,
+        "y" : 4
+      },
+      "creationDate" : 1424606818.641684,
+      "sensorTimeStamp" : 47994,
+      "rawAccelerometer" : {
+        "z" : 1202,
+        "x" : -879,
+        "y" : 8113
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -314,
+        "x" : -76,
+        "y" : -16
+      },
+      "creationDate" : 1424606818.670698,
+      "sensorTimeStamp" : 48054,
+      "rawAccelerometer" : {
+        "z" : 470,
+        "x" : -924,
+        "y" : 8093
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -310,
+        "x" : -111,
+        "y" : 23
+      },
+      "creationDate" : 1424606818.671858,
+      "sensorTimeStamp" : 48064,
+      "rawAccelerometer" : {
+        "z" : 465,
+        "x" : -964,
+        "y" : 8133
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -272,
+        "x" : -64,
+        "y" : 68
+      },
+      "creationDate" : 1424606818.699431,
+      "sensorTimeStamp" : 48074,
+      "rawAccelerometer" : {
+        "z" : 497,
+        "x" : -916,
+        "y" : 8179
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -222,
+        "x" : 45,
+        "y" : 97
+      },
+      "creationDate" : 1424606818.700166,
+      "sensorTimeStamp" : 48084,
+      "rawAccelerometer" : {
+        "z" : 547,
+        "x" : -797,
+        "y" : 8209
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -153,
+        "x" : 160,
+        "y" : 88
+      },
+      "creationDate" : 1424606818.700902,
+      "sensorTimeStamp" : 48095,
+      "rawAccelerometer" : {
+        "z" : 617,
+        "x" : -668,
+        "y" : 8201
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -102,
+        "x" : 227,
+        "y" : 51
+      },
+      "creationDate" : 1424606818.701823,
+      "sensorTimeStamp" : 48105,
+      "rawAccelerometer" : {
+        "z" : 666,
+        "x" : -589,
+        "y" : 8165
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : -57,
+        "x" : 232,
+        "y" : 11
+      },
+      "creationDate" : 1424606818.729428,
+      "sensorTimeStamp" : 48113,
+      "rawAccelerometer" : {
+        "z" : 708,
+        "x" : -577,
+        "y" : 8126
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 37,
+        "x" : 188,
+        "y" : 0
+      },
+      "creationDate" : 1424606818.730182,
+      "sensorTimeStamp" : 48123,
+      "rawAccelerometer" : {
+        "z" : 799,
+        "x" : -620,
+        "y" : 8116
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 195,
+        "x" : 131,
+        "y" : 29
+      },
+      "creationDate" : 1424606818.730741,
+      "sensorTimeStamp" : 48134,
+      "rawAccelerometer" : {
+        "z" : 957,
+        "x" : -680,
+        "y" : 8144
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 359,
+        "x" : 80,
+        "y" : 57
+      },
+      "creationDate" : 1424606818.731779,
+      "sensorTimeStamp" : 48144,
+      "rawAccelerometer" : {
+        "z" : 1128,
+        "x" : -735,
+        "y" : 8171
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 428,
+        "x" : 16,
+        "y" : 79
+      },
+      "creationDate" : 1424606818.759326,
+      "sensorTimeStamp" : 48154,
+      "rawAccelerometer" : {
+        "z" : 1206,
+        "x" : -802,
+        "y" : 8193
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 347,
+        "x" : -74,
+        "y" : 85
+      },
+      "creationDate" : 1424606818.760048,
+      "sensorTimeStamp" : 48164,
+      "rawAccelerometer" : {
+        "z" : 1128,
+        "x" : -899,
+        "y" : 8197
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 207,
+        "x" : -166,
+        "y" : 32
+      },
+      "creationDate" : 1424606818.761053,
+      "sensorTimeStamp" : 48175,
+      "rawAccelerometer" : {
+        "z" : 980,
+        "x" : -1002,
+        "y" : 8144
+      }
+    },
+    {
+      "linearAcceleration" : {
+        "z" : 93,
+        "x" : -250,
+        "y" : -18
+      },
+      "creationDate" : 1424606818.789852,
+      "sensorTimeStamp" : 48185,
+      "rawAccelerometer" : {
+        "z" : 852,
+        "x" : -1099,
+        "y" : 8093
+      }
+    }
+  ],
+  "weightInKg" : 52.8,
+  "additionalInformation" : "",
+  "leftFoot" : true,
+  "heightInMeter" : 167
+}

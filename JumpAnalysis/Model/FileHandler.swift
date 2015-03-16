@@ -34,7 +34,11 @@ class FileHandler {
     }
     
     class func readFromFile(fileName: String) -> String {
-        let fileContent = NSString(contentsOfFile: FileHandler.getFilePathForFileName(fileName), encoding: NSUTF8StringEncoding, error: nil)
+        return readFileFromPath(FileHandler.getFilePathForFileName(fileName))
+    }
+    
+    class func readFileFromPath(path: String) -> String {
+        let fileContent = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil)
         if let content = fileContent {
             return content as! String
         } else {
