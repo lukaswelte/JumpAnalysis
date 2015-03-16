@@ -33,10 +33,14 @@ class TestData: Equatable {
 
 //MARK: JSON method
     init(fromDictionary: Dictionary<String, AnyObject>) {
-        self.sensorTimeStampInMilliseconds = fromDictionary["sensorTimeStamp"] as! Int;
-        self.creationDate = NSDate(timeIntervalSince1970: fromDictionary["creationDate"] as! NSTimeInterval)
-        self.rawAcceleration = RawAcceleration(fromDictionary: fromDictionary["rawAccelerometer"] as! Dictionary<String, AnyObject>)
-        self.linearAcceleration = LinearAcceleration(fromDictionary: fromDictionary["linearAcceleration"] as! Dictionary<String, AnyObject>)
+        self.id = fromDictionary["id"] as! Int;
+        self.isLeftFoot = fromDictionary["leftFoot"] as! Bool
+        self.jumperName = fromDictionary["name"] as! String
+        self.jumperWeightInKg = fromDictionary["weightInKg"] as! Double
+        self.jumperHeightInCm = fromDictionary["heightInMeter"] as! Int
+        self.jumpDurationInMs = fromDictionary["jumpDurationInMs"] as! Int
+        self.jumpDistanceInCm = fromDictionary["jumpDistanceInCm"] as! Int
+        self.sensorData = (fromDictionary["sensorData"] as! Array).map{dict in SensorData(fromDictionary: dict)}
     }
 }
 
