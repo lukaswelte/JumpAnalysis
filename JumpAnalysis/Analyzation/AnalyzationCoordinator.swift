@@ -17,7 +17,7 @@ class AnalyzationCoordinator {
     
     let testData = TestDataLoader().retrieveTestData()
     
-    let algorithms: [AlgorithmProtocol] = [FakeAlgorithm()]
+    let algorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
     
     func testRunAndCompareAlgorithms() {
         println("Starting algorithms tests...")
