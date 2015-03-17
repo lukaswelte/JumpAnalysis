@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TestData: Equatable {
+class TestData: Equatable, Hashable {
     let id : Int
     let isLeftFoot: Bool
     let jumperName: String
@@ -30,6 +30,9 @@ class TestData: Equatable {
         self.sensorData = sensorData
     }
     
+    var hashValue: Int {
+        return self.id
+    }
 
 //MARK: JSON method
     init(fromDictionary: Dictionary<String, AnyObject>) {

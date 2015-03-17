@@ -9,5 +9,7 @@
 import Foundation
 
 protocol AlgorithmProtocol {
+    var name: String { get }
     func calculateResult(sensorData: [SensorData]) -> Double
 }
+

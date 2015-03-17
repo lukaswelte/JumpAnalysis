@@ -14,7 +14,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let testData = AnalyzationCoordinator.sharedInstance.testData
+        AnalyzationCoordinator.sharedInstance.testRunAndCompareAlgorithms()
         
     }
 

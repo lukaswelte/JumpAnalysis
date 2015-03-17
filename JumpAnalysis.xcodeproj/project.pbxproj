@@ -16,6 +16,8 @@
 		801DA5441A6C63480028AAF3 /* JumpAnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */; };
 		801DA5671A6C65110028AAF3 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5661A6C65110028AAF3 /* SensorData.swift */; };
 		801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA5681A6C666E0028AAF3 /* Gravity.swift */; };
+		802A6A5A1AB8BB38008020B6 /* AnalyzationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A6A591AB8BB38008020B6 /* AnalyzationResult.swift */; };
+		802A6A5C1AB8BED3008020B6 /* FakeAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A6A5B1AB8BED3008020B6 /* FakeAlgorithm.swift */; };
 		802F79FA1A822DA900C45AA5 /* QuaternionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F79F91A822DA900C45AA5 /* QuaternionTests.swift */; };
 		802F79FC1A822F4700C45AA5 /* VectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802F79FB1A822F4700C45AA5 /* VectorTests.swift */; };
 		80469B651A7641D000544715 /* BenchmarkSensorRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */; };
@@ -150,6 +152,8 @@
 		801DA5431A6C63480028AAF3 /* JumpAnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpAnalysisTests.swift; sourceTree = "<group>"; };
 		801DA5661A6C65110028AAF3 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
 		801DA5681A6C666E0028AAF3 /* Gravity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
+		802A6A591AB8BB38008020B6 /* AnalyzationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzationResult.swift; sourceTree = "<group>"; };
+		802A6A5B1AB8BED3008020B6 /* FakeAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeAlgorithm.swift; sourceTree = "<group>"; };
 		802F79F91A822DA900C45AA5 /* QuaternionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuaternionTests.swift; sourceTree = "<group>"; };
 		802F79FB1A822F4700C45AA5 /* VectorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorTests.swift; sourceTree = "<group>"; };
 		80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkSensorRateViewController.swift; sourceTree = "<group>"; };
@@ -438,6 +442,7 @@
 			children = (
 				80C5AF411AB7101200F20010 /* Algorithms */,
 				80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */,
+				802A6A591AB8BB38008020B6 /* AnalyzationResult.swift */,
 				80C5AEC11AB6E91800F20010 /* Data */,
 				80C5AEFE1AB6E91800F20010 /* TestData.swift */,
 				80C5AEFF1AB6E91800F20010 /* TestDataLoader.swift */,
@@ -517,6 +522,7 @@
 			children = (
 				80C5AF421AB7102D00F20010 /* SimplePeakDetection.swift */,
 				80C5AF441AB7103A00F20010 /* AlgorithmProtocol.swift */,
+				802A6A5B1AB8BED3008020B6 /* FakeAlgorithm.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -707,6 +713,7 @@
 				8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */,
 				8071D33A1A6C671100E303E8 /* Vector.swift in Sources */,
 				80C5AF431AB7102D00F20010 /* SimplePeakDetection.swift in Sources */,
+				802A6A5C1AB8BED3008020B6 /* FakeAlgorithm.swift in Sources */,
 				8081BED11A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */,
 				8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */,
 				80C5AF3E1AB6E91800F20010 /* TestDataLoader.swift in Sources */,
@@ -715,6 +722,7 @@
 				80489B9F1A6D05340044BFF1 /* Chart.swift in Sources */,
 				8071D3571A6C756400E303E8 /* ArduinoCommunicationManager.swift in Sources */,
 				80489BA31A6D05340044BFF1 /* ChartSeries.swift in Sources */,
+				802A6A5A1AB8BB38008020B6 /* AnalyzationResult.swift in Sources */,
 				801DA52E1A6C63480028AAF3 /* FirstViewController.swift in Sources */,
 				8071D33C1A6C68C800E303E8 /* LinearAcceleration.swift in Sources */,
 			);
