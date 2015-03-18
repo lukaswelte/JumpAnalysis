@@ -13,7 +13,7 @@ class TestDataLoader {
         var loadedData:[TestData] = []
         
         for i in 0...67 {
-            let path = NSBundle.mainBundle().pathForResource("Analyzation/data/\(i)", ofType: "json")
+            let path = NSBundle.mainBundle().pathForResource("\(i)", ofType: "json")
             if let filePath = path {
                 if let data = NSData(contentsOfMappedFile: filePath) {
                     let json = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)

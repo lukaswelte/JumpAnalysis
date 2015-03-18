@@ -17,7 +17,38 @@ class AnalyzationCoordinator {
     
     let testData = TestDataLoader().retrieveTestData()
     
-    let algorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
+    let algorithms: [AlgorithmProtocol]
+    
+    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
+    
+    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [FakeAlgorithmParameterized(), SimplePeakDetectionParameterized()]
+    
+    static func generateAlgorithmsFromParameterizedAlgorithms(algorithmClasses: [ParameterizedAlgorithmProtocol]) -> [AlgorithmProtocol] {
+        var algorithmList: [AlgorithmProtocol] = []
+        for aClass in algorithmClasses {
+            //var parameterMap = [String:[AlgorithmParameter]]()
+            for paramSpec in aClass.parameterSpecification {
+                var params: [AlgorithmParameter] = []
+                var current = paramSpec.min
+                while current<=paramSpec.max {
+                    let param = AlgorithmParameter(value: current, name: paramSpec.name)
+                    params.append(param)
+                    
+                    algorithmList.append(aClass.factory([param]))
+                    current += paramSpec.step
+                }
+                //parameterMap.updateValue(params, forKey: paramSpec.name)
+            }
+        }
+        
+        return algorithmList
+    }
+    
+    init() {
+        var arr : [AlgorithmProtocol] = AnalyzationCoordinator.statAlgorithms
+        arr += AnalyzationCoordinator.generateAlgorithmsFromParameterizedAlgorithms(AnalyzationCoordinator.parameterizedAlgorithmClasses)
+        self.algorithms = arr
+    }
     
     func testRunAndCompareAlgorithms() {
         println("Starting algorithms tests...")
@@ -57,8 +88,7 @@ class AnalyzationCoordinator {
         println("Finished comparison.")
     }
     
-    private func standardDeviation(arr : [Double]) -> Double
-    {
+    private func standardDeviation(arr : [Double]) -> Double {
         let length = Double(arr.count)
         let avg = arr.reduce(0, combine: {$0 + $1}) / length
         let sumOfSquaredAvgDiff = arr.map { pow($0 - avg, 2.0)}.reduce(0, combine: {$0 + $1})
