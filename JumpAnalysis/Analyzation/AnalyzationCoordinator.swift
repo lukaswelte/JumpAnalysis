@@ -26,6 +26,7 @@ class AnalyzationCoordinator {
     static func generateAlgorithmsFromParameterizedAlgorithms(algorithmClasses: [ParameterizedAlgorithmProtocol]) -> [AlgorithmProtocol] {
         var algorithmList: [AlgorithmProtocol] = []
         for aClass in algorithmClasses {
+            //TODO: enable for more than one parameter
             //var parameterMap = [String:[AlgorithmParameter]]()
             for paramSpec in aClass.parameterSpecification {
                 var params: [AlgorithmParameter] = []
