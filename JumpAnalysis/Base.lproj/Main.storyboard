@@ -18,11 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCi-Lt-XBm" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
-                                <rect key="frame" x="32" y="28" width="537" height="158"/>
+                                <rect key="frame" x="32" y="72" width="537" height="158"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="158" id="3GN-F2-1XY"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
                                         <real key="value" value="1"/>
@@ -33,32 +30,84 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kWd-uY-CKJ">
-                                <rect key="frame" x="-5" y="194" width="605" height="406"/>
+                                <rect key="frame" x="-5" y="238" width="605" height="313"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="406" id="hRe-HG-dmi"/>
+                                    <constraint firstAttribute="height" constant="313" id="tLR-yp-Qhe"/>
                                 </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vCi-Lt-XBm" firstAttribute="top" secondItem="6a4-60-KYm" secondAttribute="bottom" constant="8" symbolic="YES" id="8yc-ED-WGa"/>
-                            <constraint firstItem="kWd-uY-CKJ" firstAttribute="top" secondItem="vCi-Lt-XBm" secondAttribute="bottom" constant="8" symbolic="YES" id="Kfa-CW-wJg"/>
-                            <constraint firstItem="kWd-uY-CKJ" firstAttribute="bottom" secondItem="9Kv-e6-vuO" secondAttribute="top" id="Lul-Pq-St0"/>
-                            <constraint firstItem="kWd-uY-CKJ" firstAttribute="leading" secondItem="YrF-LY-rUJ" secondAttribute="leadingMargin" constant="-21" id="PjK-B7-y0g"/>
-                            <constraint firstAttribute="trailing" secondItem="kWd-uY-CKJ" secondAttribute="trailing" id="Sdj-HD-7jJ"/>
-                            <constraint firstItem="vCi-Lt-XBm" firstAttribute="leading" secondItem="YrF-LY-rUJ" secondAttribute="leadingMargin" constant="16" id="jHp-FE-Eon"/>
-                            <constraint firstItem="vCi-Lt-XBm" firstAttribute="centerX" secondItem="YrF-LY-rUJ" secondAttribute="centerX" id="xob-mg-Z6r"/>
+                            <constraint firstItem="kWd-uY-CKJ" firstAttribute="bottom" secondItem="9Kv-e6-vuO" secondAttribute="top" id="6Us-uJ-3Gy"/>
+                            <constraint firstItem="kWd-uY-CKJ" firstAttribute="top" secondItem="vCi-Lt-XBm" secondAttribute="bottom" constant="8" symbolic="YES" id="8bx-5L-Td0"/>
+                            <constraint firstItem="vCi-Lt-XBm" firstAttribute="centerX" secondItem="YrF-LY-rUJ" secondAttribute="centerX" id="Bir-KN-OEf"/>
+                            <constraint firstAttribute="trailing" secondItem="kWd-uY-CKJ" secondAttribute="trailing" id="TNM-qG-Rrv"/>
+                            <constraint firstItem="vCi-Lt-XBm" firstAttribute="leading" secondItem="YrF-LY-rUJ" secondAttribute="leadingMargin" constant="16" id="aXh-gg-uRQ"/>
+                            <constraint firstItem="vCi-Lt-XBm" firstAttribute="top" secondItem="6a4-60-KYm" secondAttribute="bottom" constant="8" symbolic="YES" id="ufL-Gh-gHs"/>
+                            <constraint firstItem="kWd-uY-CKJ" firstAttribute="leading" secondItem="YrF-LY-rUJ" secondAttribute="leadingMargin" constant="-21" id="xm7-ik-ZF0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oHq-YU-rka"/>
                     <connections>
                         <outlet property="distributionGraph" destination="vCi-Lt-XBm" id="P9M-6y-Whc"/>
                         <outlet property="tableView" destination="kWd-uY-CKJ" id="A1p-8k-6MU"/>
+                        <segue destination="dHL-0v-npc" kind="show" identifier="showAlgorithmDebugView" id="lfT-Yt-7qG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZl-5a-N5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="695" y="-851"/>
+            <point key="canvasLocation" x="1507" y="-851"/>
+        </scene>
+        <!--Algorithm Debug View Controller-->
+        <scene sceneID="vIS-Av-aKp">
+            <objects>
+                <viewController id="dHL-0v-npc" customClass="AlgorithmDebugViewController" customModule="JumpAnalysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yiq-C3-Sae"/>
+                        <viewControllerLayoutGuide type="bottom" id="j1i-ss-Byl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zTT-la-ldG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-CI-WLz" customClass="Chart" customModule="JumpAnalysis" customModuleProvider="target">
+                                <rect key="frame" x="32" y="72" width="537" height="168"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kcq-17-ci0">
+                                <rect key="frame" x="32" y="248" width="537" height="167"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kcq-17-ci0" firstAttribute="top" secondItem="Byt-CI-WLz" secondAttribute="bottom" constant="8" symbolic="YES" id="3ex-Qn-0f8"/>
+                            <constraint firstItem="Kcq-17-ci0" firstAttribute="leading" secondItem="Byt-CI-WLz" secondAttribute="leading" id="4wN-oR-xnE"/>
+                            <constraint firstItem="Byt-CI-WLz" firstAttribute="trailing" secondItem="Kcq-17-ci0" secondAttribute="trailing" id="FbR-eT-At8"/>
+                            <constraint firstItem="Kcq-17-ci0" firstAttribute="height" secondItem="Byt-CI-WLz" secondAttribute="height" id="HfR-G7-pC5"/>
+                            <constraint firstItem="Byt-CI-WLz" firstAttribute="centerX" secondItem="zTT-la-ldG" secondAttribute="centerX" id="MsT-4l-fSO"/>
+                            <constraint firstItem="Byt-CI-WLz" firstAttribute="leading" secondItem="zTT-la-ldG" secondAttribute="leadingMargin" constant="16" id="ZIg-6O-VKl"/>
+                            <constraint firstItem="Byt-CI-WLz" firstAttribute="top" secondItem="Yiq-C3-Sae" secondAttribute="bottom" constant="8" symbolic="YES" id="dAY-ak-IJo"/>
+                            <constraint firstItem="j1i-ss-Byl" firstAttribute="top" secondItem="Kcq-17-ci0" secondAttribute="bottom" constant="136" id="lQK-l2-ZCw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debugViewPlaceHolder" destination="Kcq-17-ci0" id="ZqX-kd-eYn"/>
+                        <outlet property="originalDataChart" destination="Byt-CI-WLz" id="Q2g-JS-I03"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQK-ac-mtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507" y="-125"/>
         </scene>
         <!--Algorithm Analysis-->
         <scene sceneID="CHX-cn-JV4">
@@ -91,7 +140,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Algorithm Analysis" id="FKX-es-plD"/>
                     <connections>
-                        <segue destination="LNF-4Z-6MK" kind="showDetail" identifier="showAlgorithmDetail" id="8cv-Hb-Dhe"/>
+                        <segue destination="L2n-yU-bnN" kind="showDetail" identifier="showAlgorithmDetail" id="8cv-Hb-Dhe"/>
                         <segue destination="FyU-Ey-PII" kind="showDetail" identifier="showCompareAlgorithms" id="SBn-Ee-m8f"/>
                     </connections>
                 </tableViewController>
@@ -133,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRM-CM-nzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="-807"/>
+            <point key="canvasLocation" x="2327" y="-807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KuY-zS-rnc">
@@ -155,10 +204,10 @@
         <scene sceneID="EgN-bc-R5M">
             <objects>
                 <splitViewController id="YKe-DI-g9j" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Analysis" id="vc0-um-lvw"/>
+                    <tabBarItem key="tabBarItem" title="Analysis" image="second" id="vc0-um-lvw"/>
                     <connections>
                         <segue destination="9bM-Do-pZn" kind="relationship" relationship="masterViewController" id="alj-hm-C3S"/>
-                        <segue destination="LNF-4Z-6MK" kind="relationship" relationship="detailViewController" id="xxt-zo-eYN"/>
+                        <segue destination="L2n-yU-bnN" kind="relationship" relationship="detailViewController" id="xxt-zo-eYN"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iY-W6-GXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -305,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="842" y="638"/>
         </scene>
         <!--Benchmark-->
         <scene sceneID="rYX-as-0Lf">
@@ -366,6 +415,25 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="741"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="faJ-Jq-Q4o">
+            <objects>
+                <viewController id="jYf-mm-Kzm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jvx-qE-6he"/>
+                        <viewControllerLayoutGuide type="bottom" id="Msv-mH-Buk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JRS-im-uNB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="first" id="V3t-bU-fDK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FG0-Hh-8Vw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914" y="-127"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -377,6 +445,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="jYf-mm-Kzm" kind="relationship" relationship="viewControllers" id="tcE-4Z-NY9"/>
                         <segue destination="YKe-DI-g9j" kind="relationship" relationship="viewControllers" id="SIN-iA-xG8"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Ff7-2r-qSf" kind="relationship" relationship="viewControllers" id="ndS-1k-fka"/>
@@ -386,12 +455,30 @@
             </objects>
             <point key="canvasLocation" x="-22" y="-166"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HCH-Xk-8xj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L2n-yU-bnN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Ww-FF-jdX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LNF-4Z-6MK" kind="relationship" relationship="rootViewController" id="ROp-Dy-vnb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMm-4g-Zhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="-851"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8cv-Hb-Dhe"/>
+        <segue reference="xxt-zo-eYN"/>
     </inferredMetricsTieBreakers>
 </document>

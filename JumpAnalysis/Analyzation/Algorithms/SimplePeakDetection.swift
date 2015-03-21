@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SimplePeakDetection : AlgorithmProtocol {
     var name = "SimplePeak"
@@ -22,5 +22,9 @@ class SimplePeakDetection : AlgorithmProtocol {
         
         let duration = lastPeak.sensorTimeStampInMilliseconds - firstPeak.sensorTimeStampInMilliseconds
         return Double(duration)
+    }
+    
+    func debugView(sensorData: [SensorData]) -> UIView {
+        return UIView()
     }
 }

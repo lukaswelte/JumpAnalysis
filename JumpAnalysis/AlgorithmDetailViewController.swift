@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlgorithmDetailViewController : UIViewController, UITableViewDataSource {
+class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     var algorithm: AlgorithmProtocol = FakeAlgorithm()
     var analyzationResults : [AnalyzationResult] = []
     
@@ -22,6 +22,8 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource {
         let algorithmResult = AnalyzationCoordinator.sharedInstance.testSingleAlgorithm(algorithm)
         self.analyzationResults = algorithmResult.analyzationResults
         self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
         self.distributionGraph.maxY = 1
         self.distributionGraph.areaAlphaComponent = 0.8
         let chartSeries : ChartSeries = ChartSeries(analyzationResults.map {s in Float(s.precision)})
@@ -39,5 +41,20 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource {
         let detailText = NSString(format: "Result: %.2f, %.2f%%", analyzationResult.computedResult, analyzationResult.precision*100)
         cell.detailTextLabel?.text = detailText as String
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showAlgorithmDebugView", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showAlgorithmDebugView" {
+            let debugViewController = segue.destinationViewController as! AlgorithmDebugViewController
+            debugViewController.algorithm = self.algorithm
+            if let selectedRowIndexPath = tableView.indexPathForSelectedRow() {
+                let testData = analyzationResults[selectedRowIndexPath.row].testData
+                debugViewController.testData = testData
+            }
+        }
     }
 }

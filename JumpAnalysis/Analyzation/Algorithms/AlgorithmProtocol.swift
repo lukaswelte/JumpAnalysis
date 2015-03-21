@@ -6,10 +6,12 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol AlgorithmProtocol {
     var name: String { get }
     func calculateResult(sensorData: [SensorData]) -> Double
+    
+    func debugView(sensorData: [SensorData]) -> UIView
 }
 

@@ -15,11 +15,11 @@ class AnalyzationCoordinator {
         return _AnalyzationCoordinator
     }
     
-    let testData = TestDataLoader().retrieveTestData()
+    lazy var testData = TestDataLoader().retrieveTestData()
     
     let algorithms: [AlgorithmProtocol]
     
-    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
+    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection(), FourierPeakDetection()]
     
     static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [FakeAlgorithmParameterized(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
     

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
     var name = "FilteredPeakDetection"
@@ -14,7 +14,7 @@ class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
     var lowPassFilterStrength = 0.9
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 0, max: 1, step: 0.01, name: "lowPassFilterStrength")
+        AlgorithmParameterSpecification(min: 0, max: 1, step: 0.1, name: "lowPassFilterStrength")
     ]
     
     required init() {}
@@ -64,5 +64,9 @@ class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
         }
         
         return Double(jumpDuration)
+    }
+    
+    func debugView(sensorData: [SensorData]) -> UIView {
+        return UIView()
     }
 }

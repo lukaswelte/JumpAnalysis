@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
     
@@ -52,5 +52,9 @@ class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
         
         
         return 0
+    }
+    
+    func debugView(sensorData: [SensorData]) -> UIView {
+        return UIView()
     }
 }

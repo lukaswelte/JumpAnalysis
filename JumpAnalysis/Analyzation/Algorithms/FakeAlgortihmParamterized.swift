@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class FakeAlgorithmParameterized : ParameterizedAlgorithmProtocol {
     var name = "FakeAlgorithmParam"
@@ -24,5 +24,9 @@ class FakeAlgorithmParameterized : ParameterizedAlgorithmProtocol {
     
     func calculateResult(sensorData: [SensorData]) -> Double {
         return 250
+    }
+    
+    func debugView(sensorData: [SensorData]) -> UIView {
+        return UIView()
     }
 }

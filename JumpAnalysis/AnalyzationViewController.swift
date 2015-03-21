@@ -53,7 +53,8 @@ class AnalyzationViewController: UITableViewController {
         if segue.identifier == "showAlgorithmDetail" {
             
             // configure AlgorithmDetailViewController
-            let algorithmViewController: AlgorithmDetailViewController = segue.destinationViewController as! AlgorithmDetailViewController
+            let navController = segue.destinationViewController as! UINavigationController
+            let algorithmViewController = navController.topViewController as! AlgorithmDetailViewController
             if let selectedRowIndexPath = tableView.indexPathForSelectedRow() {
                 if selectedRowIndexPath.row > 0 {
                     let algorithm = analyzationCoordinator.algorithms[selectedRowIndexPath.row-1]
