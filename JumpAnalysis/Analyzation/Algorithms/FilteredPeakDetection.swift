@@ -8,10 +8,29 @@
 
 import Foundation
 
-class FilteredPeakDetection : AlgorithmProtocol {
+class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
     var name = "FilteredPeakDetection"
     
-    let lowPassFilterStrength = 0.9
+    var lowPassFilterStrength = 0.9
+    
+    var parameterSpecification: [AlgorithmParameterSpecification] = [
+        AlgorithmParameterSpecification(min: 0, max: 1, step: 0.01, name: "lowPassFilterStrength")
+    ]
+    
+    required init() {}
+    
+    required init(parameters: [AlgorithmParameter]) {
+        for param in parameters {
+            if param.name == "lowPassFilterStrength" {
+                lowPassFilterStrength = param.value
+                name += " Strength: \(lowPassFilterStrength)"
+            }
+        }
+    }
+    
+    func factory(parameters: [AlgorithmParameter]) -> AlgorithmProtocol {
+        return FilteredPeakDetection(parameters: parameters)
+    }
     
     func calculateResult(sensorData: [SensorData]) -> Double {
         let sortedByTime = sensorData.sorted { (a, b) -> Bool in

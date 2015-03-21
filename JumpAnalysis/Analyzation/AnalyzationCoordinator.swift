@@ -19,9 +19,9 @@ class AnalyzationCoordinator {
     
     let algorithms: [AlgorithmProtocol]
     
-    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection(), FilteredPeakDetection()]
+    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
     
-    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [FakeAlgorithmParameterized(), SimplePeakDetectionParameterized()]
+    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [FakeAlgorithmParameterized(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
     
     static func generateAlgorithmsFromParameterizedAlgorithms(algorithmClasses: [ParameterizedAlgorithmProtocol]) -> [AlgorithmProtocol] {
         var algorithmList: [AlgorithmProtocol] = []
@@ -50,48 +50,35 @@ class AnalyzationCoordinator {
         self.algorithms = arr
     }
     
-    func testRunAndCompareAlgorithms() {
+    func testRunAndCompareAlgorithms() -> [AlgorithmTestResult] {
         println("Starting algorithms tests...")
         
-        var results: [AnalyzationResult] = []
+        var analyzationResults: [AnalyzationResult] = []
         for data in testData {
             for algorithm in algorithms {
-                results.append(AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData)))
+                analyzationResults.append(AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData)))
             }
         }
         
         println("Finished running algorithm tests.")
         println("Starting comparison...")
         
+        var algorithmResults: [AlgorithmTestResult] = []
         for algorithm in algorithms {
-            let analyzationResults = results.filter({a in a.algorithm.name == algorithm.name})
-            var bestPercentage: Double = -1
-            var worstPercentage = Double.infinity
-            var percentageSum: Double = 0.0
-            
-            for result in analyzationResults {
-                percentageSum += result.precision
-                if bestPercentage <= result.precision {
-                    bestPercentage = result.precision
-                }
-                if worstPercentage >= result.precision {
-                    worstPercentage = result.precision
-                }
-            }
-            
-            var averagePercentage: Double = percentageSum / Double(analyzationResults.count)
-            var standardDev = standardDeviation(analyzationResults.map({a in a.precision}))
-            
-            println("Algorithm: \(algorithm.name) \t Best: \(bestPercentage) \t Worst: \(worstPercentage) \t Average: \(averagePercentage) \t Standard Dev: \(standardDev)")
+            let analyzationResults = analyzationResults.filter({a in a.algorithm.name == algorithm.name})
+            algorithmResults.append(AlgorithmTestResult(analyzationResults: analyzationResults, algorithm: algorithm))
         }
         
         println("Finished comparison.")
+        return algorithmResults
     }
     
-    private func standardDeviation(arr : [Double]) -> Double {
-        let length = Double(arr.count)
-        let avg = arr.reduce(0, combine: {$0 + $1}) / length
-        let sumOfSquaredAvgDiff = arr.map { pow($0 - avg, 2.0)}.reduce(0, combine: {$0 + $1})
-        return sqrt(sumOfSquaredAvgDiff / length)
+    func testSingleAlgorithm(algorithm: AlgorithmProtocol) -> AlgorithmTestResult {
+        var results: [AnalyzationResult] = []
+        for data in testData {
+            results.append(AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData)))
+
+        }
+        return AlgorithmTestResult(analyzationResults: results, algorithm: algorithm)
     }
 }
