@@ -11,7 +11,7 @@ import Foundation
 class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 5000, max: 10000, step: 100, name: "threshold")
+        AlgorithmParameterSpecification(min: 5000, max: 10000, step: 1000, name: "threshold")
     ]
     
     var name = "SimplePeak"

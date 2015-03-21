@@ -8,14 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class AnalyzationViewController: UIViewController, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        AnalyzationCoordinator.sharedInstance.testRunAndCompareAlgorithms()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +20,9 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func compareAllAndPrintResults(sender: UIStepper) {
+        AnalyzationCoordinator.sharedInstance.testRunAndCompareAlgorithms()
+    }
+    
 }
 

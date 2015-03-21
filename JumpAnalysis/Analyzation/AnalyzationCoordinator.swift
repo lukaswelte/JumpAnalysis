@@ -19,7 +19,7 @@ class AnalyzationCoordinator {
     
     let algorithms: [AlgorithmProtocol]
     
-    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
+    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection(), FilteredPeakDetection()]
     
     static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [FakeAlgorithmParameterized(), SimplePeakDetectionParameterized()]
     

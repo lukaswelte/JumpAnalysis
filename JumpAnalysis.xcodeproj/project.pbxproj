@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		801DA52C1A6C63480028AAF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52B1A6C63480028AAF3 /* AppDelegate.swift */; };
-		801DA52E1A6C63480028AAF3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52D1A6C63480028AAF3 /* FirstViewController.swift */; };
+		801DA52E1A6C63480028AAF3 /* AnalyzationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52D1A6C63480028AAF3 /* AnalyzationViewController.swift */; };
 		801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */; };
 		801DA5331A6C63480028AAF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801DA5311A6C63480028AAF3 /* Main.storyboard */; };
 		801DA5351A6C63480028AAF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801DA5341A6C63480028AAF3 /* Images.xcassets */; };
@@ -65,6 +65,7 @@
 		8081BEFB1A6D3251004D4EF9 /* SubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */; };
 		8081BEFD1A6D3251004D4EF9 /* Tests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8081BEE11A6D3251004D4EF9 /* Tests.json */; };
 		8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */; };
+		809BE9771ABD6F84001CB2B0 /* FilteredPeakDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */; };
 		80C5AF001AB6E91800F20010 /* AnalyzationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */; };
 		80C5AF011AB6E91800F20010 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEC21AB6E91800F20010 /* 0.json */; };
 		80C5AF021AB6E91800F20010 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEC31AB6E91800F20010 /* 1.json */; };
@@ -146,7 +147,7 @@
 		801DA5261A6C63480028AAF3 /* JumpAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		801DA52A1A6C63480028AAF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		801DA52B1A6C63480028AAF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		801DA52D1A6C63480028AAF3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		801DA52D1A6C63480028AAF3 /* AnalyzationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzationViewController.swift; sourceTree = "<group>"; };
 		801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureJumpViewController.swift; sourceTree = "<group>"; };
 		801DA5321A6C63480028AAF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		801DA5341A6C63480028AAF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 		8081BEE01A6D3251004D4EF9 /* SubscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptTests.swift; sourceTree = "<group>"; };
 		8081BEE11A6D3251004D4EF9 /* Tests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tests.json; sourceTree = "<group>"; };
 		8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandlerTests.swift; sourceTree = "<group>"; };
+		809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredPeakDetection.swift; sourceTree = "<group>"; };
 		80A144E81A86952800C33214 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzationCoordinator.swift; sourceTree = "<group>"; };
 		80C5AEC21AB6E91800F20010 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
@@ -314,7 +316,7 @@
 				8071D3431A6C74D500E303E8 /* Communication */,
 				801DA5651A6C65050028AAF3 /* Model */,
 				801DA52B1A6C63480028AAF3 /* AppDelegate.swift */,
-				801DA52D1A6C63480028AAF3 /* FirstViewController.swift */,
+				801DA52D1A6C63480028AAF3 /* AnalyzationViewController.swift */,
 				801DA52F1A6C63480028AAF3 /* CaptureJumpViewController.swift */,
 				80469B641A7641D000544715 /* BenchmarkSensorRateViewController.swift */,
 				801DA5311A6C63480028AAF3 /* Main.storyboard */,
@@ -535,6 +537,7 @@
 				802A6A611AB9CF5B008020B6 /* ParameterizedAlgorithmProtocol.swift */,
 				802A6A651AB9D9C0008020B6 /* FakeAlgortihmParamterized.swift */,
 				802A6A5B1AB8BED3008020B6 /* FakeAlgorithm.swift */,
+				809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 				802A6A661AB9D9C0008020B6 /* FakeAlgortihmParamterized.swift in Sources */,
 				8081BECC1A6D2DD9004D4EF9 /* FileHandler.swift in Sources */,
 				801DA5691A6C666E0028AAF3 /* Gravity.swift in Sources */,
+				809BE9771ABD6F84001CB2B0 /* FilteredPeakDetection.swift in Sources */,
 				801DA5301A6C63480028AAF3 /* CaptureJumpViewController.swift in Sources */,
 				80C5AF451AB7103A00F20010 /* AlgorithmProtocol.swift in Sources */,
 				8071D3551A6C74F000E303E8 /* SensorDataDelegate.swift in Sources */,
@@ -739,7 +743,7 @@
 				802A6A641AB9D0B2008020B6 /* SimplePeakDetectionParameterized.swift in Sources */,
 				80489BA31A6D05340044BFF1 /* ChartSeries.swift in Sources */,
 				802A6A5A1AB8BB38008020B6 /* AnalyzationResult.swift in Sources */,
-				801DA52E1A6C63480028AAF3 /* FirstViewController.swift in Sources */,
+				801DA52E1A6C63480028AAF3 /* AnalyzationViewController.swift in Sources */,
 				8071D33C1A6C68C800E303E8 /* LinearAcceleration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
