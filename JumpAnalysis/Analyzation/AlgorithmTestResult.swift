@@ -37,7 +37,7 @@ class AlgorithmTestResult {
         self.bestPercentage = bestPercentage
         self.worstPercentage = worstPercentage
         self.averagePercentage = percentageSum / Double(analyzationResults.count)
-        self.standardDeviation = AlgorithmTestResult.standardDeviation(analyzationResults.map({a in a.precision}))
+        self.standardDeviation = AlgorithmTestResult.standardDeviation(analyzationResults.map({a in a.relativePercentError}))
     }
     
     private class func standardDeviation(arr : [Double]) -> Double {

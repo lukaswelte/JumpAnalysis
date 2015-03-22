@@ -25,9 +25,9 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, U
         self.tableView.delegate = self
         
         self.distributionGraph.maxY = 100
-        self.distributionGraph.minY = 0
+        self.distributionGraph.minY = -100
         //self.distributionGraph.areaAlphaComponent = 0.8
-        let chartSeries : ChartSeries = ChartSeries(analyzationResults.map {s in Float(s.precision*100)})
+        let chartSeries : ChartSeries = ChartSeries(analyzationResults.map {s in Float(s.percentError*100)})
         chartSeries.area = true
         self.distributionGraph.addSeries(chartSeries)
     }
@@ -40,7 +40,7 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, U
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "TestDataCell")
         let analyzationResult = analyzationResults[indexPath.row]
         cell.textLabel?.text = "TestData \(analyzationResult.testData.id): \(analyzationResult.testData.jumpDurationInMs) ms, \(analyzationResult.testData.jumpDistanceInCm) cm"
-        let detailText = NSString(format: "Result: %.2f, %.2f%%", analyzationResult.computedResult, analyzationResult.precision*100)
+        let detailText = NSString(format: "Result: %.2f, %.2f%%", analyzationResult.computedResult, analyzationResult.percentError*100)
         cell.detailTextLabel?.text = detailText as String
         return cell
     }

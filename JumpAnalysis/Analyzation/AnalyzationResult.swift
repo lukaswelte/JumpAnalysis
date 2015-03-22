@@ -13,6 +13,8 @@ class AnalyzationResult {
     let testData: TestData
     let computedResult: Double
     let precision : Double
+    let percentError: Double
+    let relativePercentError : Double
     
     init(algorithm: AlgorithmProtocol, testData: TestData, computedResult: Double) {
         self.algorithm = algorithm
@@ -21,8 +23,9 @@ class AnalyzationResult {
         let jumpDuration = Double(self.testData.jumpDurationInMs)
         let difference = self.computedResult - jumpDuration
         let absDiff = abs(difference)
-        let percentageError = absDiff / jumpDuration
-        self.precision = 1 - percentageError
+        self.percentError = difference / jumpDuration
+        self.relativePercentError = absDiff / jumpDuration
+        self.precision = 1 - self.relativePercentError
         let i = 0
     }
 }
