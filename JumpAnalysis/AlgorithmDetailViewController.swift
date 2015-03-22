@@ -24,10 +24,10 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, U
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        self.distributionGraph.maxY = 1
+        self.distributionGraph.maxY = 100
         self.distributionGraph.minY = 0
         //self.distributionGraph.areaAlphaComponent = 0.8
-        let chartSeries : ChartSeries = ChartSeries(analyzationResults.map {s in Float(s.precision)})
+        let chartSeries : ChartSeries = ChartSeries(analyzationResults.map {s in Float(s.precision*100)})
         chartSeries.area = true
         self.distributionGraph.addSeries(chartSeries)
     }

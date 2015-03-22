@@ -20,7 +20,7 @@ class AnalyzationCoordinator {
     let algorithms: [AlgorithmProtocol]
     
     /** FourerPeakDetection/Filtering is not used right now **/
-    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm(), SimplePeakDetection()]
+    static let statAlgorithms: [AlgorithmProtocol] = []//[FakeAlgorithm(), SimplePeakDetection()]
     
     static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [NegativeAreaAnalyzer()]//[FakeAlgorithmParameterized(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
     
