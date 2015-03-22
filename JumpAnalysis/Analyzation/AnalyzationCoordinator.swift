@@ -49,30 +49,6 @@ class AnalyzationCoordinator {
         var arr : [AlgorithmProtocol] = AnalyzationCoordinator.statAlgorithms
         arr += AnalyzationCoordinator.generateAlgorithmsFromParameterizedAlgorithms(AnalyzationCoordinator.parameterizedAlgorithmClasses)
         self.algorithms = arr
-        
-        checkAndRepairDataTimestamps()
-    }
-    
-    func checkAndRepairDataTimestamps() {
-        for data in testData {
-            if data.sensorData.filter({s in s.sensorTimeStampInMilliseconds > 65000}).count > 0 {
-                println("Data \(data.id) should be repaired")
-                println("------------------------")
-                println("[")
-                for s in data.sensorData {
-                    let addedSomeTime = s.sensorTimeStampInMilliseconds+20000
-                    let intMax = 65534
-                    let correctedTimeStamp = addedSomeTime>=intMax ? addedSomeTime-intMax : addedSomeTime
-                    //println("Time was \(s.sensorTimeStampInMilliseconds) now \(correctedTimeStamp)")
-                    
-                    let modifiedData = SensorData(sensorTimeStamp: correctedTimeStamp,  rawAcceleration: s.rawAcceleration, linearAcceleration: s.linearAcceleration, creationDate: s.creationDate)
-                    let json = JSON(modifiedData.toDictionary())
-                    println("\(json.description),")
-                }
-                println("]")
-                println("------------------------")
-            }
-        }
     }
     
     func testRunAndCompareAlgorithms() -> [AlgorithmTestResult] {
