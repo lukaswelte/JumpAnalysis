@@ -13,9 +13,10 @@ class TestDataLoader {
         var loadedData:[TestData] = []
         
         for i in 0...67 {
-            /*if i==10 || i==18 || i==61 {
-                continue
-            }*/
+            let predicate = i==10 || i==18 || i==61
+            if !predicate {
+            //    continue
+            }
             let path = NSBundle.mainBundle().pathForResource("\(i)", ofType: "json")
             if let filePath = path {
                 if let data = NSData(contentsOfMappedFile: filePath) {
