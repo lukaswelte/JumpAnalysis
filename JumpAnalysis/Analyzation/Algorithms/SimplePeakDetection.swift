@@ -16,7 +16,7 @@ class SimplePeakDetection : AlgorithmProtocol {
             return a.sensorTimeStampInMilliseconds < b.sensorTimeStampInMilliseconds
         }
         
-        let peaks = sortedByTime.filter({e in e.linearAcceleration.z > 6000})
+        let peaks = sortedByTime.filter({e in e.linearAcceleration.y > 6000})
         let firstPeak = peaks.first!
         let lastPeak = peaks.last!
         

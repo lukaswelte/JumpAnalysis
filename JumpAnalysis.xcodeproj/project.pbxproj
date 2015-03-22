@@ -150,6 +150,7 @@
 		80E2F4251ABDAAF400B90401 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E2F41C1ABDAAF400B90401 /* Power.swift */; };
 		80E2F4261ABDAAF400B90401 /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E2F41E1ABDAAF400B90401 /* Trigonometric.swift */; };
 		80E2F4281ABDAEE200B90401 /* AlgorithmDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E2F4271ABDAEE200B90401 /* AlgorithmDebugViewController.swift */; };
+		80E2F42A1ABEBA1000B90401 /* NegativeAreaAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E2F4291ABEBA1000B90401 /* NegativeAreaAnalyzer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +310,7 @@
 		80E2F41D1ABDAAF400B90401 /* Surge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Surge.h; sourceTree = "<group>"; };
 		80E2F41E1ABDAAF400B90401 /* Trigonometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigonometric.swift; sourceTree = "<group>"; };
 		80E2F4271ABDAEE200B90401 /* AlgorithmDebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmDebugViewController.swift; sourceTree = "<group>"; };
+		80E2F4291ABEBA1000B90401 /* NegativeAreaAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NegativeAreaAnalyzer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,6 +561,7 @@
 				802A6A5B1AB8BED3008020B6 /* FakeAlgorithm.swift */,
 				809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */,
 				80E2F3E81ABDA9F400B90401 /* FourierPeakDetection.swift */,
+				80E2F4291ABEBA1000B90401 /* NegativeAreaAnalyzer.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -820,6 +823,7 @@
 				802A6A601AB9CF01008020B6 /* AlgorithmParameter.swift in Sources */,
 				80E2F4231ABDAAF400B90401 /* Hyperbolic.swift in Sources */,
 				80E2F4251ABDAAF400B90401 /* Power.swift in Sources */,
+				80E2F42A1ABEBA1000B90401 /* NegativeAreaAnalyzer.swift in Sources */,
 				802A6A621AB9CF5B008020B6 /* ParameterizedAlgorithmProtocol.swift in Sources */,
 				8071D3511A6C74D500E303E8 /* BLEHelper.m in Sources */,
 				80C5AF3D1AB6E91800F20010 /* TestData.swift in Sources */,

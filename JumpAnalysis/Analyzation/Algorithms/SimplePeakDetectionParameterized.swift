@@ -41,7 +41,7 @@ class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
             return a.sensorTimeStampInMilliseconds < b.sensorTimeStampInMilliseconds
         }
         
-        let peaks = sortedByTime.filter({e in e.linearAcceleration.z > self.threshold})
+        let peaks = sortedByTime.filter({e in e.linearAcceleration.y > self.threshold})
         let firstPeak = peaks.first
         let lastPeak = peaks.last
         
