@@ -13,20 +13,23 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
     
     let accelerationThreshold:Double = 4000
     var landingThreshold: Double = 250
-    var lastSamplesCount = 5
-    var minJumpDuration = 187
+    var lastSamplesCount = 2
+    var minJumpDuration = 100
+    var takeOffThreshold:Double = 100
+
+    var minNegativePassedThreshold: Double = -6000
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 187, max: 187, step: 1, name: "minJumpDuration")
+        AlgorithmParameterSpecification(min: -50, max: 100, step: 10, name: "takeOff")
     ]
     
     required init() {}
     
     required init(parameters: [AlgorithmParameter]) {
         for param in parameters {
-            if param.name == "minJumpDuration" {
-                self.minJumpDuration = Int(param.value)
-                self.name += " mindur: \(self.minJumpDuration)"
+            if param.name == "takeOff" {
+                self.takeOffThreshold = param.value
+                self.name += " takeOff: \(self.takeOffThreshold)"
             }
         }
     }
@@ -50,6 +53,9 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
         var liftOff: SensorData? = nil
         var landingPeak: SensorData? = nil
         var oldAcceleration: Double = 0
+
+        var hasPassedMinNegThreshold = false
+        var maxNegativeAcceleration:Double = 0
         for data in sortedByTime {
             let valueToAnalyze = getValueToAnalyze(data)
             
@@ -67,17 +73,24 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
             } else if startJumpPeak != nil {
                 
                 //Has lift-off begun
-                if  currentAcceleration <= 0.0 && liftOff == nil {
+                if  currentAcceleration <= takeOffThreshold && liftOff == nil {
                     //Lift off happend
                     liftOff = data
-                } else {
-                    
-                    //Jumper did land?
-                    if liftOff != nil && currentAcceleration >= landingThreshold {
-                        if (data.sensorTimeStampInMilliseconds-liftOff!.sensorTimeStampInMilliseconds) > minJumpDuration {
-                            landingPeak = data
-                            //We landed so no more data needed to process
-                            break
+                } else if liftOff != nil {
+
+                    if !hasPassedMinNegThreshold && currentAcceleration <= minNegativePassedThreshold {
+                        hasPassedMinNegThreshold = true
+                    } else if hasPassedMinNegThreshold {
+                        
+                        //Jumper did land?
+                        if currentAcceleration < oldAcceleration && maxNegativeAcceleration > currentAcceleration {
+                            maxNegativeAcceleration = currentAcceleration
+                        } else if currentAcceleration >= landingThreshold || (currentAcceleration < oldAcceleration && maxNegativeAcceleration < currentAcceleration) {
+                            if (data.sensorTimeStampInMilliseconds-liftOff!.sensorTimeStampInMilliseconds) > minJumpDuration {
+                                landingPeak = data
+                                //We landed so no more data needed to process
+                                break
+                            }
                         }
                     }
                 }
@@ -121,6 +134,8 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
         var landingPeak: SensorData? = nil
         var oldAcceleration: Double = 0
         
+        var hasPassedMinNegThreshold = false
+        var maxNegativeAcceleration:Double = 0
         for i in 0..<sortedByTime.count {
             let valueToAnalyze = getValueToAnalyze(sortedByTime[i])
             
@@ -147,16 +162,23 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
             } else if startJumpPeak != nil {
                 
                 //Has lift-off begun
-                if  currentAcceleration <= 0.0 && liftOff == nil {
+                if  currentAcceleration <= takeOffThreshold && liftOff == nil {
                     //Lift off happend
                     liftOff = data
-                } else {
+                } else if liftOff != nil {
                     
-                    //Jumper did land?
-                    if liftOff != nil && currentAcceleration >= landingThreshold {
-                        if (data.sensorTimeStampInMilliseconds-liftOff!.sensorTimeStampInMilliseconds) > minJumpDuration {
-                            if landingPeak == nil {
-                                landingPeak = data
+                    if !hasPassedMinNegThreshold && currentAcceleration <= minNegativePassedThreshold {
+                        hasPassedMinNegThreshold = true
+                    } else if hasPassedMinNegThreshold {
+                        
+                        //Jumper did land?
+                        if currentAcceleration < oldAcceleration && maxNegativeAcceleration > currentAcceleration {
+                            maxNegativeAcceleration = currentAcceleration
+                        } else if currentAcceleration >= landingThreshold || (currentAcceleration < oldAcceleration && maxNegativeAcceleration < currentAcceleration) {
+                            if (data.sensorTimeStampInMilliseconds-liftOff!.sensorTimeStampInMilliseconds) > minJumpDuration {
+                                if landingPeak == nil {
+                                    landingPeak = data
+                                }
                             }
                         }
                     }
