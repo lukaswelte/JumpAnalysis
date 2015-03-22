@@ -13,23 +13,24 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
     
     let accelerationThreshold:Double = 4000
     var landingThreshold: Double = 250
-    var lastSamplesCount = 2
+    var lastSamplesCount = 5
     var minJumpDuration = 100
-    var takeOffThreshold:Double = 100
+    var takeOffThreshold:Double = 0
+    var minLandedThreshold: Double = 300
 
-    var minNegativePassedThreshold: Double = -6000
+    let minNegativePassedThreshold: Double = -6000
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: -50, max: 100, step: 10, name: "takeOff")
+        AlgorithmParameterSpecification(min: 0, max: 4000, step: 100, name: "minLand")
     ]
     
     required init() {}
     
     required init(parameters: [AlgorithmParameter]) {
         for param in parameters {
-            if param.name == "takeOff" {
-                self.takeOffThreshold = param.value
-                self.name += " takeOff: \(self.takeOffThreshold)"
+            if param.name == "minLand" {
+                self.minLandedThreshold = param.value
+                self.name += " minLand: \(self.minLandedThreshold)"
             }
         }
     }
@@ -85,7 +86,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
                         //Jumper did land?
                         if currentAcceleration < oldAcceleration && maxNegativeAcceleration > currentAcceleration {
                             maxNegativeAcceleration = currentAcceleration
-                        } else if currentAcceleration >= landingThreshold || (currentAcceleration < oldAcceleration && maxNegativeAcceleration < currentAcceleration) {
+                        } else if currentAcceleration >= landingThreshold || (currentAcceleration < oldAcceleration && maxNegativeAcceleration < currentAcceleration && abs(maxNegativeAcceleration-currentAcceleration)>4000 && abs(oldAcceleration-currentAcceleration)>self.minLandedThreshold) {
                             if (data.sensorTimeStampInMilliseconds-liftOff!.sensorTimeStampInMilliseconds) > minJumpDuration {
                                 landingPeak = data
                                 //We landed so no more data needed to process
@@ -174,7 +175,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
                         //Jumper did land?
                         if currentAcceleration < oldAcceleration && maxNegativeAcceleration > currentAcceleration {
                             maxNegativeAcceleration = currentAcceleration
-                        } else if currentAcceleration >= landingThreshold || (currentAcceleration < oldAcceleration && maxNegativeAcceleration < currentAcceleration) {
+                        } else if currentAcceleration >= landingThreshold || (currentAcceleration < oldAcceleration && maxNegativeAcceleration < currentAcceleration && abs(maxNegativeAcceleration-currentAcceleration)>self.minLandedThreshold && abs(oldAcceleration-currentAcceleration)>self.minLandedThreshold)  {
                             if (data.sensorTimeStampInMilliseconds-liftOff!.sensorTimeStampInMilliseconds) > minJumpDuration {
                                 if landingPeak == nil {
                                     landingPeak = data
