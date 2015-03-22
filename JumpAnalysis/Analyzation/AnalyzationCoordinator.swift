@@ -15,7 +15,7 @@ class AnalyzationCoordinator {
         return _AnalyzationCoordinator
     }
     
-    lazy var testData = TestDataLoader().retrieveTestData()
+    lazy var testData = TestDataLoader().retrieveTestData()//.filter({t in t.jumpDistanceInCm < 100})
     
     let algorithms: [AlgorithmProtocol]
     

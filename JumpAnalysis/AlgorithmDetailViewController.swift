@@ -39,7 +39,7 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, U
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: "TestDataCell")
         let analyzationResult = analyzationResults[indexPath.row]
-        cell.textLabel?.text = "TestData \(analyzationResult.testData.id): \(analyzationResult.testData.jumpDurationInMs) ms"
+        cell.textLabel?.text = "TestData \(analyzationResult.testData.id): \(analyzationResult.testData.jumpDurationInMs) ms, \(analyzationResult.testData.jumpDistanceInCm) cm"
         let detailText = NSString(format: "Result: %.2f, %.2f%%", analyzationResult.computedResult, analyzationResult.precision*100)
         cell.detailTextLabel?.text = detailText as String
         return cell

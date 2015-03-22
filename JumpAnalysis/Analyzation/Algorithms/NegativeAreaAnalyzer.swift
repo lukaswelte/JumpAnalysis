@@ -14,10 +14,10 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
     let accelerationThreshold:Double = 4000
     var landingThreshold: Double = 250
     var lastSamplesCount = 5
-    var minJumpDuration = 130
+    var minJumpDuration = 187
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 100, max: 250, step: 10, name: "minJumpDuration")
+        AlgorithmParameterSpecification(min: 187, max: 187, step: 1, name: "minJumpDuration")
     ]
     
     required init() {}
@@ -35,6 +35,10 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
         return NegativeAreaAnalyzer(parameters: parameters)
     }
     
+    private func getValueToAnalyze(sensorData: SensorData) -> Double {
+        return Double(sensorData.linearAcceleration.y)
+    }
+    
     
     func calculateResult(sensorData: [SensorData]) -> Double {
         let sortedByTime = sensorData.sorted { (a, b) -> Bool in
@@ -47,8 +51,10 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
         var landingPeak: SensorData? = nil
         var oldAcceleration: Double = 0
         for data in sortedByTime {
+            let valueToAnalyze = getValueToAnalyze(data)
+            
             if lastSamples.count < lastSamplesCount {
-                lastSamples.append(Double(data.linearAcceleration.y))
+                lastSamples.append(valueToAnalyze)
                 continue;
             }
             //calculate average of last samples
@@ -80,7 +86,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
             oldAcceleration = currentAcceleration
             
             
-            lastSamples.append(Double(data.linearAcceleration.y))
+            lastSamples.append(valueToAnalyze)
             if lastSamples.count > lastSamplesCount {
                 lastSamples.removeAtIndex(0)
             }
@@ -116,7 +122,9 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
         var oldAcceleration: Double = 0
         
         for i in 0..<sortedByTime.count {
-            let val = Float(sortedByTime[i].linearAcceleration.y)
+            let valueToAnalyze = getValueToAnalyze(sortedByTime[i])
+            
+            let val = Float(valueToAnalyze)
             let x = Float(sortedByTime[i].sensorTimeStampInMilliseconds)
             
             jumpThresholdLine.append(ChartPoint(x: x, y: Float(accelerationThreshold)))
@@ -125,7 +133,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
             
             /*** Algorithm ***/
             if lastSamples.count < lastSamplesCount {
-                lastSamples.append(Double(data.linearAcceleration.y))
+                lastSamples.append(valueToAnalyze)
                 continue;
             }
             //calculate average of last samples
@@ -162,7 +170,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
             oldAcceleration = currentAcceleration
             
             
-            lastSamples.append(Double(data.linearAcceleration.y))
+            lastSamples.append(valueToAnalyze)
             if lastSamples.count > lastSamplesCount {
                 lastSamples.removeAtIndex(0)
             }
