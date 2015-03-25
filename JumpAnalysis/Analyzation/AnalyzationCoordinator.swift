@@ -22,7 +22,7 @@ class AnalyzationCoordinator {
     /** FourerPeakDetection/Filtering is not used right now **/
     static let statAlgorithms: [AlgorithmProtocol] = []//[FakeAlgorithm(), SimplePeakDetection()]
     
-    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [NegativeAreaAnalyzer(), MinimumMovementAnalyzer()]//[FakeAlgorithmParameterized(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
+    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [NegativeAreaAnalyzer(), MinimumMovementAnalyzer(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
     
     static func generateAlgorithmsFromParameterizedAlgorithms(algorithmClasses: [ParameterizedAlgorithmProtocol]) -> [AlgorithmProtocol] {
         var algorithmList: [AlgorithmProtocol] = []

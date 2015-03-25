@@ -16,7 +16,10 @@ class CompareAllAlgorithmsViewController : UIViewController {
         self.title = "All Algorithms"
         
         let testResults = AnalyzationCoordinator.sharedInstance.testRunAndCompareAlgorithms().sorted { (a, b) -> Bool in
-            return a.averagePercentage > b.averagePercentage
+            if a.worstPercentage == b.worstPercentage {
+                return a.averagePercentage > b.averagePercentage
+            }
+            return a.worstPercentage > b.worstPercentage
         }
         
         self.resultTextView.text = ""

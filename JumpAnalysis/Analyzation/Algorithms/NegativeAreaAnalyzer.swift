@@ -21,7 +21,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
     let minNegativePassedThreshold: Double = -6000
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 300, max: 300, step: 1, name: "minLand")
+        AlgorithmParameterSpecification(min: 100, max: 600, step: 100, name: "minLand")
     ]
     
     required init() {}

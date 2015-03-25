@@ -20,7 +20,9 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, U
         self.title = algorithm.name
         
         let algorithmResult = AnalyzationCoordinator.sharedInstance.testSingleAlgorithm(algorithm)
-        self.analyzationResults = algorithmResult.analyzationResults
+        self.analyzationResults = algorithmResult.analyzationResults.sorted({ (a, b) -> Bool in
+            return a.testData.id < b.testData.id
+        })
         self.tableView.dataSource = self
         self.tableView.delegate = self
         

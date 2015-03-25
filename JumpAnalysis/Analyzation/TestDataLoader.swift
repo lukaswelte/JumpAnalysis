@@ -20,7 +20,7 @@ class TestDataLoader {
         var lock = NSLock()
         array.enumerateObjectsWithOptions(NSEnumerationOptions.Concurrent, usingBlock: { (obj: AnyObject!, index: Int, outStop: UnsafeMutablePointer<ObjCBool>) -> Void in
             let i = obj as! Int
-            let predicate = i==10// || i==18 || i==61
+            let predicate = i==10 || i==18 || i==61
             if !predicate {
                 let path = NSBundle.mainBundle().pathForResource("\(i)", ofType: "json")
                 if let filePath = path {
