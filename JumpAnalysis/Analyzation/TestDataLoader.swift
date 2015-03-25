@@ -12,21 +12,29 @@ class TestDataLoader {
     func retrieveTestData(max: Int? = nil) -> [TestData] {
         var loadedData:[TestData] = []
         
+        var array = NSMutableArray()
         for i in 0...67 {
-            let predicate = i==10// || i==18 || i==61
-            if predicate {
-                continue
-            }
-            let path = NSBundle.mainBundle().pathForResource("\(i)", ofType: "json")
-            if let filePath = path {
-                if let data = NSData(contentsOfMappedFile: filePath) {
-                    let json = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
-                    let dictionary = json.dictionaryObject
-                    let testData = TestData(fromDictionary: dictionary!)
-                    loadedData.append(testData)
-                }                
-            }
+            array.addObject(i)
         }
+        
+        var lock = NSLock()
+        array.enumerateObjectsWithOptions(NSEnumerationOptions.Concurrent, usingBlock: { (obj: AnyObject!, index: Int, outStop: UnsafeMutablePointer<ObjCBool>) -> Void in
+            let i = obj as! Int
+            let predicate = i==10// || i==18 || i==61
+            if !predicate {
+                let path = NSBundle.mainBundle().pathForResource("\(i)", ofType: "json")
+                if let filePath = path {
+                    if let data = NSData(contentsOfMappedFile: filePath) {
+                        let json = JSON(data: data, options: NSJSONReadingOptions.AllowFragments, error: nil)
+                        let dictionary = json.dictionaryObject
+                        let testData = TestData(fromDictionary: dictionary!)
+                        lock.lock()
+                        loadedData.append(testData)
+                        lock.unlock()
+                    }
+                }
+            }
+        });
         
         return loadedData
     }

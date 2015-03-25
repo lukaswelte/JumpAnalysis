@@ -52,6 +52,7 @@
 		8081BED21A6D323F004D4EF9 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BED01A6D323F004D4EF9 /* SwiftyJSON.swift */; };
 		8081BEFF1A6D34B5004D4EF9 /* FileHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */; };
 		809BE9771ABD6F84001CB2B0 /* FilteredPeakDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */; };
+		80A134301AC2A491007D8225 /* MinimumMovementAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1342F1AC2A491007D8225 /* MinimumMovementAnalyzer.swift */; };
 		80C5AF001AB6E91800F20010 /* AnalyzationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */; };
 		80C5AF011AB6E91800F20010 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEC21AB6E91800F20010 /* 0.json */; };
 		80C5AF021AB6E91800F20010 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEC31AB6E91800F20010 /* 1.json */; };
@@ -210,6 +211,7 @@
 		8081BED01A6D323F004D4EF9 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		8081BEFE1A6D34B5004D4EF9 /* FileHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandlerTests.swift; sourceTree = "<group>"; };
 		809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredPeakDetection.swift; sourceTree = "<group>"; };
+		80A1342F1AC2A491007D8225 /* MinimumMovementAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumMovementAnalyzer.swift; sourceTree = "<group>"; };
 		80A144E81A86952800C33214 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzationCoordinator.swift; sourceTree = "<group>"; };
 		80C5AEC21AB6E91800F20010 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 				809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */,
 				80E2F3E81ABDA9F400B90401 /* FourierPeakDetection.swift */,
 				80E2F4291ABEBA1000B90401 /* NegativeAreaAnalyzer.swift */,
+				80A1342F1AC2A491007D8225 /* MinimumMovementAnalyzer.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -827,6 +830,7 @@
 				802A6A621AB9CF5B008020B6 /* ParameterizedAlgorithmProtocol.swift in Sources */,
 				8071D3511A6C74D500E303E8 /* BLEHelper.m in Sources */,
 				80C5AF3D1AB6E91800F20010 /* TestData.swift in Sources */,
+				80A134301AC2A491007D8225 /* MinimumMovementAnalyzer.swift in Sources */,
 				80489BA11A6D05340044BFF1 /* ChartColors.swift in Sources */,
 				80E2F3E21ABD7F3500B90401 /* AlgorithmDetailViewController.swift in Sources */,
 				80E2F4211ABDAAF400B90401 /* Exponential.swift in Sources */,

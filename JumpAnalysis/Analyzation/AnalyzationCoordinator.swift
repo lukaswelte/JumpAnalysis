@@ -22,7 +22,7 @@ class AnalyzationCoordinator {
     /** FourerPeakDetection/Filtering is not used right now **/
     static let statAlgorithms: [AlgorithmProtocol] = []//[FakeAlgorithm(), SimplePeakDetection()]
     
-    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [NegativeAreaAnalyzer()]//[FakeAlgorithmParameterized(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
+    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [NegativeAreaAnalyzer(), MinimumMovementAnalyzer()]//[FakeAlgorithmParameterized(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
     
     static func generateAlgorithmsFromParameterizedAlgorithms(algorithmClasses: [ParameterizedAlgorithmProtocol]) -> [AlgorithmProtocol] {
         var algorithmList: [AlgorithmProtocol] = []
@@ -55,32 +55,29 @@ class AnalyzationCoordinator {
     func testRunAndCompareAlgorithms() -> [AlgorithmTestResult] {
         println("Starting algorithms tests...")
         
-        var analyzationResults: [AnalyzationResult] = []
-        for data in testData {
-            for algorithm in algorithms {
-                analyzationResults.append(AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData)))
-            }
-        }
-        
-        println("Finished running algorithm tests.")
-        println("Starting comparison...")
-        
-        var algorithmResults: [AlgorithmTestResult] = []
+        var analyzationResults: [AlgorithmTestResult] = []
         for algorithm in algorithms {
-            let analyzationResults = analyzationResults.filter({a in a.algorithm.name == algorithm.name})
-            algorithmResults.append(AlgorithmTestResult(analyzationResults: analyzationResults, algorithm: algorithm))
+            let result = testSingleAlgorithm(algorithm)
+            analyzationResults.append(result)
         }
         
         println("Finished comparison.")
-        return algorithmResults
+        return analyzationResults
     }
     
     func testSingleAlgorithm(algorithm: AlgorithmProtocol) -> AlgorithmTestResult {
         var results: [AnalyzationResult] = []
-        for data in testData {
-            results.append(AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData)))
-
-        }
+        
+        var array = NSArray(array: testData)
+        var lock = NSLock()
+        array.enumerateObjectsWithOptions(NSEnumerationOptions.Concurrent, usingBlock: { (obj: AnyObject!, index: Int, outStop: UnsafeMutablePointer<ObjCBool>) -> Void in
+            let data: TestData = obj as! TestData
+            let analyzationResult = AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData))
+            lock.lock()
+            results.append(analyzationResult)
+            lock.unlock()
+        });
+        
         return AlgorithmTestResult(analyzationResults: results, algorithm: algorithm)
     }
 }
