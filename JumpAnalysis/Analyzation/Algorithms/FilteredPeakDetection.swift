@@ -58,7 +58,7 @@ class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
             previousValue = currentFilteredVal
         }
         
-        var jumpDuration = 0
+        var jumpDuration = Int.max
         if let minData = minPeakData, maxData = maxPeakData {
             jumpDuration = abs(minData.sensorTimeStampInMilliseconds - maxData.sensorTimeStampInMilliseconds)
         }

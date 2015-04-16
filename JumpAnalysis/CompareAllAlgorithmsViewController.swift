@@ -16,15 +16,15 @@ class CompareAllAlgorithmsViewController : UIViewController {
         self.title = "All Algorithms"
         
         let testResults = AnalyzationCoordinator.sharedInstance.testRunAndCompareAlgorithms().sorted { (a, b) -> Bool in
-            if a.worstPercentage == b.worstPercentage {
-                return a.averagePercentage > b.averagePercentage
+            if a.averagePercentage == b.averagePercentage {
+                return a.worstPercentage > b.worstPercentage
             }
-            return a.worstPercentage > b.worstPercentage
+            return a.averagePercentage > b.averagePercentage
         }
         
-        self.resultTextView.text = ""
+        self.resultTextView.text = "Algorithm Name, Best, Worst, Mean, StdDv \n"
         for result in testResults {
-            let descriptionString: String = NSString(format: "%@: Best: %.2f%% Worst: %.2f%% Avg: %.2f%% Stdv: %.2f%% \n", result.algorithm.name, result.bestPercentage*100, result.worstPercentage*100, result.averagePercentage*100, result.standardDeviation*100) as! String
+            let descriptionString: String = NSString(format: "%@, %.4f%%, %.4f%%, %.4f%%, %.4f%% \n", result.algorithm.name, result.bestPercentage*100, result.worstPercentage*100, result.averagePercentage*100, result.standardDeviation*100) as! String
             self.resultTextView.text = self.resultTextView.text + descriptionString
         }
     }

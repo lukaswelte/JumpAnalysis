@@ -93,7 +93,7 @@ class MinimumMovementAnalyzer : ParameterizedAlgorithmProtocol {
                     reversedByTime = reversedByTime.filter({s in s.sensorTimeStampInMilliseconds < liftOffData.sensorTimeStampInMilliseconds})
                 }
             } else {
-                jumpDuration = 0
+                jumpDuration = Double(Int.max)
             }
         }
         

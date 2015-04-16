@@ -20,7 +20,13 @@ class AlgorithmDebugViewController : UIViewController {
         super.viewDidLoad()
         self.title = "Debug \(algorithm.name) with Data \(testData.id)"
         
-        self.originalDataChart.addSeries(ChartSeries(testData.sensorData.map {s in Float(s.linearAcceleration.y)}))
+        self.originalDataChart.gridColor = UIColor.clearColor()
+        let sortedByTime = testData.sensorData.sorted { (a, b) -> Bool in
+            return a.sensorTimeStampInMilliseconds < b.sensorTimeStampInMilliseconds
+        }
+        let chartPoints:[ChartPoint] = sortedByTime.map {(s: SensorData) -> ChartPoint in return ChartPoint(x:Float(s.sensorTimeStampInMilliseconds), y:Float(s.linearAcceleration.y))}
+        let chartSeries = ChartSeries(data: chartPoints)
+        self.originalDataChart.addSeries(chartSeries)
     }
     
     override func viewDidAppear(animated: Bool) {

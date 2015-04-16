@@ -106,7 +106,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
             }
         }
         
-        var jumpDuration:Int = 0
+        var jumpDuration:Int = Int.max
         if let liftOffData = liftOff, landingData = landingPeak {
             jumpDuration = landingData.sensorTimeStampInMilliseconds - liftOffData.sensorTimeStampInMilliseconds
         }
