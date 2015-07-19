@@ -17,7 +17,7 @@ class FakeAlgorithm : AlgorithmProtocol {
     
     func debugView(sensorData: [SensorData]) -> UIView {
         let view = UIView()
-        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = UIColor.whiteColor()
         return view
     }
 }

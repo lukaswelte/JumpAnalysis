@@ -11,7 +11,7 @@ import UIKit
 class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
     
     var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 2000, max: 3500, step: 5, name: "threshold")
+        AlgorithmParameterSpecification(min: 3000, max: 3500, step: 10, name: "threshold")
     ]
     
     var name = "SimplePeak"

@@ -13,6 +13,11 @@ class AlgorithmDebugViewController : UIViewController {
     var algorithm: AlgorithmProtocol = FakeAlgorithm()
     var testData: TestData = TestDataLoader().retrieveSingleTestData()
     
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var footLabel: UILabel!
+    @IBOutlet weak var manualResultLabel: UILabel!
+    @IBOutlet weak var algorithmResultLabel: UILabel!
     @IBOutlet weak var originalDataChart: Chart!
     @IBOutlet weak var debugViewPlaceHolder: UIView!
     
@@ -27,6 +32,12 @@ class AlgorithmDebugViewController : UIViewController {
         let chartPoints:[ChartPoint] = sortedByTime.map {(s: SensorData) -> ChartPoint in return ChartPoint(x:Float(s.sensorTimeStampInMilliseconds), y:Float(s.linearAcceleration.y))}
         let chartSeries = ChartSeries(data: chartPoints)
         self.originalDataChart.addSeries(chartSeries)
+        
+        self.weightLabel.text = "\(testData.jumperWeightInKg) kg"
+        self.heightLabel.text = "\(testData.jumperHeightInCm) cm"
+        self.footLabel.text = testData.isLeftFoot ? "left" : "right"
+        self.manualResultLabel.text = "\(testData.jumpDurationInMs)"
+        self.algorithmResultLabel.text = NSString(format: "%.2f", self.algorithm.calculateResult(testData.sensorData)) as String
     }
     
     override func viewDidAppear(animated: Bool) {
