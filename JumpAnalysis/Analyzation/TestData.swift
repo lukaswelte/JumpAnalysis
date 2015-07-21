@@ -33,6 +33,13 @@ class TestData: Equatable, Hashable {
     var hashValue: Int {
         return self.id
     }
+    
+    func sensorDataSortedByTime() -> [SensorData] {
+        return self.sensorData.sorted { (a, b) -> Bool in
+            return a.sensorTimeStampInMilliseconds < b.sensorTimeStampInMilliseconds
+        }
+    }
+    
 
 //MARK: JSON method
     init(fromDictionary: Dictionary<String, AnyObject>) {

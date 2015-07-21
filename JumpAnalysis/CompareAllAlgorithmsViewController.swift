@@ -22,9 +22,9 @@ class CompareAllAlgorithmsViewController : UIViewController {
             return a.averagePercentage > b.averagePercentage
         }
         
-        self.resultTextView.text = "Algorithm Name, Best, Worst, Mean, StdDv \n"
+        self.resultTextView.text = "Algorithm Name, Best, Worst, Mean \n"
         for result in testResults {
-            let descriptionString: String = NSString(format: "%@, %.4f%%, %.4f%%, %.4f%%, %.4f%% \n", result.algorithm.name, result.bestPercentage*100, result.worstPercentage*100, result.averagePercentage*100, result.standardDeviation*100) as! String
+            let descriptionString: String = NSString(format: "%@,\t %.4f%%, %.4f%%, %.4f%% \n", result.algorithm.name(), result.bestPercentage*100, result.worstPercentage*100, result.averagePercentage*100) as! String
             self.resultTextView.text = self.resultTextView.text + descriptionString
         }
     }

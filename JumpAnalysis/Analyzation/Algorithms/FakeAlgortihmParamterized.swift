@@ -9,9 +9,12 @@
 import UIKit
 
 class FakeAlgorithmParameterized : ParameterizedAlgorithmProtocol {
-    var name = "FakeAlgorithmParam"
+    private var algorithmName = "FakeAlgorithmParam"
+    func name() -> String { return self.algorithmName }
     
-    var parameterSpecification: [AlgorithmParameterSpecification] = []
+    func parameterSpecification() -> [AlgorithmParameterSpecification] {
+        return []
+    }
     
     required init() {}
     

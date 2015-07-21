@@ -15,42 +15,11 @@ class AnalyzationCoordinator {
         return _AnalyzationCoordinator
     }
     
-    lazy var testData = TestDataLoader().retrieveTestData()//.filter({t in t.jumpDistanceInCm < 100 && t.jumpDurationInMs<300})
+    lazy var testData = TestDataLoader().retrieveTestData()
     
     let algorithms: [AlgorithmProtocol]
     
-    /** FourerPeakDetection/Filtering is not used right now **/
-    static let statAlgorithms: [AlgorithmProtocol] = [FakeAlgorithm()]//[FakeAlgorithm(),  SimplePeakDetection()]
-    
-    static let parameterizedAlgorithmClasses : [ParameterizedAlgorithmProtocol] = [NegativeAreaAnalyzer(),SimplePeakDetectionParameterized()]//[NegativeAreaAnalyzer(), MinimumMovementAnalyzer(), SimplePeakDetectionParameterized(), FilteredPeakDetection()]
-    
-    static func generateAlgorithmsFromParameterizedAlgorithms(algorithmClasses: [ParameterizedAlgorithmProtocol]) -> [AlgorithmProtocol] {
-        var algorithmList: [AlgorithmProtocol] = []
-        for aClass in algorithmClasses {
-            //TODO: enable for more than one parameter
-            //var parameterMap = [String:[AlgorithmParameter]]()
-            for paramSpec in aClass.parameterSpecification {
-                var params: [AlgorithmParameter] = []
-                var current = paramSpec.min
-                while current<=paramSpec.max {
-                    let param = AlgorithmParameter(value: current, name: paramSpec.name)
-                    params.append(param)
-                    
-                    algorithmList.append(aClass.factory([param]))
-                    current += paramSpec.step
-                }
-                //parameterMap.updateValue(params, forKey: paramSpec.name)
-            }
-        }
-        
-        return algorithmList
-    }
-    
-    init() {
-        var arr : [AlgorithmProtocol] = AnalyzationCoordinator.statAlgorithms
-        arr += AnalyzationCoordinator.generateAlgorithmsFromParameterizedAlgorithms(AnalyzationCoordinator.parameterizedAlgorithmClasses)
-        self.algorithms = arr
-    }
+    static let algorithmList: [AlgorithmProtocol] = [DemoPeakDetection()]
     
     func testRunAndCompareAlgorithms() -> [AlgorithmTestResult] {
         println("Starting algorithms tests...")
@@ -72,12 +41,46 @@ class AnalyzationCoordinator {
         var lock = NSLock()
         array.enumerateObjectsWithOptions(NSEnumerationOptions.Concurrent, usingBlock: { (obj: AnyObject!, index: Int, outStop: UnsafeMutablePointer<ObjCBool>) -> Void in
             let data: TestData = obj as! TestData
-            let analyzationResult = AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorData))
+            let analyzationResult = AnalyzationResult(algorithm: algorithm, testData: data, computedResult: algorithm.calculateResult(data.sensorDataSortedByTime()))
             lock.lock()
             results.append(analyzationResult)
             lock.unlock()
         });
         
         return AlgorithmTestResult(analyzationResults: results, algorithm: algorithm)
+    }
+    
+    static func generateAlgorithmsFromParameterizedAlgorithm(algorithmClass: ParameterizedAlgorithmProtocol) -> [AlgorithmProtocol] {
+        var algorithmList: [AlgorithmProtocol] = []
+        let parameterSpecifications = algorithmClass.parameterSpecification()
+        for paramSpec in parameterSpecifications {
+            var params: [AlgorithmParameter] = []
+            var current = paramSpec.min
+            while current<=paramSpec.max {
+                let param = AlgorithmParameter(value: current, name: paramSpec.name)
+                params.append(param)
+                
+                algorithmList.append(algorithmClass.factory([param]))
+                current += paramSpec.step
+            }
+        }
+        
+        if parameterSpecifications.isEmpty {
+            algorithmList = [algorithmClass.factory([])]
+        }
+        
+        return algorithmList
+    }
+    
+    init() {
+        var arr : [AlgorithmProtocol] = []
+        for algorithm in AnalyzationCoordinator.algorithmList {
+            if let a = algorithm as? ParameterizedAlgorithmProtocol {
+                arr += AnalyzationCoordinator.generateAlgorithmsFromParameterizedAlgorithm(a)
+            } else {
+                arr += [algorithm]
+            }
+        }
+        self.algorithms = arr
     }
 }

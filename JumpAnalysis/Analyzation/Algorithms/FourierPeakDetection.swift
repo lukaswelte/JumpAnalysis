@@ -10,8 +10,8 @@ import UIKit
 import Accelerate
 
 class FourierPeakDetection : AlgorithmProtocol {
-    
-    var name = "FourierPeakDetection"
+    private var algorithmName = "FourierPeakDetection"
+    func name() -> String { return self.algorithmName }
     
     func calculateResult(sensorData: [SensorData]) -> Double {
         var mutatingSensorData = sensorData

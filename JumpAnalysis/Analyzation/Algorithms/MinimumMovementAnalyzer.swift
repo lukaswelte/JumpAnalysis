@@ -9,7 +9,8 @@
 import UIKit
 
 class MinimumMovementAnalyzer : ParameterizedAlgorithmProtocol {
-    var name = "Min Move"
+    private var algorithmName = "Min Move"
+    func name() -> String { return self.algorithmName }
     
     var lastSamplesCount = 10
     var maxJumpDuration: Double = 850
@@ -18,9 +19,11 @@ class MinimumMovementAnalyzer : ParameterizedAlgorithmProtocol {
     var jumpDurationFactor: Double = 2.6
     
     
-    var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 1, max: 10, step: 1, name: "minLand")
-    ]
+    func parameterSpecification() -> [AlgorithmParameterSpecification] {
+        return [
+            AlgorithmParameterSpecification(min: 1, max: 10, step: 1, name: "minLand")
+        ]
+    }
     
     required init() {}
     
@@ -28,7 +31,7 @@ class MinimumMovementAnalyzer : ParameterizedAlgorithmProtocol {
         for param in parameters {
             if param.name == "minLand" {
                 self.lastSamplesCount = Int(param.value)
-                self.name += " samples: \(self.lastSamplesCount)"
+                self.algorithmName += " samples: \(self.lastSamplesCount)"
             }
         }
     }

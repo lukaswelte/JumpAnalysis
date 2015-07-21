@@ -8,15 +8,17 @@
 
 import UIKit
 
-class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
+class SimplePeakDetectionParameterized : VisualizableAlgorithm, ParameterizedAlgorithmProtocol {
+    private var algorithmName = "SimplePeak"
+    override func name() -> String { return self.algorithmName }
     
-    var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 3000, max: 3500, step: 10, name: "threshold")
-    ]
+    func parameterSpecification() -> [AlgorithmParameterSpecification] {
+        return [
+            AlgorithmParameterSpecification(min: 3000, max: 3500, step: 10, name: "threshold")
+        ]
+    }
     
-    var name = "SimplePeak"
-    
-    required init() {
+    required override init() {
         
     }
     
@@ -24,7 +26,7 @@ class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
         for param in parameters {
             if param.name == "threshold" {
                 self.threshold = Int(param.value)
-                self.name += " Threshold: \(self.threshold)"
+                self.algorithmName += " Threshold: \(self.threshold)"
             }
         }
     }
@@ -36,7 +38,8 @@ class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
     var threshold: Int = 0
     
     
-    func calculateResult(sensorData: [SensorData]) -> Double {
+    override func calculateResult(sensorData: [SensorData]) -> (visualizationInformation: [VisualizationInformation], result: Double) {
+        var visualizationInformation: [VisualizationInformation] = [Threshold(color: UIColor.grayColor(), description: "Threshold", value: Double(self.threshold))]
         let sortedByTime = sensorData.sorted { (a, b) -> Bool in
             return a.sensorTimeStampInMilliseconds < b.sensorTimeStampInMilliseconds
         }
@@ -73,14 +76,14 @@ class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
                     correctedDuration = Double(duration) / 2.0
                 }
             }
-            return correctedDuration
+            return (visualizationInformation, correctedDuration)
         }
         
         
-        return Double(Int.max)
+        return (visualizationInformation, Double(Int.max))
     }
     
-    func debugView(sensorData: [SensorData]) -> UIView {
+   /* func debugView(sensorData: [SensorData]) -> UIView {
         let view = Chart()
         view.gridColor = UIColor.clearColor()
         view.labelColor = UIColor.clearColor()
@@ -145,4 +148,5 @@ class SimplePeakDetectionParameterized : ParameterizedAlgorithmProtocol {
         
         return view
     }
+*/
 }

@@ -539,10 +539,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jYf-mm-Kzm" kind="relationship" relationship="viewControllers" id="tcE-4Z-NY9"/>
                         <segue destination="YKe-DI-g9j" kind="relationship" relationship="viewControllers" id="SIN-iA-xG8"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="Ff7-2r-qSf" kind="relationship" relationship="viewControllers" id="ndS-1k-fka"/>
+                        <segue destination="jYf-mm-Kzm" kind="relationship" relationship="viewControllers" id="tcE-4Z-NY9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

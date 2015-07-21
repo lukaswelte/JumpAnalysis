@@ -9,9 +9,6 @@
 import UIKit
 
 protocol AlgorithmProtocol {
-    var name: String { get }
+    func name() -> String
     func calculateResult(sensorData: [SensorData]) -> Double
-    
-    func debugView(sensorData: [SensorData]) -> UIView
 }
-

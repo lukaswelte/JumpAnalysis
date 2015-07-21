@@ -9,7 +9,8 @@
 import UIKit
 
 class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
-    var name = "Negative Area"
+    private var algorithmName = "Negative Area"
+    func name() -> String { return self.algorithmName }
     
     let accelerationThreshold:Double = 4000
     var landingThreshold: Double = 250
@@ -20,9 +21,11 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
 
     let minNegativePassedThreshold: Double = -6000
     
-    var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 100, max: 600, step: 100, name: "minLand")
-    ]
+    func parameterSpecification() -> [AlgorithmParameterSpecification] {
+        return [
+            AlgorithmParameterSpecification(min: 100, max: 600, step: 100, name: "minLand")
+        ]
+    }
     
     required init() {}
     
@@ -30,7 +33,7 @@ class NegativeAreaAnalyzer : ParameterizedAlgorithmProtocol {
         for param in parameters {
             if param.name == "minLand" {
                 self.minLandedThreshold = param.value
-                self.name += " minLand: \(self.minLandedThreshold)"
+                self.algorithmName += " minLand: \(self.minLandedThreshold)"
             }
         }
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 class FakeAlgorithm : AlgorithmProtocol {
-    var name = "FakeAlgorithm"
+    func name() -> String { return "FakeAlgorithm" }
     
     func calculateResult(sensorData: [SensorData]) -> Double {
         return 301.5

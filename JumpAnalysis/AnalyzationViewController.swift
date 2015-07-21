@@ -36,7 +36,7 @@ class AnalyzationViewController: UITableViewController {
         if index==0 {
             cell.textLabel?.text = "Compare all Algorithms"
         } else {
-            cell.textLabel?.text = analyzationCoordinator.algorithms[indexPath.row-1].name
+            cell.textLabel?.text = analyzationCoordinator.algorithms[indexPath.row-1].name()
         }
         return cell
     }

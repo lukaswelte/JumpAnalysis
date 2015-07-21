@@ -9,7 +9,12 @@
 import UIKit
 
 class SimplePeakDetection : AlgorithmProtocol {
-    var name = "SimplePeak"
+    private var algorithmName = "FakeAlgorithmParam"
+    func name() -> String { return self.algorithmName }
+    
+    func parameterSpecification() -> [AlgorithmParameterSpecification] {
+        return []
+    }
     
     let threshold: Int = 3000
     

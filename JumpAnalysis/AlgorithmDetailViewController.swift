@@ -17,7 +17,7 @@ class AlgorithmDetailViewController : UIViewController, UITableViewDataSource, U
     @IBOutlet weak var distributionGraph: Chart!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = algorithm.name
+        self.title = algorithm.name()
         
         let algorithmResult = AnalyzationCoordinator.sharedInstance.testSingleAlgorithm(algorithm)
         self.analyzationResults = algorithmResult.analyzationResults.sorted({ (a, b) -> Bool in

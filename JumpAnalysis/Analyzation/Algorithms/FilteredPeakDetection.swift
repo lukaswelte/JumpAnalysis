@@ -9,13 +9,18 @@
 import UIKit
 
 class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
-    var name = "FilteredPeakDetection"
+    private var algorithmName = "FilteredPeakDetection"
+    func name() -> String { return self.algorithmName }
     
     var lowPassFilterStrength = 0.9
     
-    var parameterSpecification: [AlgorithmParameterSpecification] = [
-        AlgorithmParameterSpecification(min: 0, max: 1, step: 0.1, name: "lowPassFilterStrength")
-    ]
+    func parameterSpecification() -> [AlgorithmParameterSpecification] {
+        return [
+            AlgorithmParameterSpecification(min: 0, max: 1, step: 0.1, name: "lowPassFilterStrength")
+        ]
+    }
+    
+    
     
     required init() {}
     
@@ -23,7 +28,7 @@ class FilteredPeakDetection : ParameterizedAlgorithmProtocol {
         for param in parameters {
             if param.name == "lowPassFilterStrength" {
                 lowPassFilterStrength = param.value
-                name += " Strength: \(lowPassFilterStrength)"
+                algorithmName += " Strength: \(lowPassFilterStrength)"
             }
         }
     }

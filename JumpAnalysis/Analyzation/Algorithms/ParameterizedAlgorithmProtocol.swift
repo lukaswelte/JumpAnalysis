@@ -9,10 +9,10 @@
 import Foundation
 
 protocol ParameterizedAlgorithmProtocol : AlgorithmProtocol {
-    var parameterSpecification: [AlgorithmParameterSpecification] {get}
+    func parameterSpecification() -> [AlgorithmParameterSpecification]
     
-    init(parameters: [AlgorithmParameter])
     func factory(parameters: [AlgorithmParameter]) -> AlgorithmProtocol
     
+    init(parameters: [AlgorithmParameter])
     init()
 }
