@@ -2,13 +2,14 @@
 //  DemoPeakDetection.swift
 //  JumpAnalysis
 //
-//  Created by Lukas Welte on 20.07.15.
+//  Created by Lukas Welte on 23.07.15.
 //  Copyright (c) 2015 Lukas Welte. All rights reserved.
 //
 
+
 import UIKit
 
-class DemoPeakDetection: VisualizableAlgorithm, ParameterizedAlgorithmProtocol {
+class DemoPeakDetection: VisualizableAlgorithm,ParameterizedAlgorithmProtocol {
     var algorithmName = "Peak"
     
     override func name() -> String {
@@ -36,7 +37,7 @@ class DemoPeakDetection: VisualizableAlgorithm, ParameterizedAlgorithmProtocol {
         return DemoPeakDetection(parameters: parameters)
     }
     
-    var threshold: Int = 500
+    var threshold: Int = 4000
     
     override func calculateResult(sensorData: [SensorData]) -> (visualizationInformation: [VisualizationInformation], result: Double) {
         var visualizationInformation: [VisualizationInformation] = [Threshold(color: UIColor.lightGrayColor(), description: "Threshold", value: Double(self.threshold))]
@@ -97,19 +98,20 @@ class DemoPeakDetection: VisualizableAlgorithm, ParameterizedAlgorithmProtocol {
             previousValue = currentValue
         }
         
+        /*
         if let first = firstPeak {
             visualizationInformation.append(Peak(color: UIColor.blackColor(), description: "First", timestamp: first.sensorTimeStampInMilliseconds))
-        }
+        }*/
         
-        if let last = lastPeak {
+        /*if let last = lastPeak {
             visualizationInformation.append(Peak(color: UIColor.blackColor(), description: "Last", timestamp: last.sensorTimeStampInMilliseconds))
-        }
+        }*/
         
         if let first = firstPeak, last = lastPeak {
             let duration = last.sensorTimeStampInMilliseconds - first.sensorTimeStampInMilliseconds
             visualizationInformation.append(Range(color: UIColor.greenColor(), description: "Hop", startTime: first.sensorTimeStampInMilliseconds, endTime: last.sensorTimeStampInMilliseconds))
             return (visualizationInformation, Double(duration))
         }
-        return (visualizationInformation, Double(Int.max))
+        return (visualizationInformation, Double(0))
     }
 }

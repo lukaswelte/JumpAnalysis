@@ -58,10 +58,10 @@
 		808DB4611B5D843200CFBF22 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DB4601B5D843200CFBF22 /* Event.swift */; };
 		808DB4631B5D844800CFBF22 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DB4621B5D844800CFBF22 /* Range.swift */; };
 		808DB4651B5D847D00CFBF22 /* Peak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DB4641B5D847D00CFBF22 /* Peak.swift */; };
-		808DB4671B5D958200CFBF22 /* DemoPeakDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DB4661B5D958200CFBF22 /* DemoPeakDetection.swift */; };
 		808DB4691B5DA1C200CFBF22 /* NegativeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DB4681B5DA1C200CFBF22 /* NegativeArea.swift */; };
 		809BE9771ABD6F84001CB2B0 /* FilteredPeakDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */; };
 		80A134301AC2A491007D8225 /* MinimumMovementAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A1342F1AC2A491007D8225 /* MinimumMovementAnalyzer.swift */; };
+		80A6D2FD1B60F80900BCEEE2 /* DemoPeakDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6D2FC1B60F80900BCEEE2 /* DemoPeakDetection.swift */; };
 		80C5AF001AB6E91800F20010 /* AnalyzationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */; };
 		80C5AF011AB6E91800F20010 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEC21AB6E91800F20010 /* 0.json */; };
 		80C5AF021AB6E91800F20010 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 80C5AEC31AB6E91800F20010 /* 1.json */; };
@@ -226,11 +226,11 @@
 		808DB4601B5D843200CFBF22 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		808DB4621B5D844800CFBF22 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 		808DB4641B5D847D00CFBF22 /* Peak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peak.swift; sourceTree = "<group>"; };
-		808DB4661B5D958200CFBF22 /* DemoPeakDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPeakDetection.swift; sourceTree = "<group>"; };
 		808DB4681B5DA1C200CFBF22 /* NegativeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NegativeArea.swift; sourceTree = "<group>"; };
 		809BE9761ABD6F84001CB2B0 /* FilteredPeakDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredPeakDetection.swift; sourceTree = "<group>"; };
 		80A1342F1AC2A491007D8225 /* MinimumMovementAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumMovementAnalyzer.swift; sourceTree = "<group>"; };
 		80A144E81A86952800C33214 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		80A6D2FC1B60F80900BCEEE2 /* DemoPeakDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPeakDetection.swift; sourceTree = "<group>"; };
 		80C5AEC01AB6E91800F20010 /* AnalyzationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzationCoordinator.swift; sourceTree = "<group>"; };
 		80C5AEC21AB6E91800F20010 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
 		80C5AEC31AB6E91800F20010 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
@@ -599,7 +599,7 @@
 				80E2F4291ABEBA1000B90401 /* NegativeAreaAnalyzer.swift */,
 				80A1342F1AC2A491007D8225 /* MinimumMovementAnalyzer.swift */,
 				808DB4681B5DA1C200CFBF22 /* NegativeArea.swift */,
-				808DB4661B5D958200CFBF22 /* DemoPeakDetection.swift */,
+				80A6D2FC1B60F80900BCEEE2 /* DemoPeakDetection.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -873,6 +873,7 @@
 				808DB4611B5D843200CFBF22 /* Event.swift in Sources */,
 				80E2F3E21ABD7F3500B90401 /* AlgorithmDetailViewController.swift in Sources */,
 				80E2F4211ABDAAF400B90401 /* Exponential.swift in Sources */,
+				80A6D2FD1B60F80900BCEEE2 /* DemoPeakDetection.swift in Sources */,
 				8071D3421A6C69F500E303E8 /* SensorDataSession.swift in Sources */,
 				80E2F4281ABDAEE200B90401 /* AlgorithmDebugViewController.swift in Sources */,
 				808DB45F1B5D841300CFBF22 /* Threshold.swift in Sources */,
@@ -884,7 +885,6 @@
 				80E2F3E41ABD945500B90401 /* CompareAllAlgorithmsViewController.swift in Sources */,
 				8071D33E1A6C690E00E303E8 /* Quaternion.swift in Sources */,
 				80C5AF3E1AB6E91800F20010 /* TestDataLoader.swift in Sources */,
-				808DB4671B5D958200CFBF22 /* DemoPeakDetection.swift in Sources */,
 				8071D3591A6C774100E303E8 /* BLEService.m in Sources */,
 				8071D3401A6C699100E303E8 /* RawAcceleration.swift in Sources */,
 				80489B9F1A6D05340044BFF1 /* Chart.swift in Sources */,

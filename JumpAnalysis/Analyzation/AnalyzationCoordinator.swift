@@ -15,11 +15,18 @@ class AnalyzationCoordinator {
         return _AnalyzationCoordinator
     }
     
+    /*****************************************************/
+    /*  Algorithms that are tested should be added here  */
+    /*****************************************************/
+    static let algorithmList: [AlgorithmProtocol] = [DemoPeakDetection()]
+    
+    
+    
+    
     lazy var testData = TestDataLoader().retrieveTestData()
     
     let algorithms: [AlgorithmProtocol]
     
-    static let algorithmList: [AlgorithmProtocol] = [DemoPeakDetection()]
     
     func testRunAndCompareAlgorithms() -> [AlgorithmTestResult] {
         println("Starting algorithms tests...")
